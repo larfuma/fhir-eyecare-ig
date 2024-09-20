@@ -17,7 +17,11 @@ Please feel free to contact me for feedback or if you would like try and work on
 To specify the values it should communicate I have copied the slicing method from the [Australian ADHA Visual Acuity Observation Profile](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/StructureDefinition-dh-observation-visualacuity-1.html), (Credit to the Authors)
 
 1.2 Handling String VA Data: 
-Ophthalmologists in Germany currently document >90% of their visual acuity measurements as strings. Their EMRs are usually not certified to convert this data into numerical or ratio values I felt i sadly had to introduce some capability for the profile to handle string values as well, although this is unneccessary and damaging to interoperability. I have made an effort to to demonstrate that this is not encouraged with a warning, and it may be reasonable to remove this capability in healthcare services which are not overly reliant on string-formatted VA data. 
+Ophthalmologists in Germany currently document >90% of their visual acuity measurements as strings. Their EMRs are usually not certified to convert this data into numerical or ratio values I felt i sadly had to introduce some capability for the profile to handle string values as well. 
+I emphatically disencourage this, because there is no possible Value of a VA which requires string format. 
+I have made an effort to to demonstrate that this is not encouraged with a warning, and it may be reasonable to remove this capability in healthcare services which are not overly reliant on string-formatted VA data. 
+If you know a VA value that you think "needs" a string format, it should be added to the CodeableConcept Valueset instead. 
+
 
 
 
