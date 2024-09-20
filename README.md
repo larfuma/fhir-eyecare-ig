@@ -1,6 +1,5 @@
-# Requirements
 
-## Disclaimer
+# Introduction
 
 This is an experimental fork of the fhir-eyecare-IG developed by the Eyes on FHIR project group. 
 
@@ -13,9 +12,12 @@ Please feel free to contact me for feedback or if you would like try and work on
 ## 1. Work on the Visual Acuity Observation profile
 
 
-To specify the values it should communicate I have copied the slicing method from the [Australian ADHA Visual Acuity Observation Profile](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/StructureDefinition-dh-observation-visualacuity-1.html), Credit to the Authors!
+1.1 Merging with the ADHA VA Observation Profile: 
 
-Ophthalmologists in germany currently document >90% of their Visual acuity measurements as strings. Their EMRs are usually not certified to convert this data into numerical or ratio values I felt i sadly had to introduce some capability for the profile to handle string values as well, although this is unneccessary and damaging to interoperability. I have made an effort to to demonstrate that this is not encouraged with a warning, and it may be reasonable to remove this capability in healthcare services which are not overly reliant on string-formatted VA data. 
+To specify the values it should communicate I have copied the slicing method from the [Australian ADHA Visual Acuity Observation Profile](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/StructureDefinition-dh-observation-visualacuity-1.html), (Credit to the Authors)
+
+1.2 Handling String VA Data: 
+Ophthalmologists in Germany currently document >90% of their visual acuity measurements as strings. Their EMRs are usually not certified to convert this data into numerical or ratio values I felt i sadly had to introduce some capability for the profile to handle string values as well, although this is unneccessary and damaging to interoperability. I have made an effort to to demonstrate that this is not encouraged with a warning, and it may be reasonable to remove this capability in healthcare services which are not overly reliant on string-formatted VA data. 
 
 
 
@@ -26,7 +28,7 @@ Ophthalmologists in germany currently document >90% of their Visual acuity measu
 
 
 -------------------
-# Readme from the origina IG (publiched under CC0 license):
+# Readme from the origina IG (published under CC0 license):
 
 
 
