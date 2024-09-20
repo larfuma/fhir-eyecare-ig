@@ -24,11 +24,9 @@ Ophthalmologists in Germany currently document >90% of their visual acuity measu
 
 
 
-
-
-
 -------------------
-# Readme from the origina IG (published under CC0 license):
+# Readme from the original IG 
+(published under CC0 license)
 
 
 
