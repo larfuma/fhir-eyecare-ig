@@ -2,15 +2,15 @@
 
 ## Disclaimer
 
-This is an experimental Fork of the fhir-eyecare-IG developed by the Eyes on FHIR project group (publiched under CC0 license). 
+This is an experimental fork of the fhir-eyecare-IG developed by the Eyes on FHIR project group. 
 
-I am a trainee ophthalmologist based in germany with limited FHIR/Gíthub experience, and I am using this fork to get aquainted with both and to  explore ways in which the development of this IG can be expanded in the future. 
+I am a trainee ophthalmologist based in germany with limited FHIR/Gíthub experience. I am using this fork to get aquainted with FHIR and git,  and to explore ways in which the development of this IG can be expanded in the future. 
 
 I will use this Readme to describe my experimental changes, in order to be transparent to people with or without FHIR/Git experience.
 Please feel free to contact me for feedback or if you would like try and work on improving ophthalmic interoperability with me! 
 
 
-# Work in the Visual Acuity Observation profile
+## 1. Work on the Visual Acuity Observation profile
 
 
 To specify the values it should communicate I have copied the slicing method from the [Australian ADHA Visual Acuity Observation Profile](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/StructureDefinition-dh-observation-visualacuity-1.html), Credit to the Authors!
@@ -26,7 +26,7 @@ Ophthalmologists in germany currently document >90% of their Visual acuity measu
 
 
 -------------------
-Readme from the origina IG: 
+# Readme from the origina IG (publiched under CC0 license):
 
 
 
