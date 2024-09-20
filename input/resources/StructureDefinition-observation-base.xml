@@ -37,6 +37,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:ophthalCategory">
@@ -79,13 +80,7 @@
     </element>
     <element id="Observation.bodySite.extension">
       <path value="Observation.bodySite.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+      <max value="1" />
     </element>
     <element id="Observation.bodySite.extension:bodySiteEye">
       <path value="Observation.bodySite.extension" />

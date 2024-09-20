@@ -1,5 +1,35 @@
 # Requirements
 
+## Disclaimer
+
+This is an experimental Fork of the fhir-eyecare-IG developed by the Eyes on FHIR project group (publiched under CC0 license). 
+
+I am a trainee ophthalmologist based in germany with limited FHIR/Gíthub experience, and I am using this fork to get aquainted with both and to  explore ways in which the development of this IG can be expanded in the future. 
+
+I will use this Readme to describe my experimental changes, in order to be transparent to people with or without FHIR/Git experience.
+Please feel free to contact me for feedback or if you would like try and work on improving ophthalmic interoperability with me! 
+
+
+# Work in the Visual Acuity Observation profile
+
+
+To specify the values it should communicate I have copied the slicing method from the [Australian ADHA Visual Acuity Observation Profile](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/StructureDefinition-dh-observation-visualacuity-1.html), Credit to the Authors!
+
+Ophthalmologists in germany currently document >90% of their Visual acuity measurements as strings. Their EMRs are usually not certified to convert this data into numerical or ratio values I felt i sadly had to introduce some capability for the profile to handle string values as well, although this is unneccessary and damaging to interoperability. I have made an effort to to demonstrate that this is not encouraged with a warning, and it may be reasonable to remove this capability in healthcare services which are not overly reliant on string-formatted VA data. 
+
+
+
+
+
+
+
+
+
+-------------------
+Readme from the origina IG: 
+
+
+
 ## GitHub
 The IG source code is stored in GitHub so you'll need to be a Github user and have GIT installed and available from a terminal or shell.  If you intend to contribute content to the project you'll need write permission so please contact us at woliver@oculo.com.au or brett.esler@oridashi.com.au
 

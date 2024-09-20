@@ -3,26 +3,30 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="uv-eyecare"/>
-  <url value="http://hl7.org/fhir/uv/eyecare/ImplementationGuide/uv-eyecare"/>
+  <url value="http:to_be_announced"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0"/>
   <name value="OphthalmologyImplementationGuide"/>
-  <title value="HL7 FHIR® Implementation Guide: Ophthalmology Retinal, Release 1"/>
+  <title value="Eyes back on FHIR? An experimental continuation of the Eyes on FHIR working group's HL7 FHIR® IG"/> 
   <status value="draft"/>
-  <experimental value="false"/>
-  <publisher value="HL7 International - Patient Care WG"/>
+  <experimental value="true"/>
+  <publisher value="Lars Fuhrmann"/>
   <contact>
-        <name value="HL7 International - Patient Care"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/patientcare"/>
-        </telecom>
+        <name value="Lars Fuhrmann"/>
+     <telecom>
+      <system value="url"/>
+      <value value="http://www.wedonthaveawebsiteyet.org"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="fuhr.lars@gmail.com"/> <!-- Replace with your actual email -->
+    </telecom>
     </contact>
-  <description value="The overarching goal is to define and standardize the means through which all types of eye care and general medical providers can communicate"/>
+  <description value="My attempts at continuing on the development of a Ophtalmologiy Implementation Guide. IMPORTANT: At the moment this IG mostly a fork of the 'Eyes on FHIR' working groups STU 1 Ballot version published here: https://hl7.org/fhir/uv/eyecare/2021Sep/index.html , with minor modifications"/>
  <jurisdiction>
 		<coding>
 			<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-			<code value="001"/>
+			<code value="276"/>
 		</coding>
 	</jurisdiction>
   <packageId value="hl7.fhir.uv.eyecare"/>
@@ -147,12 +151,12 @@
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
-      <value value="2020+"/>
+      <value value="2024"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="STU 1 Ballot"/>
+      <value value="experimental"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>

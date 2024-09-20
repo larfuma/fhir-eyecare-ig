@@ -10,18 +10,120 @@
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  
   <type value="Observation" />
   <baseDefinition value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="260246004" />
+          <display value="Visual Acuity finding" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <short value="Visual Acuity Observables" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity" />
+      </binding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.value[x]:valueRatio">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueRatio" />
+      <short value="Visual acuity expressed as a Snellen fraction" />
+      <definition value="Visual acuity expressed as a Snellen fraction." />
+      <type>
+        <code value="Ratio" />
+      </type>
+      <constraint>
+        <key value="inv-dh-va-01" />
+        <severity value="error" />
+        <human value="Value shall include numerator value and denominator value" />
+        <expression value="numerator.value.exists() and denominator.value.exists()" />
+      </constraint>
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueQuantity" />
+      <short value="Visual acuity expressed as a simple quantity" />
+      <definition value="Visual acuity expressed as a simple quantity." />
+      <comment value="This is suitable for LogMAR, N-point and M-size notations, and also for decimal notation with units '/arcmin'." />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <constraint>
+        <key value="inv-dh-va-02" />
+        <severity value="error" />
+        <human value="Value shall include value and unit" />
+        <expression value="value.exists() and unit.exists()" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1" />
+      </constraint>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <short value="Visual acuity expressed as a code" />
+      <definition value="Visual acuity expressed as a code" />
+      <comment value="This is suitable for expressing low vision." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://art-decor.org/ad/#/ophtalcds-/terminology/valueset/2.16.840.1.113883.3.1937.777.89.11.12/2024-09-19T16:29:06" />
+      </binding>
+    </element>
+    <element id="Observation.value[x]:valueString">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueString" />
+      <short value="Visual acuity expressed as a string (discouraged!)" />
+      <definition value="Visual acuity expressed as a string. Use of string values is strongly discouraded, it is neither necessary from an ophthalmological nor from a technical standpoint. It should only be used where legacy systems have already stored VA values as strings and transformation to structured is not possible due to regulatory constraints." />
+      <type>
+        <code value="string" />
+      </type>
+      <constraint>
+        <key value="inv-va-01" />
+        <severity value="warning" />
+        <human value="Use of valueString is discouraged; please use structured data types instead." />
+        <expression value="false" />
+      </constraint>
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <definition value="Which eye(s) were used for the Visual acuity test? note that both eyes refers to a binocular visuin test, it does not mean that each of the eyes alone has the specified VA value!&#xD;&#xA;Also., when a Patient uses an extrocular device such as a worn camera devicefor the VA test, please use &quot;Topography not assigned&quot; and use specify the device in observation.device" />
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity" />
+        <valueSet value="https://art-decor.org/ad/#/ophtalcds-/terminology/valueset/2.16.840.1.113883.3.1937.777.89.11.3/2024-07-06T18:34:44" />
       </binding>
     </element>
     <element id="Observation.method">
