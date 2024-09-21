@@ -3,7 +3,7 @@ name: Build and Deploy IG
 on:
   push:
     branches:
-      - master
+      - main  # or 'master' if that's your default branch
 
 jobs:
   build:
@@ -11,6 +11,16 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
+
+      - name: Set up Ruby (required for Jekyll)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install jekyll bundler
+          bundle install
 
       - name: Set up Java
         uses: actions/setup-java@v2
@@ -25,10 +35,6 @@ jobs:
       - name: Build IG
         run: |
           java -jar publisher.jar -ig ig.ini
-
-      - name: Create .nojekyll file
-        run: |
-          touch output/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
