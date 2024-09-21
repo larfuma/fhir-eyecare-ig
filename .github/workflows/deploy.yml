@@ -3,7 +3,7 @@ name: Build and Deploy IG
 on:
   push:
     branches:
-      - main  # or 'master' if that's your default branch
+      - master  # or 'master' if that's your default branch
 
 jobs:
   build:
