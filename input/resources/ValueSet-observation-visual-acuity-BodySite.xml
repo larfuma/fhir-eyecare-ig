@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="visual-acuity-laterality"/>
+  <url value="http://hl7.org/fhir/uv/eyecare/ValueSet/visual-acuity-laterality"/>
+  <version value="1.0.0"/>
+  <name value="Visual Acuity BodySite"/>
+  <title value="Visual Acuity BodySite"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Lars Fuhrmann"/>
+  <description value="ValueSet containing laterality codes for visual acuity observations."/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="362502000"/>
+        <display value="Entire right eye"/>
+      </concept>
+      <concept>
+        <code value="362503005"/>
+        <display value="Entire left eye"/>
+      </concept>
+      <concept>
+        <code value="362508001"/>
+        <display value="Both eyes, entire (body structure)"/>
+      </concept>
+      <concept>
+        <code value="87100004"/>
+        <display value="Topography unknown (body structure)"/>
+      </concept>
+      <concept>
+        <code value="21229009"/>
+        <display value="Topography not assigned (body structure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
