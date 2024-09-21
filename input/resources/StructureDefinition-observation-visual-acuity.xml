@@ -119,7 +119,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-BodySite.html" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite.html" />
       </binding>
     </element>
     <element id="Observation.method">

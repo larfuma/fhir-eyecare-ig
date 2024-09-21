@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="visual-acuity-laterality"/>
-  <url value="http://hl7.org/fhir/uv/eyecare/ValueSet/visual-acuity-laterality"/>
+  <id value="ValueSet-Visual-Acuity-BodySite"/>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite.html"/>
   <version value="1.0.0"/>
-  <name value="Visual Acuity BodySite"/>
-  <title value="Visual Acuity BodySite"/>
+  <name value="ValueSet-Visual-Acuity-BodySite"/>
+  <title value="ValueSet-Visual-Acuity-BodySite"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Lars Fuhrmann"/>
