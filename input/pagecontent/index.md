@@ -1,5 +1,12 @@
 
 
+# Disclaimer
+
+This is a personal project without any affiliation to HL7 or any other standards organization. 
+Any mention of HL7 originates from the original IG from where this was forked
+
+
+
 ### Introduction
 
 
