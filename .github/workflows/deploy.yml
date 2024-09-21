@@ -1,0 +1,32 @@
+name: Build and Deploy IG
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+
+      - name: Install IG Publisher
+        run: |
+          wget -O publisher.jar https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+
+      - name: Build IG
+        run: |
+          java -jar publisher.jar -ig ig.ini
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
