@@ -3,7 +3,7 @@ name: Build and Deploy IG
 on:
   push:
     branches:
-      - main  # or 'master' if that's your default branch
+      - master  # or 'master' if that's your default branch
 
 jobs:
   build:
@@ -12,15 +12,18 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
 
-      - name: Set up Ruby (required for Jekyll)
+      - name: Set up Ruby (Install Ruby 3.x)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '3.0'
 
-      - name: Install Jekyll and Bundler
+      - name: Update RubyGems to Latest Version
+        run: |
+          gem update --system
+
+      - name: Install Latest Jekyll and Bundler
         run: |
           gem install jekyll bundler
-          bundle install
 
       - name: Set up Java
         uses: actions/setup-java@v2
@@ -36,9 +39,14 @@ jobs:
         run: |
           java -jar publisher.jar -ig ig.ini
 
+      - name: Create .nojekyll file
+        run: |
+          touch output/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           publish_branch: gh-pages
+          force_orphan: true  # Ensure a clean deployment without previous files
