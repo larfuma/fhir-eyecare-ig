@@ -15,7 +15,7 @@
         <name value="Lars Fuhrmann"/>
      <telecom>
       <system value="url"/>
-      <value value="http://www.wedonthaveawebsiteyet.org"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
     </telecom>
     <telecom>
         <system value="email"/>

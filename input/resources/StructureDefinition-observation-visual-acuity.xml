@@ -14,10 +14,6 @@
   <baseDefinition value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <fixedCodeableConcept>
@@ -99,7 +95,7 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://art-decor.org/ad/#/ophtalcds-/terminology/valueset/2.16.840.1.113883.3.1937.777.89.11.12/2024-09-19T16:29:06" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values.xml" />
       </binding>
     </element>
     <element id="Observation.value[x]:valueString">
