@@ -1,0 +1,367 @@
+{
+  "Timestamp": "2024-09-21T10:32:47.312065+00:00",
+  "Series": "free",
+  "Type": "Simplifier",
+  "Files": [
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1914,
+      "Hash": "C7CF6A06E53583959ACB85D97CB3D55C",
+      "FilePath": "examples\\observation-refraction-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1912,
+      "Hash": "C9F4ECDDC5FB99E25C85BB0AB2AFA5E4",
+      "FilePath": "examples\\observation-refraction-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1255,
+      "Hash": "622E666B3A642E963E21731C9BB3262F",
+      "FilePath": "examples\\observation-va-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1253,
+      "Hash": "6875388445890CE6B25BF32895191382",
+      "FilePath": "examples\\observation-va-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1256,
+      "Hash": "1DB56076E0CAB44047C7738548F922E1",
+      "FilePath": "examples\\observation-va-2.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1255,
+      "Hash": "D5C7F63B86405C05A3748049970F9895",
+      "FilePath": "examples\\observation-va-3.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1368,
+      "Hash": "9888D3D84BA549E837F23BE2DC82AB19",
+      "FilePath": "examples\\observation-va-4.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1367,
+      "Hash": "4C077FBA1CAEF8531A87380BFA156309",
+      "FilePath": "examples\\observation-va-5.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1254,
+      "Hash": "39B5FB73926E779E556C8EAA24FE5D08",
+      "FilePath": "examples\\observation-vf-false-positives-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1253,
+      "Hash": "065EB2937BB3CF169BE7575BFB7155B7",
+      "FilePath": "examples\\observation-vf-false-positives-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1244,
+      "Hash": "D1F5ACB3638D2061F6447B1E26DA74FC",
+      "FilePath": "examples\\observation-vf-fixation-loss-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1243,
+      "Hash": "029B43FDD355C3F76DF6B3E25942695B",
+      "FilePath": "examples\\observation-vf-fixation-loss-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1157,
+      "Hash": "7CCD881B50B42E8FCF02C874A9B8500B",
+      "FilePath": "examples\\observation-vf-mean-deviation-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1156,
+      "Hash": "6843FC7144B4010086ADE73A94E97D50",
+      "FilePath": "examples\\observation-vf-mean-deviation-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1180,
+      "Hash": "CDDC1819A84B6C4E266D659D8130AC6C",
+      "FilePath": "examples\\observation-vf-pattern-sd-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1179,
+      "Hash": "58CFBDD26EDBF9FB970D4DEC22812FBD",
+      "FilePath": "examples\\observation-vf-pattern-sd-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1153,
+      "Hash": "AA2A3AD1132290F7F9A00CEAFE9EF041",
+      "FilePath": "examples\\observation-vf-test-duration-0.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. Invalid Xml encountered. Details: Data at the root level is invalid. Line 2, position 1."
+        }
+      ],
+      "Tag": null,
+      "Length": 1152,
+      "Hash": "F02CA758CAC5D59C6501F5C921306236",
+      "FilePath": "examples\\observation-vf-test-duration-1.json"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. type (at Cannot locate type information for type \u0027ul\u0027)"
+        }
+      ],
+      "Tag": null,
+      "Length": 482,
+      "Hash": "A74ED0FB34DF51EEFE222C6A0C7A49E6",
+      "FilePath": "includes\\menu.xml"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. type (at Cannot locate type information for type \u0027div\u0027)"
+        }
+      ],
+      "Tag": null,
+      "Length": 469,
+      "Hash": "8F2672662A07EAC55F73F9614565F574",
+      "FilePath": "pagecontent\\changes.xml"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. type (at Cannot locate type information for type \u0027div\u0027)"
+        }
+      ],
+      "Tag": null,
+      "Length": 1410,
+      "Hash": "0473E2ED64763A11C1E02BBD3D48180F",
+      "FilePath": "pagecontent\\downloads.xml"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. type (at Cannot locate type information for type \u0027div\u0027)"
+        }
+      ],
+      "Tag": null,
+      "Length": 254,
+      "Hash": "1165FC59DA1FCCB55D83ED13FDA25E22",
+      "FilePath": "pagecontent\\StructureDefinition-mypatient-intro.xml"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 0,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "PARSING",
+          "Message": "Could not parse file as a FHIR resource. type (at Cannot locate type information for type \u0027div\u0027)"
+        }
+      ],
+      "Tag": null,
+      "Length": 244,
+      "Hash": "E79597D07A5E2F528D950DA5350B839E",
+      "FilePath": "pagecontent\\StructureDefinition-mypatient-notes.xml"
+    },
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CLAIM",
+          "Message": "This project has no canonical claims."
+        }
+      ],
+      "Tag": null,
+      "Length": 0,
+      "Hash": null,
+      "FilePath": null
+    }
+  ]
+}
