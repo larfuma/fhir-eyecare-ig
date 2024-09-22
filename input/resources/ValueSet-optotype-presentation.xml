@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="optotype-presentation" />
-  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotype-presentation" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotype-presentation.html" />
   <version value="1.0.0" />
   <name value="OptotypePresentation" />
   <title value="Optotype Presentation ValueSet" />
@@ -11,7 +11,17 @@
   <description value="A ValueSet that includes codes representing the type of optotype presentation used during visual acuity testing." />
   <compose>
     <include>
-      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/optotype-presentation-codes" />
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html" />
+      <concept>
+    <code value="single-optotypes" />
+    <display value="Single Optotypes" />
+    <definition value="The visual acuity test was conducted using single optotypes." />
+  </concept>
+  <concept>
+    <code value="optotype-rows" />
+    <display value="Optotype Rows" />
+    <definition value="The visual acuity test was conducted using rows of optotypes." />
+  </concept>
     </include>
     <include>
       <system value="http://snomed.info/sct" />
