@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pinhole-occluder-usage" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html" />
+  <version value="1.0.0" />
+  <name value="PinholeOccluderUsage" />
+  <title value="Pinhole Occluder Usage Values" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Lars Fuhrmann" />
+  <description value="This ValueSet contains SNOMED CT codes to represent whether a pinhole occluder was used during a visual acuity measurement." />
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="373066001" />
+        <display value="Yes" />
+      </concept>
+      <concept>
+        <code value="373067005" />
+        <display value="No" />
+      </concept>
+      <concept>
+        <code value="1220561009" />
+        <display value="Not recorded" />
+      </concept>
+      <concept>
+        <code value="261665006" />
+        <display value="Unknown" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

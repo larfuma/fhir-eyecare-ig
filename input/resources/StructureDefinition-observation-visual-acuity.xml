@@ -163,17 +163,32 @@
         </coding>
       </fixedCodeableConcept>
     </element>
-    <element id="Observation.component:pinhole_occluder_usage.valueCodeableConcept">
-  <path value="Observation.component.valueCodeableConcept" />
-  <short value="Pinhole Occluder Usage Value" />
-  <definition value="The value indicating pinhole occluder usage." />
-  <type>
-    <code value="CodeableConcept" />
-  </type>
-  <binding>
-    <strength value="required" />
-    <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html" />
-  </binding>
-</element>
+    <element id="Observation.component:pinhole_occluder_usage.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.component:pinhole_occluder_usage.value[x]:valueCodeableConcept">
+      <path value="Observation.component.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <short value="Pinhole Occluder Usage Value" />
+      <definition value="The value indicating pinhole occluder usage." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
