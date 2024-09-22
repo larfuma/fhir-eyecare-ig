@@ -30,5 +30,16 @@
         <display value="Unknown" />
       </concept>
     </include>
+        <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="1220561009" />
+        <display value="Not recorded" />
+      </concept>
+      <concept>
+        <code value="261665006" />
+        <display value="Unknown" />
+      </concept>
+    </include>
   </compose>
 </ValueSet>

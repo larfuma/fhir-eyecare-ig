@@ -186,9 +186,38 @@
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html" />
       </binding>
     </element>
+    <element id="Observation.component:optotype_presentation">
+  <path value="Observation.component" />
+  <sliceName value="optotype_presentation" />
+  <short value="Optotype Presentation" />
+  <definition value="Indicates whether the visual acuity test was conducted using single optotypes or optotype rows." />
+  <max value="1" />
+</element>
+<element id="Observation.component:optotype_presentation.code">
+  <path value="Observation.component.code" />
+  <fixedCodeableConcept>
+    <coding>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/optotype-presentation-codes" />
+      <code value="optotype-presentation" />
+      <display value="Optotype Presentation Type (Single or Row)" />
+    </coding>
+  </fixedCodeableConcept>
+</element>
+<element id="Observation.component:optotype_presentation.valueCodeableConcept">
+  <path value="Observation.component.valueCodeableConcept" />
+  <short value="Optotype Presentation Value" />
+  <definition value="The value indicating the type of optotype presentation used during the test." />
+  <type>
+    <code value="CodeableConcept" />
+  </type>
+  <binding>
+    <strength value="preferred" />
+    <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotype-presentation" />
+  </binding>
+</element>
   </differential>
 </StructureDefinition>
