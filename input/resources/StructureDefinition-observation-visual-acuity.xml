@@ -279,7 +279,7 @@
   </type>
   <binding>
     <strength value="preferred" />
-    <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-test-distance" />
+    <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance" />
   </binding>
 </element>
 
