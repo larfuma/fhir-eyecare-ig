@@ -69,6 +69,9 @@
 <artifact id="ValueSet/observation-visual-field" key="ValueSet-observation-visual-field" name="Visual Field Observable Entities ValueSet"/>
 <artifact id="StructureDefinition/observation-visual-field" key="StructureDefinition-observation-visual-field" name="Visual field observations"/>
 <artifact id="CodeSystem/visual-field-observations" key="CodeSystem-visual-field-observations" name="Visual field test parameter observations"/>
+<artifact id="ValueSet/optotype-presentation" key="ValueSet-optotype-presentation" name="Optotype presentation ValueSet"/>
+<artifact id="ValueSet/visual-acuity-test-distance" key="ValueSet-visual-acuity-test-distance" name="VA test distance ValueSet"/>
+<artifact id="CodeSystem/optotype-presentation-codes" key="CodeSystem-optotype-presentation-codes" name="Optotype presentation CodeSystem"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

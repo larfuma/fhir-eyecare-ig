@@ -1,13 +1,12 @@
-
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="visual-acuity-test-distance" />
-  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-test-distance" />
   <version value="1.0.0" />
   <name value="VisualAcuityTestDistance" />
   <title value="Visual Acuity Test Distance" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2024-09-28T18:14:55" />
+  <date value="2024-09-28" />
   <publisher value="Lars Fuhrmann" />
   <description value="Codes representing the distances at which visual acuity tests are performed." />
   <compose>
