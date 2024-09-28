@@ -96,7 +96,7 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values.xml" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values" />
       </binding>
     </element>
     <element id="Observation.value[x]:valueString">
@@ -126,7 +126,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite.html" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite" />
       </binding>
     </element>
     <element id="Observation.method">
@@ -194,7 +194,7 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage" />
       </binding>
     </element>
     <element id="Observation.component:optotype_presentation">
@@ -276,7 +276,7 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-test-distance" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance" />
       </binding>
     </element>
     <element id="Observation.component:test_distance.value[x]:valueQuantity">
