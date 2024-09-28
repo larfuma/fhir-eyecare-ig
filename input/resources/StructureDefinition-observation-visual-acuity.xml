@@ -51,6 +51,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueRatio">
       <path value="Observation.value[x]" />
@@ -110,12 +111,18 @@
         <key value="inv-va-01" />
         <severity value="warning" />
         <human value="Use of valueString is discouraged; please use structured data types instead." />
-        <expression value="false" />
+        <expression value="true" />
       </constraint>
+    </element>
+    <element id="Observation.note">
+      <path value="Observation.note" />
+      <short value="Free text note or Comments about the VA observation" />
+      <definition value="If there is a free text field that relates to the VA observation, it should be included as this note. Although this is not encouraged, free text notes may include information that is crucial to the interpretation of the visual acuity which could not be entered in other fields. For example, some systems may not support all of the observation.component values. Therefore, if a free text note about a VA measurement is available, it should be included here and it should be available for future interpretation of the VA measurement." />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
-      <definition value="Which eye(s) were used for the visual acuity test? note that both eyes refers to a binocular visuin test, it does not mean that each of the eyes alone has the specified VA value!&#xD;&#xA;Also., when a Patient uses an extrocular device such as a worn camera devicefor the VA test, please use &quot;Topography not assigned&quot; and use specify the device in observation.device" />
+      <definition value="Which eye(s) were used for the visual acuity test? note that both eyes refers to a binocular visuin test, it does not mean that each of the eyes alone has the specified VA value! Also, when a Patient uses an extrocular device such as a worn camera devicefor the VA test, please use &quot;Topography not assigned&quot; and use specify the device in observation.device" />
       <min value="1" />
       <binding>
         <strength value="required" />
@@ -191,32 +198,102 @@
       </binding>
     </element>
     <element id="Observation.component:optotype_presentation">
+      <path value="Observation.component" />
+      <sliceName value="optotype_presentation" />
+      <short value="Optotype Presentation" />
+      <definition value="Indicates whether the visual acuity test was conducted using single optotypes or optotype rows." />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:optotype_presentation.code">
+      <path value="Observation.component.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/optotype-presentation-codes" />
+          <code value="optotype-presentation" />
+          <display value="Optotype Presentation Type (Single or Row)" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.component:optotype_presentation.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:optotype_presentation.value[x]:valueCodeableConcept">
+      <path value="Observation.component.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <short value="Optotype Presentation Value" />
+      <definition value="The value indicating the type of optotype presentation used during the test." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotype-presentation" />
+      </binding>
+    </element>
+<element id="Observation.component:test_distance">
   <path value="Observation.component" />
-  <sliceName value="optotype_presentation" />
-  <short value="Optotype Presentation" />
-  <definition value="Indicates whether the visual acuity test was conducted using single optotypes or optotype rows." />
+  <sliceName value="test_distance" />
+  <short value="Test" />
+  <definition value="The distance at which the visual acuity test was performed." />
   <max value="1" />
 </element>
-<element id="Observation.component:optotype_presentation.code">
+
+<element id="Observation.component:test_distance.code">
   <path value="Observation.component.code" />
   <fixedCodeableConcept>
     <coding>
-      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/optotype-presentation-codes" />
-      <code value="optotype-presentation" />
-      <display value="Optotype Presentation Type (Single or Row)" />
+      <system value="http://your-ig-url/CodeSystem/va-test-distance-codes" />
+      <code value="test-distance" />
+      <display value="Test" />
     </coding>
   </fixedCodeableConcept>
 </element>
-<element id="Observation.component:optotype_presentation.valueCodeableConcept">
-  <path value="Observation.component.valueCodeableConcept" />
-  <short value="Optotype Presentation Value" />
-  <definition value="The value indicating the type of optotype presentation used during the test." />
+
+<element id="Observation.component:test_distance.value[x]">
+  <path value="Observation.component.value[x]" />
+  <slicing>
+    <discriminator>
+      <type value="type" />
+      <path value="$this" />
+    </discriminator>
+    <ordered value="false" />
+    <rules value="open" />
+  </slicing>
+</element>
+
+<element id="Observation.component:measurement_distance.value[x]:valueCodeableConcept">
+  <path value="Observation.component.value[x]" />
+  <sliceName value="valueCodeableConcept" />
+  <short value="Measurement Distance as Coded Concept" />
+  <definition value="The distance at which the visual acuity test was performed, expressed as a coded concept (e.g., near, intermediate, far)." />
   <type>
     <code value="CodeableConcept" />
   </type>
   <binding>
     <strength value="preferred" />
-    <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotype-presentation" />
+    <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-test-distance" />
+  </binding>
+</element>
+
+<element id="Observation.component:test_distance.value[x]:valueQuantity">
+  <path value="Observation.component.value[x]" />
+  <sliceName value="valueQuantity" />
+  <short value="Test as Quantity" />
+  <definition value="The precise distance at which the visual acuity test was performed, expressed as a quantity (e.g., 40 cm)." />
+  <type>
+    <code value="Quantity" />
+  </type>
+  <binding>
+    <strength value="required" />
+    <valueSet value="http://unitsofmeasure.org" />
   </binding>
 </element>
   </differential>
