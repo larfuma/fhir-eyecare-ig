@@ -15,17 +15,14 @@
         <concept>
         <code value="Landolt C" />
         <display value="Landolt C" />
-        <definition value="Landolt C Optotype, also known as Landolt Ring" />
         </concept>
         <concept>
         <code value="Sjogren's Hand Test" />
         <display value="Sjogren's Hand Test" />
-        <definition value="A Visual Acuity Test with a Chart consisting of pictures of hands with fingers pointing towards various directions." />
         </concept>
         <concept>
         <code value="Lea Symbol Test" />
         <display value="Lea Symbol Test" />
-        <definition value="A four-Optotype Visual acuity Test for Children developed by Dr Lea Hyvaerinen" />
         </concept>
     </include>
     <include>
