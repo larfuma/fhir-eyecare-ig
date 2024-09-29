@@ -44,9 +44,25 @@
     </include>
     <include>
       <system value="http://loinc.org"/>
-      <concept>
+       <concept>
         <code value="LA24679-5"/>
         <display value="Count fingers (CF)"/>
+      </concept>
+      <concept>
+        <code value="LA25490-6"/>
+        <display value="Central steady maintain"/>
+      </concept>
+      <concept>
+        <code value="LA25491-4"/>
+        <display value="Central unsteady maintain"/>
+      </concept>
+      <concept>
+        <code value="LA25492-2"/>
+        <display value="Fix and follow"/>
+      </concept>
+      <concept>
+        <code value="LA25493-0"/>
+        <display value="Blinks for lights"/>
       </concept>
     </include>
   </compose>

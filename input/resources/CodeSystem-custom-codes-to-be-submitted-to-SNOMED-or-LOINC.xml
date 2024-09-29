@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="custom-codes-to-be-submitted-to-SNOMED-or-LOINC" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC" />
+  <version value="1.0.0" />
+  <name value="CustomCodeSystem" />
+  <title value="Codes which were needed, but not found in SNOMED or LOINC, will be submitted there" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Lars Fuhrmann " />
+  <description value="Codes which were needed, but not found in SNOMED or LOINC, will be submitted there" />
+  <content value="complete" />
+  <concept>
+    <code value="single-optotypes" />
+    <display value="Single Optotypes" />
+    <definition value="The visual acuity test was conducted using single optotypes." />
+  </concept>
+  <concept>
+    <code value="optotype-rows" />
+    <display value="Optotype Rows" />
+    <definition value="The visual acuity test was conducted using rows of optotypes." />
+  </concept>
+  <concept>
+    <code value="optotype-presentation" />
+    <display value="Optotype Presentation" />
+    <definition value="Whether the optotypes were presented as single optotypes or as rows of optotypes" />
+  </concept>
+  <concept>
+    <code value="Optotype" />
+    <display value="Optotype" />
+    <definition value="Figures or letters of different sizes, which are discriminated by a patient in Visual acuity testing" />
+  </concept>
+  <concept>
+    <code value="Landolt C" />
+    <display value="Landolt C" />
+    <definition value="Landolt C Optotype, also known as Landolt Ring Optotype" />
+  </concept>
+  <concept>
+    <code value="Sjogren's Hand Test" />
+    <display value="Sjogren's Hand Test" />
+    <definition value="A Visual Acuity Test with a Chart consisting of pictures of hands with fingers pointing towards various directions." />
+  </concept>
+    <concept>
+    <code value="Lea Symbol Test" />
+    <display value="Lea Symbol Test" />
+    <definition value="A four-Optotype Visual acuity Test for Children developed by Dr Lea Hyvaerinen" />
+  </concept>
+</CodeSystem>

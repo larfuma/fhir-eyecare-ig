@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="optotypes" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes" />
+  <version value="1.0.0" />
+  <name value="Optotypes" />
+  <title value="Optotype ValueSet" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Lars Fuhrmann" />
+  <description value="A ValueSet that includes codes representing optotype used during visual acuity testing." />
+  <compose>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-Codes-to-be-submitted-to-SNOMED-or-LOINC" />
+        <concept>
+        <code value="Landolt C" />
+        <display value="Landolt C" />
+        <definition value="Landolt C Optotype, also known as Landolt Ring" />
+        </concept>
+        <concept>
+        <code value="Sjogren's Hand Test" />
+        <display value="Sjogren's Hand Test" />
+        <definition value="A Visual Acuity Test with a Chart consisting of pictures of hands with fingers pointing towards various directions." />
+        </concept>
+        <concept>
+        <code value="Lea Symbol Test" />
+        <display value="Lea Symbol Test" />
+        <definition value="A four-Optotype Visual acuity Test for Children developed by Dr Lea Hyvaerinen" />
+        </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="1220561009" />
+        <display value="Not recorded" />
+      </concept>
+      <concept>
+        <code value="261665006" />
+        <display value="Unknown" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

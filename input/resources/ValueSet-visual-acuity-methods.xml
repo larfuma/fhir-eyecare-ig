@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
 	<id value="observation-visual-acuity-methods"/>
-	<url value="http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity-methods"/>
+	<url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods"/>
 	<version value="0.1.0"/>
 	<name value="OphthalmologyVisualAcuityMethods"/>
 	<title value="Visual acuity chart valueset (SNOMED)"/>
@@ -20,11 +20,47 @@
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-			<filter>
-				<property value="concept"/>
-				<op value="descendent-of"/>
-				<value value="400912000"/>
-			</filter>
+        <concept>
+            <code value="416307006"/>
+            <display value="Laser inferometer for potential acuity testing (physical object)"/>
+        </concept>
+        <concept>
+            <code value="418295001"/>
+            <display value="Near card (physical object)"/>
+        </concept>
+        <concept>
+            <code value="417283003"/>
+            <display value="Potential acuity meter (physical object)"/>
+        </concept>
+        <concept>
+            <code value="421763006"/>
+            <display value="Visual acuity chart (physical object)"/>
+        </concept>
+		 <concept>
+            <code value="285802009"/>
+            <display value="Preferential looking test (procedure)"/>
+        </concept>
+		 <concept>
+            <code value="73933001"/>
+            <display value="Optokinetic nystagmus test"/>
+        </concept>
+		 <concept>
+            <code value="63107007"/>
+            <display value="Visual evoked potential study (procedure)"/>
+        </concept>
+		 <concept>
+            <code value="74964007"/>
+            <display value="Other (qualifier value)"/>
+        </concept>
+		<concept>
+            <code value="227607007"/>
+            <display value="Candy (substance), refferring to Boeck's Candy Test"/>
+        </concept>
+		<concept>
+            <code value="400908006"/>
+            <display value="Central, steady, maintained visual acuity assessment (procedure)"/>
+        </concept>
+		
 		</include>
 	</compose>
 </ValueSet>
