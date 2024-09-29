@@ -38,6 +38,69 @@
         <code value="261665006" />
         <display value="Unknown" />
       </concept>
+      <concept>
+        <code value="400911007" />
+        <display value="E test" />
+      </concept>
+      <concept>
+        <code value="252982005" />
+        <display value="Kay picture test" />
+      </concept>
+      <concept>
+        <code value="252977003" />
+        <display value="Cambridge crowded letter charts" />
+      </concept>
+      <concept>
+        <code value="252976007" />
+        <display value="Sonsken charts" />
+      </concept>
+      <concept>
+        <code value="252978008" />
+        <display value="Sheridan Gardiner test (procedure)" />
+      </concept>
+      <concept>
+        <code value="252884005" />
+        <display value="Stycar vision test" />
+      </concept>
+      <concept>
+        <code value="285805006" />
+        <display value="Cardiff acuity cards (procedure)" />
+      </concept>
+      <concept>
+        <code value="285803004" />
+        <display value="Teller acuity cards" />
+      </concept>
+      <concept>
+        <code value="285804005" />
+        <display value="Keeler acuity cards" />
+      </concept>
+      <concept>
+        <code value="400914004" />
+        <display value="Early Treatment of Diabetic Retinopathy Study visual acuity chart (physical object)" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org" />
+      <concept>
+        <code value="LA25494-8" />
+        <display value="Teller" />
+      </concept>
+      <concept>
+        <code value="LA25495-5" />
+        <display value="Allen figure" />
+      </concept>
+      <concept>
+        <code value="LA25496-3" />
+        <display value="HOTV" />
+      </concept>
+      <concept>
+        <code value="LA25497-1" />
+        <display value="Numbers" />
+      </concept>
+      <concept>
+        <code value="LA25498-9" />
+        <display value="Snellen" />
+      </concept>
     </include>
   </compose>
 </ValueSet>
