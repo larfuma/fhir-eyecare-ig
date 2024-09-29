@@ -45,4 +45,35 @@
     <display value="Lea Symbol Test" />
     <definition value="A four-Optotype Visual acuity Test for Children developed by Dr Lea Hyvaerinen" />
   </concept>
+  </concept>
+    <concept>
+    <code value="Refractive Correction" />
+    <display value="Refractive Correction" />
+    <definition value="The process of improving visual acuity by changing the paths of light rays by in order to more accurately focus it on the retina" />
+  </concept>
+    <concept>
+    <code value="trial-lenses-autorefraction" />
+    <display value="Trial Lenses - Values from Autorefraction" />
+    <definition value="Trial lenses used for visual acuity testing based on values obtained from an autorefractor." />
+  </concept>
+  <concept>
+    <code value="trial-lenses-manifest-without-cycloplegia" />
+    <display value="Trial Lenses - Values from Manifest Refraction without Cycloplegia" />
+    <definition value="Trial lenses used for visual acuity testing based on values from manifest refraction without cycloplegia." />
+  </concept>
+  <concept>
+    <code value="trial-lenses-manifest-with-cycloplegia" />
+    <display value="Trial Lenses - Values from Manifest Refraction with Cycloplegia" />
+    <definition value="Trial lenses used for visual acuity testing based on values from manifest refraction with cycloplegia." />
+  </concept>
+  <concept>
+    <code value="trial-lenses-retinoscopy" />
+    <display value="Trial Lenses - Values from Retinoscopy" />
+    <definition value="Trial lenses used for visual acuity testing based on values from retinoscopy." />
+  </concept>
+  <concept>
+    <code value="trial-lenses-unspecified-origin" />
+    <display value="Trial Lenses - Values of Unspecified Origin" />
+    <definition value="Trial lenses used for visual acuity testing where the origin of the refractive values is unspecified." />
+  </concept>
 </CodeSystem>

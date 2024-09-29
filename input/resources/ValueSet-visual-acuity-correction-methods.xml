@@ -1,0 +1,48 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="visual-acuity-correction-methods" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods" />
+  <name value="VisualAcuityCorrectionMethods" />
+  <title value="Visual Acuity Correction Methods" />
+  <status value="active" />
+  <description value="Methods of correction used during a visual acuity test." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="420050001" />
+        <display value="Uncorrected visual acuity" />
+      </concept>
+      <concept>
+        <code value="50121007" />
+        <display value="Eye glasses, device" />
+      </concept>
+      <concept>
+        <code value="57368009" />
+        <display value="Contact lenses, device" />
+      </concept>
+    </include>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC" />
+      <concept>
+        <code value="trial-lenses-autorefraction" />
+        <display value="Trial Lenses - Values from Autorefraction" />
+      </concept>
+      <concept>
+        <code value="trial-lenses-manifest-without-cycloplegia" />
+        <display value="Trial Lenses - Values from Manifest Refraction without Cycloplegia" />
+      </concept>
+      <concept>
+        <code value="trial-lenses-manifest-with-cycloplegia" />
+        <display value="Trial Lenses - Values from Manifest Refraction with Cycloplegia" />
+      </concept>
+      <concept>
+        <code value="trial-lenses-retinoscopy" />
+        <display value="Trial Lenses - Values from Retinoscopy" />
+      </concept>
+      <concept>
+        <code value="trial-lenses-unspecified-origin" />
+        <display value="Trial Lenses - Values of Unspecified Origin" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
