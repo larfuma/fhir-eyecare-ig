@@ -343,12 +343,24 @@
       <definition value="Trial cylindrical correction value used during the visual acuity test for the left eye." />
       <max value="1" />
     </element>
+    <element id="Observation.component:Trial-Cylinder-Left-Eye.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
     <element id="Observation.component:Trial-Axis-Left-Eye">
       <path value="Observation.component" />
       <sliceName value="Trial-Axis-Left-Eye" />
       <short value="Trial Axis Correction for Left Eye" />
       <definition value="Trial axis of cylindrical correction used during the visual acuity test for the left eye." />
       <max value="1" />
+    </element>
+    <element id="Observation.component:Trial-Axis-Left-Eye.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.component:Trial-Sphere-Right-Eye">
       <path value="Observation.component" />
@@ -357,6 +369,12 @@
       <definition value="Trial spherical correction value used during the visual acuity test for the right eye." />
       <max value="1" />
     </element>
+    <element id="Observation.component:Trial-Sphere-Right-Eye.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
     <element id="Observation.component:Trial-Cylinder-Right-Eye">
       <path value="Observation.component" />
       <sliceName value="Trial-Cylinder-Right-Eye" />
@@ -364,12 +382,24 @@
       <definition value="Trial cylindrical correction value used during the visual acuity test for the right eye." />
       <max value="1" />
     </element>
+    <element id="Observation.component:Trial-Cylinder-Right-Eye.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
     <element id="Observation.component:Trial-Axis-Right-Eye">
       <path value="Observation.component" />
       <sliceName value="Trial-Axis-Right-Eye" />
       <short value="Trial Axis Correction for Right Eye" />
       <definition value="Trial axis of cylindrical correction used during the visual acuity test for the right eye." />
       <max value="1" />
+    </element>
+    <element id="Observation.component:Trial-Axis-Right-Eye.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
