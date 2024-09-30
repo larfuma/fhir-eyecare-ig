@@ -302,6 +302,7 @@
       <sliceName value="Refractive-Correction" />
       <short value="Refractive Correction Method and Details" />
       <definition value="Indicates the refractive correction method used during the visual acuity measurement and allows for specifying refractive values if applicable." />
+      <mustSupport value="false" />
     </element>
     <element id="Observation.component:Refractive-Correction.value[x]">
       <path value="Observation.component.value[x]" />
@@ -313,6 +314,9 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element id="Observation.component:Refractive-Correction.value[x]:valueCodeableConcept">
       <path value="Observation.component.value[x]" />
@@ -332,48 +336,12 @@
       <definition value="Trial spherical correction value used during the visual acuity test for the left eye." />
       <max value="1" />
     </element>
-    <element id="Observation.component:Trial-Sphere-Left-Eye.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:Trial-Sphere-Left-Eye.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
     <element id="Observation.component:Trial-Cylinder-Left-Eye">
       <path value="Observation.component" />
       <sliceName value="Trial-Cylinder-Left-Eye" />
       <short value="Trial Cylindrical Correction for Left Eye" />
       <definition value="Trial cylindrical correction value used during the visual acuity test for the left eye." />
       <max value="1" />
-    </element>
-    <element id="Observation.component:Trial-Cylinder-Left-Eye.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:Trial-Cylinder-Left-Eye.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-      <type>
-        <code value="Quantity" />
-      </type>
     </element>
     <element id="Observation.component:Trial-Axis-Left-Eye">
       <path value="Observation.component" />
@@ -382,48 +350,12 @@
       <definition value="Trial axis of cylindrical correction used during the visual acuity test for the left eye." />
       <max value="1" />
     </element>
-    <element id="Observation.component:Trial-Axis-Left-Eye.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:Trial-Axis-Left-Eye.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
     <element id="Observation.component:Trial-Sphere-Right-Eye">
       <path value="Observation.component" />
       <sliceName value="Trial-Sphere-Right-Eye" />
       <short value="Trial Spherical Correction for Right Eye" />
       <definition value="Trial spherical correction value used during the visual acuity test for the right eye." />
       <max value="1" />
-    </element>
-    <element id="Observation.component:Trial-Sphere-Right-Eye.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:Trial-Sphere-Right-Eye.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-      <type>
-        <code value="Quantity" />
-      </type>
     </element>
     <element id="Observation.component:Trial-Cylinder-Right-Eye">
       <path value="Observation.component" />
@@ -432,48 +364,12 @@
       <definition value="Trial cylindrical correction value used during the visual acuity test for the right eye." />
       <max value="1" />
     </element>
-    <element id="Observation.component:Trial-Cylinder-Right-Eye.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:Trial-Cylinder-Right-Eye.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
     <element id="Observation.component:Trial-Axis-Right-Eye">
       <path value="Observation.component" />
       <sliceName value="Trial-Axis-Right-Eye" />
       <short value="Trial Axis Correction for Right Eye" />
       <definition value="Trial axis of cylindrical correction used during the visual acuity test for the right eye." />
       <max value="1" />
-    </element>
-    <element id="Observation.component:Trial-Axis-Right-Eye.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:Trial-Axis-Right-Eye.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-      <type>
-        <code value="Quantity" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
