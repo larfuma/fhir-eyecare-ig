@@ -3,6 +3,8 @@
   <id value="OwnCorrectionLensValuesduringVATest" />
   <url value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnCorrectionLensValuesduringVATest" />
   <name value="OwnCorrectionLensValuesduringVATest" />
+  <title value="Own Correction Lens Values during VA Test" />
+  <description value="Extension capturing refractive power of the spectacle or contact lenses worn during a Visual Acuity test." />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />

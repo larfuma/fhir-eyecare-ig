@@ -6,7 +6,7 @@
   <title value="Own Correction During Visual Acuity Test" />
   <status value="draft" />
   <experimental value="true" />
-  <description value="Extension capturing lens values and related information used during a visual acuity test." />
+  <description value="Extension capturing spectacle or contact lens values and related information used during a visual acuity test." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -134,6 +134,12 @@
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnCorrectionDuringVATest" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
