@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Pupil-function-confounders"/>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/Pupil-function-confounders"/>
+  <version value="1.0.0"/>
+  <name value="PupilFunctionConfounders"/>
+  <title value="Pupil Function Confounders"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Lars Fuhrmann"/>
+  <description value="ValueSet including codes that represent confounders due to pupil function that may affect visual acuity measurements."/>
+  <compose>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"/>
+      <concept>
+        <code value="VA_Confounder_Right_Pupil_Dilated"/>
+        <display value="The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use"/>
+      </concept>
+      <concept>
+        <code value="VA_Confounder_Left_Pupil_Dilated"/>
+        <display value="The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use"/>
+      </concept>
+      <concept>
+        <code value="VA_Confounded_pathological_right_pupil_function"/>
+        <display value="The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops"/>
+      </concept>
+      <concept>
+        <code value="VA_Confounded_pathological_left_pupil_function"/>
+        <display value="The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops"/>
+      </concept>
+      <concept>
+          <code value="VA_not_confounded_by_pupil_function" />
+    <display value="Absence of significant confounding effect of pupil function on VA measurement" />
+    </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -13,24 +13,16 @@
     <include>
       <system value="http://snomed.info/sct"/>
       <concept>
-        <code value="362502000"/>
-        <display value="Entire right eye"/>
+        <code value="1290043002"/>
+        <display value="Entire right eye proper"/>
       </concept>
       <concept>
-        <code value="362503005"/>
-        <display value="Entire left eye"/>
+        <code value="1290041000"/>
+        <display value="Entire left eye proper"/>
       </concept>
       <concept>
         <code value="362508001"/>
         <display value="Both eyes, entire (body structure)"/>
-      </concept>
-      <concept>
-        <code value="87100004"/>
-        <display value="Topography unknown (body structure)"/>
-      </concept>
-      <concept>
-        <code value="21229009"/>
-        <display value="Topography not assigned (body structure)"/>
       </concept>
     </include>
   </compose>

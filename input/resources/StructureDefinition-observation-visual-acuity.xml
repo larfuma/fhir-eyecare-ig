@@ -26,6 +26,13 @@
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <short value="Visual Acuity Observables" />
       <binding>
         <strength value="preferred" />
@@ -133,7 +140,6 @@
       <path value="Observation.method" />
       <short value="VA measurement Method" />
       <definition value="This is used to document the general Method by which VA measurement performed, Note that all Visual acuity Charts with optotypes are either a &quot;Visual Acuity Chart&quot; or &quot;Near Card&quot;, the optotypes are specified as a .component." />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.method.coding">
       <path value="Observation.method.coding" />
@@ -400,6 +406,20 @@
       <type>
         <code value="Quantity" />
       </type>
+    </element>
+    <element id="Observation.component:Pupil_Function_Confounders">
+      <path value="Observation.component" />
+      <sliceName value="Pupil_Function_Confounders" />
+    </element>
+    <element id="Observation.component:Pupil_Function_Confounders.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/Pupil-function-confounders" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
