@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-OwnCorrectionDuringVA" />
+  <id value="Own-Correction-During-VA-Test" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own-Correction-During-VA-Test" />
   <name value="OwnCorrectionDuringVATest" />
   <title value="Own Correction During Visual Acuity Test" />
   <status value="draft" />
@@ -131,7 +132,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-OwnCorrectionDuringVA" />
+      <fixedUri value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own-Correction-During-VA-Test" />
     </element>
   </differential>
 </StructureDefinition>

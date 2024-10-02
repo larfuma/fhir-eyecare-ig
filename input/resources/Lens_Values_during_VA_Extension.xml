@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own_Correction_LensValues_during_VA_Test" />
-  <name value="Own_Correction_LensValues_during_VA_Test" />
+  <id value="Own-Correction-LensValues-during-VA-Test" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own-Correction-LensValues-during-VA-Test" />
+  <name value="OwnCorrectionLensValuesduringVATest" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
@@ -58,7 +59,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own_Correction_LensValues_during_VA_Test" />
+      <fixedUri value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own-Correction-LensValues-during-VA-Test" />
     </element>
   </differential>
 </StructureDefinition>
