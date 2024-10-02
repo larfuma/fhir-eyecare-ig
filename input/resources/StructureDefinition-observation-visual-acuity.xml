@@ -19,7 +19,7 @@
       <sliceName value="ownCorrectionDuringVATest" />
       <type>
         <code value="Extension" />
-        <profile value="https://example.org/fhir/StructureDefinition/OwnCorrectionDuringVA" />
+        <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Own-Correction-During-VA-Test" />
       </type>
       <isModifier value="false" />
     </element>
