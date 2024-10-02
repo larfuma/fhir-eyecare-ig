@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/Own_Correction_LensValues_during_VA_Test" />
+  <name value="Own_Correction_LensValues_during_VA_Test" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Extension.value[x]" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension:Sphere_Power">
+      <path value="Extension.extension" />
+      <sliceName value="Sphere_Power" />
+    </element>
+    <element id="Extension.extension:Sphere_Power.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Sphere_Power" />
+    </element>
+    <element id="Extension.extension:Sphere_Power.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:Cylinder_Power">
+      <path value="Extension.extension" />
+      <sliceName value="Cylinder_Power" />
+    </element>
+    <element id="Extension.extension:Cylinder_Power.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Cylinder_Power" />
+    </element>
+    <element id="Extension.extension:Cylinder_Power.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:Cylinder_Axis">
+      <path value="Extension.extension" />
+      <sliceName value="Cylinder_Axis" />
+    </element>
+    <element id="Extension.extension:Cylinder_Axis.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Cylinder_Axis" />
+    </element>
+    <element id="Extension.extension:Cylinder_Axis.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/Own_Correction_LensValues_during_VA_Test" />
+    </element>
+  </differential>
+</StructureDefinition>

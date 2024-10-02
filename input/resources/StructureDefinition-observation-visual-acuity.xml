@@ -14,6 +14,15 @@
   <baseDefinition value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.extension:ownCorrectionDuringVATest">
+      <path value="Observation.extension" />
+      <sliceName value="ownCorrectionDuringVATest" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/OwnCorrectionDuringVA" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <fixedCodeableConcept>
@@ -148,6 +157,10 @@
         <strength value="preferred" />
         <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods" />
       </binding>
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="1" />
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
@@ -284,6 +297,7 @@
       <sliceName value="Optotype-used" />
       <short value="Optotype used" />
       <definition value="The type of image or symbol that the patient had to discern for the Visual Acuity test, typically on a chart, card, screen, or projector image." />
+      <max value="1" />
     </element>
     <element id="Observation.component:Optotype-used.code">
       <path value="Observation.component.code" />
@@ -312,26 +326,11 @@
     </element>
     <element id="Observation.component:Refractive-Correction.value[x]">
       <path value="Observation.component.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Observation.component:Refractive-Correction.value[x]:valueCodeableConcept">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods" />
       </binding>
     </element>
