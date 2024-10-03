@@ -1,0 +1,564 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OwnLensDuringVATestSpecification",
+  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification",
+  "version": "1.0.0",
+  "name": "OwnLensDuringVATestSpecification",
+  "title": "Own Lens During VA Test Specification",
+  "status": "draft",
+  "experimental": true,
+  "date": "2023-10-07",
+  "publisher": "Lars Fuhrmann",
+  "description": "Extension capturing lens specification used during a visual acuity test.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation.component"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Lens specification used during VA test",
+        "definition": "Extension capturing lens specification used during a visual acuity test.",
+        "comment": "Based on VisionPrescription.lensSpecification but flattened.",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:product",
+        "path": "Extension.extension",
+        "sliceName": "product",
+        "short": "Product type (e.g., spectacles, contact lens)"
+      },
+      {
+        "id": "Extension.extension:sphere",
+        "path": "Extension.extension",
+        "sliceName": "sphere",
+        "short": "Lens sphere power",
+        "definition": "Power of the lens in diopters."
+      },
+      {
+        "id": "Extension.extension:sphere.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sphere"
+      },
+      {
+        "id": "Extension.extension:sphere.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:sphere.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:cylinder",
+        "path": "Extension.extension",
+        "sliceName": "cylinder",
+        "short": "Lens cylinder power",
+        "definition": "Lens power for astigmatism correction."
+      },
+      {
+        "id": "Extension.extension:cylinder.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "cylinder"
+      },
+      {
+        "id": "Extension.extension:cylinder.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:cylinder.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:axis",
+        "path": "Extension.extension",
+        "sliceName": "axis",
+        "short": "Lens cylinder axis",
+        "definition": "Axis of the cylinder in degrees (0-180)."
+      },
+      {
+        "id": "Extension.extension:axis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "axis"
+      },
+      {
+        "id": "Extension.extension:axis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:axis.value[x]:valueInteger",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueInteger",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prismAmount",
+        "path": "Extension.extension",
+        "sliceName": "prismAmount",
+        "short": "Prism amount",
+        "definition": "Amount of prism correction."
+      },
+      {
+        "id": "Extension.extension:prismAmount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "prismAmount"
+      },
+      {
+        "id": "Extension.extension:prismAmount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:prismAmount.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prismBase",
+        "path": "Extension.extension",
+        "sliceName": "prismBase",
+        "short": "Prism base direction",
+        "definition": "Base direction of the prism correction."
+      },
+      {
+        "id": "Extension.extension:prismBase.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "prismBase"
+      },
+      {
+        "id": "Extension.extension:prismBase.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:prismBase.value[x]:valueCode",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCode",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vision-base-codes"
+        }
+      },
+      {
+        "id": "Extension.extension:add",
+        "path": "Extension.extension",
+        "sliceName": "add",
+        "short": "Addition power for multifocal lenses",
+        "definition": "Added power for multifocal lenses."
+      },
+      {
+        "id": "Extension.extension:add.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "add"
+      },
+      {
+        "id": "Extension.extension:add.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:add.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:power",
+        "path": "Extension.extension",
+        "sliceName": "power",
+        "short": "Contact lens power",
+        "definition": "Power of the contact lens."
+      },
+      {
+        "id": "Extension.extension:power.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "power"
+      },
+      {
+        "id": "Extension.extension:power.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:power.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:backCurve",
+        "path": "Extension.extension",
+        "sliceName": "backCurve",
+        "short": "Contact lens back curvature",
+        "definition": "Back curvature of the contact lens."
+      },
+      {
+        "id": "Extension.extension:backCurve.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "backCurve"
+      },
+      {
+        "id": "Extension.extension:backCurve.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:backCurve.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:diameter",
+        "path": "Extension.extension",
+        "sliceName": "diameter",
+        "short": "Contact lens diameter",
+        "definition": "Diameter of the contact lens."
+      },
+      {
+        "id": "Extension.extension:diameter.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "diameter"
+      },
+      {
+        "id": "Extension.extension:diameter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:diameter.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:duration",
+        "path": "Extension.extension",
+        "sliceName": "duration",
+        "short": "Lens wear duration",
+        "definition": "Recommended wear duration for the contact lens."
+      },
+      {
+        "id": "Extension.extension:duration.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "duration"
+      },
+      {
+        "id": "Extension.extension:duration.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:duration.value[x]:valueQuantity",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:color",
+        "path": "Extension.extension",
+        "sliceName": "color",
+        "short": "Lens color",
+        "definition": "Color of the lens."
+      },
+      {
+        "id": "Extension.extension:color.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "color"
+      },
+      {
+        "id": "Extension.extension:color.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:color.value[x]:valueString",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueString",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:brand",
+        "path": "Extension.extension",
+        "sliceName": "brand",
+        "short": "Lens brand",
+        "definition": "Brand of the lens."
+      },
+      {
+        "id": "Extension.extension:brand.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "brand"
+      },
+      {
+        "id": "Extension.extension:brand.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:brand.value[x]:valueString",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueString",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Notes about the lens",
+        "definition": "Notes or comments about the lens."
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:note.value[x]:valueString",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueString",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:Corrective_Device_Reference",
+        "path": "Extension.extension",
+        "sliceName": "Corrective_Device_Reference"
+      },
+      {
+        "id": "Extension.extension:Corrective_Device_Reference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "Corrective_Device_Reference"
+      },
+      {
+        "id": "Extension.extension:Corrective_Device_Reference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:Lensmeter_Observation_Reference",
+        "path": "Extension.extension",
+        "sliceName": "Lensmeter_Observation_Reference"
+      },
+      {
+        "id": "Extension.extension:Lensmeter_Observation_Reference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "Lensmeter_Observation_Reference"
+      },
+      {
+        "id": "Extension.extension:Vision_Prescription_Reference",
+        "path": "Extension.extension",
+        "sliceName": "Vision_Prescription_Reference"
+      },
+      {
+        "id": "Extension.extension:Vision_Prescription_Reference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "Vision_Prescription_Reference"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
