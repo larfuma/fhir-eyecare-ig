@@ -50,6 +50,9 @@
         <rules value="open" />
       </slicing>
       <type>
+        <code value="string" />
+      </type>
+      <type>
         <code value="Ratio" />
       </type>
       <type>
@@ -140,10 +143,14 @@
       <path value="Observation.method" />
       <short value="VA measurement Method" />
       <definition value="This is used to document the general Method by which VA measurement performed, Note that all Visual acuity Charts with optotypes are either a &quot;Visual Acuity Chart&quot; or &quot;Near Card&quot;, the optotypes are specified as a .component." />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods" />
+      </binding>
     </element>
     <element id="Observation.method.coding">
       <path value="Observation.method.coding" />
-      <min value="1" />
+      <max value="1" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods" />
@@ -207,7 +214,7 @@
       <path value="Observation.component" />
       <sliceName value="ContactLensWornduringTest-Right-Eye" />
     </element>
-    <element id="Observation.component:OwnSpectacleLensesWornDuringTest-Right-Eye.extension:ownLensDuringVATestSpecification">
+    <element id="Observation.component:ContactLensWornduringTest-Right-Eye.extension:ownLensDuringVATestSpecification">
       <path value="Observation.component.extension" />
       <sliceName value="ownLensDuringVATestSpecification" />
       <type>
@@ -220,7 +227,7 @@
       <path value="Observation.component" />
       <sliceName value="ContactLensWornduringTest-Left-Eye" />
     </element>
-    <element id="Observation.component:OwnSpectacleLensesWornDuringTest-Right-Eye.extension:ownLensDuringVATestSpecification">
+    <element id="Observation.component:ContactLensWornduringTest-Left-Eye.extension:ownLensDuringVATestSpecification">
       <path value="Observation.component.extension" />
       <sliceName value="ownLensDuringVATestSpecification" />
       <type>
@@ -246,7 +253,7 @@
       <path value="Observation.component" />
       <sliceName value="OwnSpectacleLensesWornDuringTest-Left-Eye" />
     </element>
-    <element id="Observation.component:OwnSpectacleLensesWornDuringTest-Right-Eye.extension:ownLensDuringVATestSpecification">
+    <element id="Observation.component:OwnSpectacleLensesWornDuringTest-Left-Eye.extension:ownLensDuringVATestSpecification">
       <path value="Observation.component.extension" />
       <sliceName value="ownLensDuringVATestSpecification" />
       <type>
@@ -300,6 +307,12 @@
       <short value="Trial Spherical Correction for Left Eye" />
       <definition value="Trial spherical correction value used during the visual acuity test for the left eye." />
       <max value="1" />
+    </element>
+    <element id="Observation.component:TrialLens-Sphere-Power-Left-Eye.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.component:TrialLens-Cylinder-Power-Left-Eye">
       <path value="Observation.component" />
