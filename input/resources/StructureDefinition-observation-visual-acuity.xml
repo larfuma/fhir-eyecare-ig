@@ -14,20 +14,6 @@
   <baseDefinition value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.extension:ownCorrectionDuringVATest">
-      <path value="Observation.extension" />
-      <sliceName value="ownCorrectionDuringVATest" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnCorrectionDuringVATest" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="Observation.extension:ownCorrectionDuringVATest.url">
-      <path value="Observation.extension.url" />
-      <fixedUri value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnCorrectionDuringVATest" />
-    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <fixedCodeableConcept>
