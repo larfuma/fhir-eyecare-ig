@@ -1,414 +1,350 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OwnLensDuringVATestSpecification",
   "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification",
-  "version": "1.0.0",
   "name": "OwnLensDuringVATestSpecification",
-  "title": "Own Lens During VA Test Specification",
   "status": "draft",
-  "experimental": true,
-  "date": "2023-10-07",
-  "publisher": "Lars Fuhrmann",
-  "description": "Extension capturing lens specification used during a visual acuity test.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "Observation.component"
-    }
-  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "Lens specification used during VA test",
-        "definition": "Extension capturing lens specification used during a visual acuity test.",
-        "comment": "Based on VisionPrescription.lensSpecification but flattened.",
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension",
-        "path": "Extension.extension",
-        "sliceName": "product",
-        "short": "Product type (e.g., spectacles, contact lens)",
-        "definition": "Type of corrective device used during the VA test.",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:sphere",
-        "path": "Extension.extension",
-        "sliceName": "sphere",
-        "short": "Lens sphere power",
-        "definition": "Power of the lens in diopters.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:sphere.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:cylinder",
-        "path": "Extension.extension",
-        "sliceName": "cylinder",
-        "short": "Lens cylinder power",
-        "definition": "Lens power for astigmatism correction.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:cylinder.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:axis",
-        "path": "Extension.extension",
-        "sliceName": "axis",
-        "short": "Lens cylinder axis",
-        "definition": "Axis of the cylinder in degrees (0-180).",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:axis.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:prismAmount",
-        "path": "Extension.extension",
-        "sliceName": "prismAmount",
-        "short": "Prism amount",
-        "definition": "Amount of prism correction.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:prismAmount.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:prismBase",
-        "path": "Extension.extension",
-        "sliceName": "prismBase",
-        "short": "Prism base direction",
-        "definition": "Base direction of the prism correction.",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/vision-base-codes"
-        }
-      },
-      {
-        "id": "Extension.extension:prismBase.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:add",
-        "path": "Extension.extension",
-        "sliceName": "add",
-        "short": "Addition power for multifocal lenses",
-        "definition": "Added power for multifocal lenses.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:add.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:power",
-        "path": "Extension.extension",
-        "sliceName": "power",
-        "short": "Contact lens power",
-        "definition": "Power of the contact lens.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:power.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:backCurve",
-        "path": "Extension.extension",
-        "sliceName": "backCurve",
-        "short": "Contact lens back curvature",
-        "definition": "Back curvature of the contact lens.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:backCurve.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:diameter",
-        "path": "Extension.extension",
-        "sliceName": "diameter",
-        "short": "Contact lens diameter",
-        "definition": "Diameter of the contact lens.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:diameter.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:duration",
-        "path": "Extension.extension",
-        "sliceName": "duration",
-        "short": "Lens wear duration",
-        "definition": "Recommended wear duration for the contact lens.",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:duration.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:color",
-        "path": "Extension.extension",
-        "sliceName": "color",
-        "short": "Lens color",
-        "definition": "Color of the lens.",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:color.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:brand",
-        "path": "Extension.extension",
-        "sliceName": "brand",
-        "short": "Lens brand",
-        "definition": "Brand of the lens.",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:brand.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:note",
-        "path": "Extension.extension",
-        "sliceName": "note",
-        "short": "Notes about the lens",
-        "definition": "Notes or comments about the lens.",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:note.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Corrective_Device_Reference",
-        "path": "Extension.extension",
-        "sliceName": "Corrective_Device_Reference",
-        "short": "Reference to a corrective device used",
-        "definition": "Reference to a corrective device (e.g., spectacles, contact lenses) used during the VA test.",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Corrective_Device_Reference.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Lensmeter_Observation_Reference",
-        "path": "Extension.extension",
-        "sliceName": "Lensmeter_Observation_Reference",
-        "short": "Reference to a Lensmeter observation",
-        "definition": "Reference to a Lensmeter Observation where the lens values were initially produced.",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Lensmeter_Observation_Reference.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Vision_Prescription_Reference",
-        "path": "Extension.extension",
-        "sliceName": "Vision_Prescription_Reference",
-        "short": "Reference to a Vision Prescription",
-        "definition": "Reference to a VisionPrescription from where the lens values were initially produced.",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Vision_Prescription_Reference.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/VisionPrescription"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "fixedUri": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "max": "0"
-      }
-    ]
-  }
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation.component.extension"
+    }
+  ],
+"differential": {
+ "element": [
+ {
+"id": "Extension.extension:BasedOn",
+"path": "Extension.extension",
+"sliceName": "BasedOn",
+"short": "Where the Lens Data comes fro",
+"definition": "Lens Data may originate from Corrective Device Resource of Glasses or Contacts, or from Lensmeter Measurement, of from manual input."
+},
+ {
+"id": "Extension.extension:BasedOn.url",
+"path": "Extension.extension.url",
+"fixedUri": "BasedOn"
+},
+ {
+"id": "Extension.extension:BasedOn.value[x]",
+"path": "Extension.extension.value[x]",
+"short": "Where the Lens Data is coming from",
+"definition": "The Lens Data may come from either a Device Resource, a Lensmeter observation or explicit data entry.",
+ "type": [
+ {
+"code": "Reference"
+}
+]
+},
+ {
+"id": "Extension.extension:product",
+"path": "Extension.extension",
+"sliceName": "product",
+"short": "Lens Product Worn during VA test",
+"definition": "Identifies the type of vision correction product which is required for the patient.\r\n \r\nNeed to identify whether glasses or contacts."
+},
+ {
+"id": "Extension.extension:product.url",
+"path": "Extension.extension.url",
+"fixedUri": "product"
+},
+ {
+"id": "Extension.extension:product.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "CodeableConcept"
+}
+]
+},
+ {
+"id": "Extension.extension:sphere",
+"path": "Extension.extension",
+"sliceName": "sphere",
+"short": "Power of the lens",
+"definition": "Lens power measured in dioptres (0.25 units)"
+},
+ {
+"id": "Extension.extension:sphere.url",
+"path": "Extension.extension.url",
+"fixedUri": "sphere"
+},
+ {
+"id": "Extension.extension:sphere.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+},
+ {
+"code": "Quantity"
+}
+]
+},
+ {
+"id": "Extension.extension:cylinder",
+"path": "Extension.extension",
+"sliceName": "cylinder",
+"short": "Lens power for astigmatism",
+"definition": "Power adjustment for astigmatism measured in dioptres (0.25 units)."
+},
+ {
+"id": "Extension.extension:cylinder.url",
+"path": "Extension.extension.url",
+"fixedUri": "cylinder"
+},
+ {
+"id": "Extension.extension:cylinder.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+},
+ {
+"code": "Quantity"
+}
+]
+},
+ {
+"id": "Extension.extension:axis",
+"path": "Extension.extension",
+"sliceName": "axis",
+"short": "Lens meridian which contain no power for astigmatism",
+"definition": "Adjustment for astigmatism measured in integer degrees."
+},
+ {
+"id": "Extension.extension:axis.url",
+"path": "Extension.extension.url",
+"fixedUri": "axis"
+},
+ {
+"id": "Extension.extension:axis.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "integer"
+}
+]
+},
+ {
+"id": "Extension.extension:PrismAmount",
+"path": "Extension.extension",
+"sliceName": "PrismAmount",
+"short": "Amount of adjustment",
+"definition": "Amount of prism to compensate for eye alignment in fractional units."
+},
+ {
+"id": "Extension.extension:PrismAmount.url",
+"path": "Extension.extension.url",
+"fixedUri": "PrismAmount"
+},
+ {
+"id": "Extension.extension:PrismAmount.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+}
+]
+},
+ {
+"id": "Extension.extension:PrismBaseDirection",
+"path": "Extension.extension",
+"sliceName": "PrismBaseDirection",
+"short": "The relative base, or reference lens edge, for the prism.",
+"definition": "The relative base, or reference lens edge, for the prism."
+},
+ {
+"id": "Extension.extension:PrismBaseDirection.url",
+"path": "Extension.extension.url",
+"fixedUri": "PrismBaseDirection"
+},
+ {
+"id": "Extension.extension:PrismBaseDirection.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "code",
+ "profile": [
+"up",
+"down",
+"in",
+"out"
+]
+}
+]
+},
+ {
+"id": "Extension.extension:add",
+"path": "Extension.extension",
+"sliceName": "add",
+"short": "Added power for multifocal levels",
+"definition": "Power adjustment for multifocal lenses measured in dioptres (0.25 units)."
+},
+ {
+"id": "Extension.extension:add.url",
+"path": "Extension.extension.url",
+"fixedUri": "add"
+},
+ {
+"id": "Extension.extension:add.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+}
+]
+},
+ {
+"id": "Extension.extension:power",
+"path": "Extension.extension",
+"sliceName": "power",
+"short": "Contact lens power",
+"definition": "Contact lens power measured in dioptres (0.25 units)."
+},
+ {
+"id": "Extension.extension:power.url",
+"path": "Extension.extension.url",
+"fixedUri": "power"
+},
+ {
+"id": "Extension.extension:power.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+}
+]
+},
+ {
+"id": "Extension.extension:backCurve",
+"path": "Extension.extension",
+"sliceName": "backCurve",
+"short": "Contact lens back curvature",
+"definition": "Back curvature measured in millimetres."
+},
+ {
+"id": "Extension.extension:backCurve.url",
+"path": "Extension.extension.url",
+"fixedUri": "backCurve"
+},
+ {
+"id": "Extension.extension:backCurve.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+}
+]
+},
+ {
+"id": "Extension.extension:diameter",
+"path": "Extension.extension",
+"sliceName": "diameter",
+"short": "Contact lens diameter",
+"definition": "Contact lens diameter measured in millimetres."
+},
+ {
+"id": "Extension.extension:diameter.url",
+"path": "Extension.extension.url",
+"fixedUri": "diameter"
+},
+ {
+"id": "Extension.extension:diameter.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "decimal"
+}
+]
+},
+ {
+"id": "Extension.extension:duration",
+"path": "Extension.extension",
+"sliceName": "duration",
+"short": "Lens wear duration",
+"definition": "n \r\nThe recommended maximum wear period for the lens."
+},
+ {
+"id": "Extension.extension:duration.url",
+"path": "Extension.extension.url",
+"fixedUri": "duration"
+},
+ {
+"id": "Extension.extension:duration.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "Quantity"
+}
+]
+},
+ {
+"id": "Extension.extension:color",
+"path": "Extension.extension",
+"sliceName": "color"
+},
+ {
+"id": "Extension.extension:color.url",
+"path": "Extension.extension.url",
+"fixedUri": "color"
+},
+ {
+"id": "Extension.extension:color.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "string"
+}
+]
+},
+ {
+"id": "Extension.extension:brand",
+"path": "Extension.extension",
+"sliceName": "brand"
+},
+ {
+"id": "Extension.extension:brand.url",
+"path": "Extension.extension.url",
+"fixedUri": "brand"
+},
+ {
+"id": "Extension.extension:brand.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "string"
+}
+]
+},
+ {
+"id": "Extension.extension:note",
+"path": "Extension.extension",
+"sliceName": "note"
+},
+ {
+"id": "Extension.extension:note.url",
+"path": "Extension.extension.url",
+"fixedUri": "note"
+},
+ {
+"id": "Extension.extension:note.value[x]",
+"path": "Extension.extension.value[x]",
+ "type": [
+ {
+"code": "string"
+}
+]
+},
+ {
+"id": "Extension.url",
+"path": "Extension.url",
+"fixedUri": "https://example.org/fhir/StructureDefinition/OwnCorrectiveLensDuringVATest"
+}
+]
+}
 }
