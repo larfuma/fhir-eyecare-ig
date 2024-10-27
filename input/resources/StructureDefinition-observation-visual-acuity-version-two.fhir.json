@@ -269,9 +269,9 @@
         "sliceName": "Lens-in-front-of-left-eye"
       },
       {
-        "id": "Observation.component:Lens-in-front-of-left-eye.extension:ownLensDuringVATestSpecification",
+        "id": "Observation.component:Lens-in-front-of-left-eye.extension:LensDuringVATestSpecification",
         "path": "Observation.component.extension",
-        "sliceName": "ownLensDuringVATestSpecification",
+        "sliceName": "LensDuringVATestSpecification",
         "type": [
           {
             "code": "Extension",
