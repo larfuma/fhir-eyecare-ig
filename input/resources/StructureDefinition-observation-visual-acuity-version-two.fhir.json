@@ -1,0 +1,396 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-visual-acuity-version-two",
+  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two",
+  "name": "ObservationVisualAcuity-version-two",
+  "title": "Visual Acuity (VA) V2",
+  "status": "draft",
+  "experimental": true,
+  "description": "An assessment of a patients ability to see - Version two - simpler structure than Version 1",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260246004",
+              "display": "Visual Acuity finding"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Visual Acuity Observables",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity"
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRatio",
+        "short": "Visual acuity expressed as a Snellen fraction",
+        "definition": "Visual acuity expressed as a Snellen fraction.",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-dh-va-01",
+            "severity": "error",
+            "human": "Value shall include numerator value and denominator value",
+            "expression": "numerator.value.exists() and denominator.value.exists()"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "short": "Visual acuity expressed as a simple quantity",
+        "definition": "Visual acuity expressed as a simple quantity.",
+        "comment": "This is suitable for LogMAR, N-point and M-size notations, and also for decimal notation with units '/arcmin'.",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-dh-va-02",
+            "severity": "error",
+            "human": "Value shall include value and unit",
+            "expression": "value.exists() and unit.exists()",
+            "source": "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "short": "Visual acuity expressed as a code",
+        "definition": "Visual acuity expressed as a code",
+        "comment": "This is suitable for expressing low vision.",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueString",
+        "path": "Observation.value[x]",
+        "sliceName": "valueString",
+        "short": "Visual acuity expressed as a string (discouraged!)",
+        "definition": "Visual acuity expressed as a string. Use of string values is strongly discouraded, it is neither necessary from an ophthalmological nor from a technical standpoint. It should only be used where legacy systems have already stored VA values as strings and transformation to structured is not possible due to regulatory constraints.",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-va-01",
+            "severity": "warning",
+            "human": "Use of valueString is discouraged; please use structured data types instead.",
+            "expression": "true"
+          }
+        ]
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "short": "Free text note or Comments about the VA observation",
+        "definition": "If there is a free text field that relates to the VA observation, it should be included as this note. Although this is not encouraged, free text notes may include information that is crucial to the interpretation of the visual acuity which could not be entered in other fields. For example, some systems may not support all of the observation.component values. Therefore, if a free text note about a VA measurement is available, it should be included here and it should be available for future interpretation of the VA measurement.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "definition": "Which eye(s) were used for the visual acuity test? note that both eyes refers to a binocular visuin test, it does not mean that each of the eyes alone has the specified VA value! Also, when a Patient uses an extrocular device such as a worn camera devicefor the VA test, please use \"Topography not assigned\" and use specify the device in observation.device",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite"
+        }
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "short": "VA measurement Method",
+        "definition": "This is used to document the general Method by which VA measurement performed, Note that all Visual acuity Charts with optotypes are either a \"Visual Acuity Chart\" or \"Near Card\", the optotypes are specified as a .component.",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods"
+        }
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "max": "1"
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:Refractive-Correction-Types",
+        "path": "Observation.component",
+        "sliceName": "Refractive-Correction-Types",
+        "short": "Refractive Correction Method and Details",
+        "definition": "Indicates the refractive correction method used during the visual acuity measurement and allows for specifying refractive values if applicable.",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Refractive-Correction-Types.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods"
+        }
+      },
+      {
+        "id": "Observation.component:Lens-in-front-of-right-eye",
+        "path": "Observation.component",
+        "sliceName": "Lens-in-front-of-right-eye"
+      },
+      {
+        "id": "Observation.component:Lens-in-front-of-right-eye.extension:LensDuringVATestSpecification",
+        "path": "Observation.component.extension",
+        "sliceName": "LensDuringVATestSpecification",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component:Lens-in-front-of-left-eye",
+        "path": "Observation.component",
+        "sliceName": "Lens-in-front-of-left-eye"
+      },
+      {
+        "id": "Observation.component:Lens-in-front-of-left-eye.extension:ownLensDuringVATestSpecification",
+        "path": "Observation.component.extension",
+        "sliceName": "ownLensDuringVATestSpecification",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component:Test-Distance",
+        "path": "Observation.component",
+        "sliceName": "Test-Distance",
+        "short": "Distance of Visual acuity Test",
+        "definition": "The distance at which the visual acuity test was performed.",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Test-Distance.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "252124009",
+              "display": "Test distance"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Test-Distance.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:Test-Distance.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "short": "Measurement Distance as Coded Concept",
+        "definition": "The distance at which the visual acuity test was performed, expressed as a coded concept (e.g., near, intermediate, far).",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance"
+        }
+      },
+      {
+        "id": "Observation.component:Optotype-used",
+        "path": "Observation.component",
+        "sliceName": "Optotype-used",
+        "short": "Optotype used",
+        "definition": "The type of image or symbol that the patient had to discern for the Visual Acuity test, typically on a chart, card, screen, or projector image.",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Optotype-used.code",
+        "path": "Observation.component.code",
+        "code": [
+          {
+            "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+            "code": "Optotype",
+            "display": "Optotype"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:Optotype-used.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes"
+        }
+      },
+      {
+        "id": "Observation.component:SpecialVATestingParameters",
+        "path": "Observation.component",
+        "sliceName": "SpecialVATestingParameters"
+      },
+      {
+        "id": "Observation.component:SpecialVATestingParameters.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/special-va-testing-parameters"
+        }
+      }
+    ]
+  }
+}

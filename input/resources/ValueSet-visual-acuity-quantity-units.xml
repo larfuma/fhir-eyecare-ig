@@ -1,0 +1,43 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="visual-acuity-quantity-units" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units" />
+  <name value="VisualAcuityQuantityUnits" />
+  <title value="Visual Acuity Quantity Units" />
+  <status value="active" />
+  <description value="Units of Measure of Visual acuity" />
+  <compose>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC" />
+      <concept>
+        <code value="logMAR" />
+        <display value="Logarithm of the Minimum Angle of Resolution" />
+        <definition value="Logarithm of the Minimum Angle of Resolution as a Unit of Visual Acuity" />
+      </concept>
+      <concept>
+        <code value="MAR" />
+        <display value="Minimum Angle of Resolution" />
+        <definition value="Minimum Angle of Resolution as a Unit of Visual Acuity" />
+      </concept>
+      <concept>
+        <code value="Decimal" />
+        <display value="Decimal Unit of Visual Acuity" />
+        <definition value="Reciprocal value of Minimum Angle of Resolution, equivalent to calculating the fraction of a Snellen Ratio" />
+      </concept>
+      <concept>
+        <code value="Jaeger J" />
+        <display value="Jaeger type (J) Unit" />
+        <definition value="Unit of Visual acuity, determined by the smallest print read on a Jaeger chart" />
+      </concept>
+      <concept>
+        <code value="VAS" />
+        <display value="Visual Acuity Score" />
+        <definition value="Unit of Visual acuity, calculated as 100 - 50 x logMAR" />
+      </concept>
+      <concept>
+        <code value="Number of recognized optotypes" />
+        <display value="Number of recognized optotypes" />
+        <definition value="Number of optotypes that were correctly identified, usually in terms of letters read" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

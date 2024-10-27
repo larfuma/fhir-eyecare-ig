@@ -1,0 +1,41 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
+  <id value="special-va-testing-parameters" />
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/special-va-testing-parameters" />
+  <version value="1.0.0" />
+  <name value="Special VA testing Parameters" />
+  <title value="Special VA testing Parameters" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Lars Fuhrmann" />
+  <description value="This ValueSet contains codes to represent whether special testing parameters, such as a pinhole occluder or glare light was used during a visual acuity measurement." />
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="257492003" />
+        <display value="Pinhole Occluder" />
+      </concept>
+      <concept>
+        <code value="404645008" />
+        <display value="Glare Testing" />
+      </concept>
+      <concept>
+        <code value="424986007" />
+        <display value="Pupil dilation" />
+      </concept>
+      <concept>
+        <code value="261665006" />
+        <display value="Unknown" />
+      </concept>
+    </include>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-Codes-to-be-submitted-to-SNOMED-or-LOINC" />
+      <concept>
+    <code value="single-optotypes" />
+    <display value="Single Optotypes" />
+    <definition value="The visual acuity test was conducted using single optotypes." />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
