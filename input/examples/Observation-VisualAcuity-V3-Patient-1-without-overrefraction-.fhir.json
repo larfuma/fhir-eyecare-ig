@@ -33,12 +33,10 @@
   "valueRatio": {
     "numerator": {
       "value": 6
-
     },
     "denominator": {
       "value": 9
-
-  },
+  }},
   "method": {
     "coding": [
       {
