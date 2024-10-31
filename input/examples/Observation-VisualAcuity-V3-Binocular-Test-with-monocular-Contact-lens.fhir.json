@@ -82,16 +82,16 @@
                 }
               },
               {
-                "url": "sphere",
-                "valueDecimal": -1.50
+                "url": "diameter",
+                "valueDecimal": 14
               },
               {
-                "url": "cylinder",
-                "valueDecimal": -0.75
+                "url": "power",
+                "valueDecimal": -2.25
               },
               {
-                "url": "axis",
-                "valueInteger": 110
+                "url": "backCurve",
+                "valueDecimal": 8.3
               }
             ]
           }

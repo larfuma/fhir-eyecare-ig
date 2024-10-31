@@ -1,7 +1,7 @@
 {
   "resourceType": "Observation",
   "id": "va-measurement-example-patient-1-without-overrefraction-v3",
-  "text": "Observation of visual acuity for the right eye conducted with just the own glasses",
+  "text": "Observation of visual acuity for the right eye conducted without overrefraction.",
   "meta": {
     "profile": [
       "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"
@@ -32,17 +32,12 @@
   },
   "valueRatio": {
     "numerator": {
-      "value": 6,
-      "unit": "m",
-      "system": "http://unitsofmeasure.org",
-      "code": "m"
+      "value": 6
+
     },
     "denominator": {
-      "value": 9,
-      "unit": "m",
-      "system": "http://unitsofmeasure.org",
-      "code": "m"
-    }
+      "value": 9
+
   },
   "method": {
     "coding": [
@@ -55,7 +50,7 @@
   },
   "component": [
     {
-      "id": "Spectacle-lens-in-front-of-right-eye",
+      "id": "Soft-contact-lens-in-front-of-right-eye",
       "code": {
         "coding": [
           {
@@ -69,8 +64,8 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "50121007",
-            "display": "Eyeglasses"
+            "code": "421632004",
+            "display": "Soft contact lens"
           }
         ]
       },
@@ -84,80 +79,29 @@
                 "coding": [
                   {
                     "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type",
-                    "code": "421591000",
-                    "display": "Spectacle Lens"
+                    "code": "421632004",
+                    "display": "Soft contact lens"
                   }
                 ]
               }
             },
             {
-              "url": "sphere",
-              "valueDecimal": 1.00
+              "url": "diameter",
+              "valueDecimal": 14.0
             },
             {
-              "url": "cylinder",
-              "valueDecimal": -0.50
+              "url": "power",
+              "valueDecimal": -2.25
             },
             {
-              "url": "axis",
-              "valueInteger": 90
+              "url": "backCurve",
+              "valueDecimal": 8.3
             }
           ]
         }
       ]
     },
-    {
-      "id": "Trial-Lenses-in-front-of-right-eye",
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "29073-4",
-            "display": "Right Eye position"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl",
-            "code": "trial-lenses-manifest-without-cycloplegia",
-            "display": "Manifest refraction using trial lenses without cycloplegia"
-          }
-        ]
-      },
-      "extension": [
-        {
-          "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification",
-          "extension": [
-            {
-              "url": "type",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type",
-                    "code": "5420330007",
-                    "display": "Trial Lens"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "sphere",
-              "valueDecimal": -2.00
-            },
-            {
-              "url": "cylinder",
-              "valueDecimal": -1.5
-            },
-            {
-              "url": "axis",
-              "valueInteger": 36
-            }
-          ]
-        }
-      ]
-    },
+
     {
       "id": "Test-Distance",
       "code": {
