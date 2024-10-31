@@ -31,7 +31,7 @@
       ]
     },
     "valueQuantity": {
-        "value": 0.5,
+        "value": 0.8,
         "system": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units",
         "code": "Decimal"
     },
