@@ -24,7 +24,8 @@
         "slicing": {
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Extension.extension:BasedOn",
@@ -55,6 +56,7 @@
         "sliceName": "type",
         "short": "Lens Type (Contact,Spectracle or Trial)",
         "definition": "This identifies whether the lens is a contact lens, a lens in spectacles or a trial lens (which may or may not be inside a phoropter)",
+        "min": 1,
         "max": "1"
       },
       {
@@ -69,7 +71,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/lens-type"
+        }
       },
       {
         "id": "Extension.extension:sphere",

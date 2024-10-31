@@ -1,0 +1,201 @@
+{
+  "resourceType": "Observation",
+  "id": "va-measurement-example-patient-1-with-overrefraction-v3",
+  "text": "Observation of visual acuity for the right eye conducted with overrefraction. Both manifest refraction using trial lenses and eyeglasses correction were applied.",
+  "meta": {
+    "profile": [
+      "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "260246004",
+        "display": "Visual Acuity finding"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/123"
+  },
+  "effectiveDateTime": "2023-10-31T09:00:00+00:00",
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1290043002",
+        "display": "Entire right eye proper"
+      }
+    ]
+  },
+  "valueRatio": {
+    "numerator": {
+      "value": 6,
+      "unit": "m",
+      "system": "http://unitsofmeasure.org",
+      "code": "m"
+    },
+    "denominator": {
+      "value": 9,
+      "unit": "m",
+      "system": "http://unitsofmeasure.org",
+      "code": "m"
+    }
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods",
+        "code": "chart",
+        "display": "Visual Acuity Chart"
+      }
+    ]
+  },
+  "component": [
+    {
+      "id": "Spectacle-lens-in-front-of-right-eye",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29073-4",
+            "display": "Right Eye position"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "50121007",
+            "display": "Eyeglasses"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type",
+                    "code": "421591000",
+                    "display": "Spectacle Lens"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "sphere",
+              "valueDecimal": 1.00
+            },
+            {
+              "url": "cylinder",
+              "valueDecimal": -0.50
+            },
+            {
+              "url": "axis",
+              "valueInteger": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Trial-Lenses-in-front-of-right-eye",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29073-4",
+            "display": "Right Eye position"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl",
+            "code": "trial-lenses-manifest-without-cycloplegia",
+            "display": "Manifest refraction using trial lenses without cycloplegia"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type",
+                    "code": "5420330007",
+                    "display": "Trial Lens"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "sphere",
+              "valueDecimal": -2.00
+            },
+            {
+              "url": "cylinder",
+              "valueDecimal": -1.5
+            },
+            {
+              "url": "axis",
+              "valueInteger": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Test-Distance",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "252124009",
+            "display": "Test distance"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 6,
+        "unit": "m",
+        "system": "http://unitsofmeasure.org",
+        "code": "m"
+      }
+    },
+    {
+      "id": "Optotype-used",
+      "code": {
+        "coding": [
+          {
+            "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+            "code": "Optotype",
+            "display": "Optotype"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes",
+            "code": "LA25497-1",
+            "display": "Numbers"
+          }
+        ]
+      }
+    }
+  ]
+}

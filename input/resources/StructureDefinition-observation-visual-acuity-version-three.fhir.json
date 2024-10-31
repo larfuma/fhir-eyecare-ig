@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "observation-visual-acuity-version-two",
-  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two",
-  "name": "ObservationVisualAcuity_version_two",
-  "title": "Visual Acuity (VA) V2",
+  "id": "observation-visual-acuity-version-three",
+  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three",
+  "name": "ObservationVisualAcuity_version_three",
+  "title": "Visual Acuity (VA) V3",
   "status": "draft",
   "experimental": true,
-  "description": "An assessment of a patients ability to see - Version two - simpler structure than Version 1",
+  "description": "An assessment of a patients ability to see - Version three - third time's the charm?",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -211,58 +211,20 @@
         }
       },
       {
-        "id": "Observation.component:Refractive-Correction-Types",
+        "id": "Observation.component:Position-in-front-of-right-eye",
         "path": "Observation.component",
-        "sliceName": "Refractive-Correction-Types",
-        "short": "Refractive Correction Method and Details",
-        "definition": "Indicates the refractive correction method used during the visual acuity measurement and allows for specifying refractive values if applicable.",
-        "mustSupport": false
+        "sliceName": "Position-in-front-of-right-eye"
       },
       {
-        "id": "Observation.component:Refractive-Correction-Types.code",
-        "path": "Observation.component.code",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "LL6028-6",
-              "display": "Refraction Type"
-            }
-          ]
-        }
+        "id": "Observation.component:Position-in-front-of-right-eye.extension",
+        "path": "Observation.component.extension",
+        "max": "1"
       },
       {
-        "id": "Observation.component:Refractive-Correction-Types.value[x]",
-        "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods"
-        }
-      },
-      {
-        "id": "Observation.component:Lens-in-front-of-right-eye",
-        "path": "Observation.component",
-        "sliceName": "Lens-in-front-of-right-eye"
-      },
-      {
-        "id": "Observation.component:Lens-in-front-of-right-eye.extension:LensDuringVATestSpecification",
+        "id": "Observation.component:Position-in-front-of-right-eye.extension:LensDuringVATestSpecification",
         "path": "Observation.component.extension",
         "sliceName": "LensDuringVATestSpecification",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -274,7 +236,7 @@
         "isModifier": false
       },
       {
-        "id": "Observation.component:Lens-in-front-of-right-eye.code",
+        "id": "Observation.component:Position-in-front-of-right-eye.code",
         "path": "Observation.component.code",
         "fixedCodeableConcept": {
           "coding": [
@@ -287,14 +249,33 @@
         }
       },
       {
-        "id": "Observation.component:Lens-in-front-of-left-eye",
-        "path": "Observation.component",
-        "sliceName": "Lens-in-front-of-left-eye"
+        "id": "Observation.component:Position-in-front-of-right-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl"
+        }
       },
       {
-        "id": "Observation.component:Lens-in-front-of-left-eye.extension:LensDuringVATestSpecification",
+        "id": "Observation.component:Position-in-front-of-left-eye",
+        "path": "Observation.component",
+        "sliceName": "Position-in-front-of-left-eye"
+      },
+      {
+        "id": "Observation.component:Position-in-front-of-left-eye.extension",
+        "path": "Observation.component.extension",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Position-in-front-of-left-eye.extension:LensDuringVATestSpecification",
         "path": "Observation.component.extension",
         "sliceName": "LensDuringVATestSpecification",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -306,7 +287,7 @@
         "isModifier": false
       },
       {
-        "id": "Observation.component:Lens-in-front-of-left-eye.code",
+        "id": "Observation.component:Position-in-front-of-left-eye.code",
         "path": "Observation.component.code",
         "fixedCodeableConcept": {
           "coding": [
@@ -316,6 +297,19 @@
               "display": "Left eye Position"
             }
           ]
+        }
+      },
+      {
+        "id": "Observation.component:Position-in-front-of-left-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl"
         }
       },
       {
