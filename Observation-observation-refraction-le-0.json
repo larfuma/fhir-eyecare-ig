@@ -1,0 +1,76 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-refraction-le-0",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-refraction-le-0</b></p><a name=\"observation-refraction-le-0\"> </a><a name=\"hcobservation-refraction-le-0\"> </a><a name=\"observation-refraction-le-0-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251794006}\">Refraction</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number:\u00a002134005)</a></p><p><b>effective</b>: 2013-06-27 17:04:20+0400</p><p><b>bodySite</b>: <span title=\"Codes:\"></span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251795007}\">Power of sphere</span></p><p><b>value</b>: -2.5 diopter</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251799001}\">Axis of cylinder</span></p><p><b>value</b>: 75 degree</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251797004}\">Power of cylinder</span></p><p><b>value</b>: 0.5 diopter</p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "251794006"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ophthal-patient-example-0"
+  },
+  "effectiveDateTime" : "2013-06-27T17:04:20+04:00",
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/bodySite",
+      "valueReference" : {
+        "reference" : "BodyStructure/bodystructure-left-eye"
+      }
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "251795007",
+        "display" : "Power of sphere"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : -2.5,
+      "unit" : "diopter"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "251799001",
+        "display" : "Axis of cylinder"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 75,
+      "unit" : "degree"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "251797004",
+        "display" : "Power of cylinder"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0.5,
+      "unit" : "diopter"
+    }
+  }]
+}

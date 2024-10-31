@@ -1,0 +1,63 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "visual-field-observations",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Visual field test parameter obsevations</h2>\n    </div>"
+  },
+  "url" : "http://terminolgy.hl7.org/uv/eyecare/CodeSystem/visual-field-observations",
+  "version" : "0.1.0",
+  "name" : "OphthalmologyVisualFieldObservations",
+  "title" : "Visual field test parameter observations",
+  "status" : "draft",
+  "date" : "2021-08-07",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Visual field observation additional codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "HL7",
+  "caseSensitive" : true,
+  "compositional" : false,
+  "versionNeeded" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "400204",
+    "display" : "Fixation loss",
+    "definition" : "Fixation loss occurs when the patient reports seeing a stimulus that is presented in the predicted area of the physiologic blind spot"
+  },
+  {
+    "code" : "400202",
+    "display" : "False positive percent",
+    "definition" : "Percentage of false positive responses"
+  },
+  {
+    "code" : "400203",
+    "display" : "False negative percent",
+    "definition" : "Percentage of false negative reponses"
+  },
+  {
+    "code" : "400205",
+    "display" : "False positive ratio",
+    "definition" : "Ratio of false positive responses to total responses"
+  },
+  {
+    "code" : "400206",
+    "display" : "False negative ratio",
+    "definition" : "Ratio of false negative responses to total responses"
+  }]
+}

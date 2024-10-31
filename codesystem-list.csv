@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://terminolgy.hl7.org/uv/eyecare/CodeSystem/visual-field-observations,0.1.0,draft,,OphthalmologyVisualFieldObservations,Visual field test parameter observations,"Visual field observation additional codes",
+http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods,0.1.0,draft,,IOPMethods,IOP Methods Code System,"IOP additional method types",
+http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers,0.1.0,draft,,BodyStructureQualifiers,Body Structure Qualifiers,"Additional body site qualifiers",
+https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC,0.1.0,draft,,CustomCodeSystem,Codes which were needed, but not found in SNOMED or LOINC, will be submitted there,"Codes which were needed, but not found in SNOMED or LOINC, will be submitted there",

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Visual-Acuity-BodySite"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Visual-Acuity-BodySite</b></p><a name="Visual-Acuity-BodySite"> </a><a name="hcVisual-Acuity-BodySite"> </a><a name="Visual-Acuity-BodySite-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1290043002">1290043002</a></td><td>Entire right eye proper</td></tr><tr><td><a href="http://snomed.info/id/1290041000">1290041000</a></td><td>Entire left eye proper</td></tr><tr><td><a href="http://snomed.info/id/362508001">362508001</a></td><td>Both eyes, entire (body structure)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite.html"/>
+  <version value="0.1.0"/>
+  <name value="ValueSet-Visual-Acuity-BodySite"/>
+  <title value="ValueSet-Visual-Acuity-BodySite"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-10-31T19:17:07+00:00"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet containing laterality codes for visual acuity observations."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1290043002"/>
+        <display value="Entire right eye proper"/>
+      </concept>
+      <concept>
+        <code value="1290041000"/>
+        <display value="Entire left eye proper"/>
+      </concept>
+      <concept>
+        <code value="362508001"/>
+        <display value="Both eyes, entire (body structure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

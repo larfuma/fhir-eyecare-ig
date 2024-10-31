@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-ophthal-glaucoma"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/condition-base"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition condition-ophthal-glaucoma</b></p><a name="condition-ophthal-glaucoma"> </a><a name="hccondition-ophthal-glaucoma"> </a><a name="condition-ophthal-glaucoma-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status unconfirmed}">Unconfirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 23986001}">Glaucoma</span></p><p><b>subject</b>: <a href="Patient-ophthal-patient-example-0.html">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>onset</b>: 2020-04-27 17:04:20+0400</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="unconfirmed"/>
+      <display value="Unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="23986001"/>
+      <display value="Glaucoma"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ophthal-patient-example-0"/>
+  </subject>
+  <onsetDateTime value="2020-04-27T17:04:20.643+04:00"/>
+</Condition>

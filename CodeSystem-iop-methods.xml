@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="iop-methods"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Methods to measure Intraocular Pressure</h2>
+      <div>
+        <p>Additional coding for IOP observation method</p>
+      </div>
+    </div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods"/>
+  <version value="0.1.0"/>
+  <name value="IOPMethods"/>
+  <title value="IOP Methods Code System"/>
+  <status value="draft"/>
+  <date value="2021-08-07"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="IOP additional method types"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="HL7"/>
+  <caseSensitive value="true"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="rebound-tonometry"/>
+    <display value="Rebound tonometry"/>
+    <definition value="Rebound tonometry"/>
+  </concept>
+  <concept>
+    <code value="rebound-tonometry-remote"/>
+    <display value="Rebound tonometry remote"/>
+    <definition value="Rebound tonometry remote"/>
+  </concept>
+  <concept>
+    <code value="contact-lens-tonometry"/>
+    <display value="Contact lens tonometry"/>
+    <definition value="Contact lens tonometry"/>
+  </concept>
+</CodeSystem>

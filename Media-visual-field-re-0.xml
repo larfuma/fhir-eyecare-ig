@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Media xmlns="http://hl7.org/fhir">
+  <id value="visual-field-re-0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Media visual-field-re-0</b></p><a name="visual-field-re-0"> </a><a name="hcvisual-field-re-0"> </a><a name="visual-field-re-0-en-US"> </a><p><b>status</b>: Completed</p><h3>Contents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td><a href="http://localhost/media.pdf">http://localhost/media.pdf</a></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <content>
+    <url value="http://localhost/media.pdf"/>
+  </content>
+</Media>

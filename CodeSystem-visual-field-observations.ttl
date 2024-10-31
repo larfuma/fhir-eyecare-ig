@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/visual-field-observations> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "visual-field-observations"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Visual field test parameter obsevations</h2>\n    </div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminolgy.hl7.org/uv/eyecare/CodeSystem/visual-field-observations"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OphthalmologyVisualFieldObservations"] ; # 
+  fhir:title [ fhir:v "Visual field test parameter observations"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2021-08-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Visual field observation additional codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "HL7"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:versionNeeded [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "400204" ] ;
+     fhir:display [ fhir:v "Fixation loss" ] ;
+     fhir:definition [ fhir:v "Fixation loss occurs when the patient reports seeing a stimulus that is presented in the predicted area of the physiologic blind spot" ]
+  ] [
+     fhir:code [ fhir:v "400202" ] ;
+     fhir:display [ fhir:v "False positive percent" ] ;
+     fhir:definition [ fhir:v "Percentage of false positive responses" ]
+  ] [
+     fhir:code [ fhir:v "400203" ] ;
+     fhir:display [ fhir:v "False negative percent" ] ;
+     fhir:definition [ fhir:v "Percentage of false negative reponses" ]
+  ] [
+     fhir:code [ fhir:v "400205" ] ;
+     fhir:display [ fhir:v "False positive ratio" ] ;
+     fhir:definition [ fhir:v "Ratio of false positive responses to total responses" ]
+  ] [
+     fhir:code [ fhir:v "400206" ] ;
+     fhir:display [ fhir:v "False negative ratio" ] ;
+     fhir:definition [ fhir:v "Ratio of false negative responses to total responses" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

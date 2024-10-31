@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "observation-visual-acuity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet observation-visual-acuity</b></p><a name=\"observation-visual-acuity\"> </a><a name=\"hcobservation-visual-acuity\"> </a><a name=\"observation-visual-acuity-en-US\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 363983007 (Visual acuity)</li></ul></div>"
+  },
+  "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity",
+  "version" : "0.1.0",
+  "name" : "OphthalmologyVisualAcuityObservableEntitiesValueSet",
+  "title" : "Visual acuity method valueset (SNOMED)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-05-01",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Describes the visual acuity observation result, where concept descends from 363983007 (Visual acuity)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "363983007"
+      }]
+    }]
+  }
+}

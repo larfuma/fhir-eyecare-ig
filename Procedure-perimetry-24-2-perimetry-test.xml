@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="perimetry-24-2-perimetry-test"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/procedure-base"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure perimetry-24-2-perimetry-test</b></p><a name="perimetry-24-2-perimetry-test"> </a><a name="hcperimetry-24-2-perimetry-test"> </a><a name="perimetry-24-2-perimetry-test-en-US"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 252806005}">Humphrey perimeter plot</span></p><p><b>subject</b>: <a href="Patient-ophthal-patient-example-0.html">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>performed</b>: 2019-03-26 12:55:26-0700 --&gt; 2019-03-26 13:25:26-0700</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-ophthal-practitioner-example-0.html">Practitioner Ronald Bone </a></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="252806005"/>
+      <display value="Humphrey perimeter plot"/>
+    </coding>
+    <text value="Humphrey perimeter plot"/>
+  </code>
+  <subject>
+    <reference value="Patient/ophthal-patient-example-0"/>
+  </subject>
+  <performedPeriod>
+    <start value="2019-03-26T12:55:26-07:00"/>
+    <end value="2019-03-26T13:25:26-07:00"/>
+  </performedPeriod>
+  <performer>
+    <actor>
+      <reference value="Practitioner/ophthal-practitioner-example-0"/>
+    </actor>
+  </performer>
+</Procedure>

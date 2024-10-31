@@ -1,0 +1,207 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/va-observation-v2-example-patient-1-with-overrefraction> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "va-observation-v2-example-patient-1-with-overrefraction"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two"^^xsd:anyURI ;
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation va-observation-v2-example-patient-1-with-overrefraction</b></p><a name=\"va-observation-v2-example-patient-1-with-overrefraction\"> </a><a name=\"hcva-observation-v2-example-patient-1-with-overrefraction\"> </a><a name=\"va-observation-v2-example-patient-1-with-overrefraction-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 260246004}\">Visual Acuity finding</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>effective</b>: 2023-10-31 09:00:00+0000</p><p><b>value</b>: 6 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span>/6 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 1290043002}\">Entire right eye proper</span></p><p><b>method</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods chart}\">Visual Acuity Chart</span></p><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Refractive-Correction-Type-Trial</blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org LL6028-6}\">Refraction Type</span></p><p><b>value</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods trial-lenses-manifest-without-cycloplegia}\">Manifest refraction</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Refractive-Correction-Type-Glasses</blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org LL6028-6}\">Refraction Type</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 50121007}\">Eye glasses</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Lens-in-front-of-right-eye-spectacle</blockquote><blockquote><p><b>LensDuringVATestSpecification</b></p><ul><li>type: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type 421591000}\">Spectacle Lens</span></li><li>sphere: 1.00</li><li>cylinder: -0.50</li><li>axis: 90</li></ul></blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29073-4}\">Right Eye position</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Lens-in-front-of-right-eye-trial</blockquote><blockquote><p><b>LensDuringVATestSpecification</b></p><ul><li>type: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type 5420330007}\">Trial Lens</span></li><li>sphere: -2.00</li><li>cylinder: -1.5</li><li>axis: 36</li></ul></blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29073-4}\">Right Eye position</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Test-Distance</blockquote><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252124009}\">Test distance</span></p><p><b>value</b>: 6 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Optotype-used</blockquote><p><b>code</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC Optotype}\">Optotype</span></p><p><b>value</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes LA25497-1}\">Numbers</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:260246004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "260246004" ] ;
+       fhir:display [ fhir:v "Visual Acuity finding" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/123> ;
+     fhir:reference [ fhir:v "Patient/123" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-10-31T09:00:00+00:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Ratio ;
+     fhir:numerator [
+       fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "m" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "m" ]
+     ] ;
+     fhir:denominator [
+       fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "m" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "m" ]
+     ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:1290043002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1290043002" ] ;
+       fhir:display [ fhir:v "Entire right eye proper" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "chart" ] ;
+       fhir:display [ fhir:v "Visual Acuity Chart" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:id [ fhir:v "Refractive-Correction-Type-Trial" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LL6028-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LL6028-6" ] ;
+         fhir:display [ fhir:v "Refraction Type" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "trial-lenses-manifest-without-cycloplegia" ] ;
+         fhir:display [ fhir:v "Manifest refraction" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "Refractive-Correction-Type-Glasses" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LL6028-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LL6028-6" ] ;
+         fhir:display [ fhir:v "Refraction Type" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:50121007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "50121007" ] ;
+         fhir:display [ fhir:v "Eye glasses" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "Lens-in-front-of-right-eye-spectacle" ] ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "421591000" ] ;
+             fhir:display [ fhir:v "Spectacle Lens" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "sphere"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1.00"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "cylinder"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "-0.50"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "axis"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "90"^^xsd:integer ]
+       ] ) ;
+       fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"^^xsd:anyURI ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:29073-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29073-4" ] ;
+         fhir:display [ fhir:v "Right Eye position" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "Lens-in-front-of-right-eye-trial" ] ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "5420330007" ] ;
+             fhir:display [ fhir:v "Trial Lens" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "sphere"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "-2.00"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "cylinder"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "-1.5"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "axis"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "36"^^xsd:integer ]
+       ] ) ;
+       fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"^^xsd:anyURI ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:29073-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29073-4" ] ;
+         fhir:display [ fhir:v "Right Eye position" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "Test-Distance" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:252124009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "252124009" ] ;
+         fhir:display [ fhir:v "Test distance" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "m" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "m" ]
+     ]
+  ] [
+     fhir:id [ fhir:v "Optotype-used" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Optotype" ] ;
+         fhir:display [ fhir:v "Optotype" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA25497-1" ] ;
+         fhir:display [ fhir:v "Numbers" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

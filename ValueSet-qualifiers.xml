@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="qualifiers"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet qualifiers</b></p><a name="qualifiers"> </a><a name="hcqualifiers"> </a><a name="qualifiers-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/7771000">7771000</a></td><td>Left</td></tr><tr><td><a href="http://snomed.info/id/24028007">24028007</a></td><td>Right</td></tr><tr><td><a href="http://snomed.info/id/51440002">51440002</a></td><td>Bilateral</td></tr><tr><td><a href="http://snomed.info/id/261183002">261183002</a></td><td>Upper</td></tr><tr><td><a href="http://snomed.info/id/261122009">261122009</a></td><td>Lower</td></tr><tr><td><a href="http://snomed.info/id/264217000">264217000</a></td><td>Superior</td></tr><tr><td><a href="http://snomed.info/id/261089000">261089000</a></td><td>Inferior</td></tr><tr><td><a href="http://snomed.info/id/255551008">255551008</a></td><td>Posterior</td></tr><tr><td><a href="http://snomed.info/id/255549009">255549009</a></td><td>Anterior</td></tr><tr><td><a href="http://snomed.info/id/255570003">255570003</a></td><td>Temporal</td></tr><tr><td><a href="http://snomed.info/id/260540009">260540009</a></td><td>Nasal</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 272485000 (Clockface position)</li><li>Include all codes defined in <a href="CodeSystem-qualifiers.html"><code>http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers</code></a></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/ValueSet/qualifiers"/>
+  <version value="0.1.0"/>
+  <name value="BodyStructureQualifiers"/>
+  <title value="Ophthalmic anatomical location qualifiers"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2019-05-01"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Describes whether a recorded observation is either final or amended"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="7771000"/>
+        <display value="Left"/>
+      </concept>
+      <concept>
+        <code value="24028007"/>
+        <display value="Right"/>
+      </concept>
+      <concept>
+        <code value="51440002"/>
+        <display value="Bilateral"/>
+      </concept>
+      <concept>
+        <code value="261183002"/>
+        <display value="Upper"/>
+      </concept>
+      <concept>
+        <code value="261122009"/>
+        <display value="Lower"/>
+      </concept>
+      <concept>
+        <code value="264217000"/>
+        <display value="Superior"/>
+      </concept>
+      <concept>
+        <code value="261089000"/>
+        <display value="Inferior"/>
+      </concept>
+      <concept>
+        <code value="255551008"/>
+        <display value="Posterior"/>
+      </concept>
+      <concept>
+        <code value="255549009"/>
+        <display value="Anterior"/>
+      </concept>
+      <concept>
+        <code value="255570003"/>
+        <display value="Temporal"/>
+      </concept>
+      <concept>
+        <code value="260540009"/>
+        <display value="Nasal"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="272485000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers"/>
+    </include>
+  </compose>
+</ValueSet>

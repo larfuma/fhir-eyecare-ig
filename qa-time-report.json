@@ -1,0 +1,3137 @@
+{
+  "date" : "Thu, 31 Oct, 2024 19:17:07 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/input/ig.xml",
+      "size" : 6028,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 14
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 127
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 796
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 165
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 149
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-VisualAcuity-V2-Patient-1-with-overrefraction.fhir.json",
+      "size" : 6099,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 176
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 508
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 30
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-VisualAcuity-V2-Patient-1-without-overrefraction.fhir.json",
+      "size" : 4248,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-VisualAcuity-V3-Binocular-Test-with-monocular-Contact-lens.fhir.json",
+      "size" : 4324,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 127
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 290
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-VisualAcuity-V3-Patient-1-with-overrefraction.fhir.json",
+      "size" : 4928,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 124
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 32
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-VisualAcuity-V3-Patient-1-without-overrefraction-.fhir.json",
+      "size" : 3425,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/bodystructure-left-eye.json",
+      "size" : 691,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 334
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 150
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/bodystructure-right-eye.json",
+      "size" : 770,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 82
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/condition-ophthal-glaucoma.json",
+      "size" : 1217,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 81
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/diagnostic-report-visual-field-0.json",
+      "size" : 1629,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 154
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 22
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 92,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/diagnostic-report-visual-field-1.json",
+      "size" : 1244,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/media-visual-field-0.json",
+      "size" : 143,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/media-visual-field-1.json",
+      "size" : 143,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-iop-0.json",
+      "size" : 1313,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 47
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 220
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-iop-1.json",
+      "size" : 1312,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-iop-2.json",
+      "size" : 1343,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 79
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-iop-3.json",
+      "size" : 1342,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-refraction-0.json",
+      "size" : 1823,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 66
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 176
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-refraction-1.json",
+      "size" : 1821,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-false-positives-0.json",
+      "size" : 1196,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 98
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-false-positives-1.json",
+      "size" : 1195,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-fixation-loss-0.json",
+      "size" : 1186,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-fixation-loss-1.json",
+      "size" : 1185,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-mean-deviation-0.json",
+      "size" : 1103,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 142
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-mean-deviation-1.json",
+      "size" : 1102,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-pattern-sd-0.json",
+      "size" : 1126,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 102
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-pattern-sd-1.json",
+      "size" : 1125,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-test-duration-0.json",
+      "size" : 1099,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 101
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-vf-test-duration-1.json",
+      "size" : 1098,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/patient-ophthal-0.json",
+      "size" : 947,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/practitioner-example-0.json",
+      "size" : 646,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/procedure-perimetry-diagnostic-test.json",
+      "size" : 767,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 43
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.xml",
+      "size" : 6734,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 27
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 187
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 40
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1741
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CodeSystem-iop-methods.xml",
+      "size" : 1369,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 47
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CodeSystem-qualifiers.xml",
+      "size" : 1417,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 12
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 48
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CodeSystem-visual-field-observations.xml",
+      "size" : 1773,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 13
+        },
+        {
+          "activity" : "scan",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-LensDuringVATestSpecification.fhir.json",
+      "size" : 10191,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 61
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 120
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 736
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 499
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 1607
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 19
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-OwnLensDuringVATestSpecification.json",
+      "size" : 9857,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 61
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 442
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 489
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 800
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 85,
+          "length" : 2
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-body-structure-eye.xml",
+      "size" : 2192,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 126
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 123
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 404
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-condition-base.xml",
+      "size" : 2651,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 15
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 51
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 254
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 232
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 763
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-diagnostic-report-base.xml",
+      "size" : 2244,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 52
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 143
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 171
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 643
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-diagnostic-report-oct-macula.xml",
+      "size" : 2503,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 122
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 363
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 227
+        },
+        {
+          "activity" : "generate2",
+          "start" : 61,
+          "length" : 527
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 7
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-diagnostic-report-oct-rnfl.xml",
+      "size" : 2454,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 70
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 237
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 278
+        },
+        {
+          "activity" : "generate2",
+          "start" : 61,
+          "length" : 427
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-diagnostic-report-visual-field.xml",
+      "size" : 2644,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 15
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 49
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 347
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 211
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 596
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-base.xml",
+      "size" : 4037,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 45
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 297
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 365
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 718
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-iop.xml",
+      "size" : 3304,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 61
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 223
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 414
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 996
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-oct-macula.xml",
+      "size" : 1297,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 176
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 308
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 765
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-oct-rnfl.xml",
+      "size" : 1778,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 28,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 243
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 316
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 795
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-visual-acuity-version-three.fhir.json",
+      "size" : 15396,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 28,
+          "length" : 82
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 166
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 927
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 944
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 1416
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 26
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-visual-acuity-version-two.fhir.json",
+      "size" : 15644,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 7
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 28,
+          "length" : 94
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 93
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 624
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 963
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 1332
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 28
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-visual-acuity.fhir.json",
+      "size" : 22308,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 28,
+          "length" : 118
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 163
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 873
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 51,
+          "length" : 1445
+        },
+        {
+          "activity" : "generate2",
+          "start" : 68,
+          "length" : 1777
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 93,
+          "length" : 42
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-observation-visual-field.xml",
+      "size" : 1265,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 28,
+          "length" : 37
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 234
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 310
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 600
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-Lens-type.fhir.json",
+      "size" : 4644,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 99
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 4448
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-Pupil-function-confounders.xml",
+      "size" : 1860,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 82
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 54
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-Visual-Acuity-Categorical.xml",
+      "size" : 2521,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 137
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 235
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 134
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-body-site-eye.xml",
+      "size" : 1252,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 41
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 54
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 1065
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-conditions.xml",
+      "size" : 1387,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 45
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 51
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 1742
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 92,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-iop-methods.xml",
+      "size" : 1401,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 45
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 78,
+          "length" : 100
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observable-entities.xml",
+      "size" : 1307,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 48
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 78,
+          "length" : 441
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observation-final-status.xml",
+      "size" : 879,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observation-oct-macula.xml",
+      "size" : 2675,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 39
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 142
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 80
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 85,
+          "length" : 1
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 92,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observation-oct-rnfl.xml",
+      "size" : 7393,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 334
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 36
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 127
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observation-visual-acuity-BodySite.xml",
+      "size" : 1380,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 78
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 84
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observation-visual-acuity.xml",
+      "size" : 1397,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 45
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 116
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-observation-visual-field.xml",
+      "size" : 1591,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 79
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 104
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 377
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-optotype-presentation.xml",
+      "size" : 1430,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 313
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 100
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 342
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-optotypes.xml",
+      "size" : 3168,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 376
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 274
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 302
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 92,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-pinhole-occluder-usage.xml",
+      "size" : 1480,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 89
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 89
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-procedure.xml",
+      "size" : 3061,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 38
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 134
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 179
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 1330
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-qualifiers.xml",
+      "size" : 2406,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 156
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 179
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 165
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-special-va-testing-parameters.xml",
+      "size" : 1910,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 283
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 92
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 355
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-visual-acuity-correction-methods-with-sl.xml",
+      "size" : 2007,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 47
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 81
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 110
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-visual-acuity-correction-methods.xml",
+      "size" : 1878,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 60
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 103
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-visual-acuity-methods.xml",
+      "size" : 2747,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 49
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 111
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 112
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 94,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-visual-acuity-quantity-units.xml",
+      "size" : 1950,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 51
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-visual-acuity-test-distance.xml",
+      "size" : 1177,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 42
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 92
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 80
+        }
+      ]
+    }
+  ]
+}

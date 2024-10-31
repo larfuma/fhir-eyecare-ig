@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Visual-Acuity-BodySite",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Visual-Acuity-BodySite</b></p><a name=\"Visual-Acuity-BodySite\"> </a><a name=\"hcVisual-Acuity-BodySite\"> </a><a name=\"Visual-Acuity-BodySite-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1290043002\">1290043002</a></td><td>Entire right eye proper</td></tr><tr><td><a href=\"http://snomed.info/id/1290041000\">1290041000</a></td><td>Entire left eye proper</td></tr><tr><td><a href=\"http://snomed.info/id/362508001\">362508001</a></td><td>Both eyes, entire (body structure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite.html",
+  "version" : "0.1.0",
+  "name" : "ValueSet-Visual-Acuity-BodySite",
+  "title" : "ValueSet-Visual-Acuity-BodySite",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-10-31T19:17:07+00:00",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "ValueSet containing laterality codes for visual acuity observations.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1290043002",
+        "display" : "Entire right eye proper"
+      },
+      {
+        "code" : "1290041000",
+        "display" : "Entire left eye proper"
+      },
+      {
+        "code" : "362508001",
+        "display" : "Both eyes, entire (body structure)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Procedure/perimetry-24-2-perimetry-test> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "perimetry-24-2-perimetry-test"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/eyecare/StructureDefinition/procedure-base"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/eyecare/StructureDefinition/procedure-base>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure perimetry-24-2-perimetry-test</b></p><a name=\"perimetry-24-2-perimetry-test\"> </a><a name=\"hcperimetry-24-2-perimetry-test\"> </a><a name=\"perimetry-24-2-perimetry-test-en-US\"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252806005}\">Humphrey perimeter plot</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>performed</b>: 2019-03-26 12:55:26-0700 --&gt; 2019-03-26 13:25:26-0700</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-ophthal-practitioner-example-0.html\">Practitioner Ronald Bone </a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:252806005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "252806005" ] ;
+       fhir:display [ fhir:v "Humphrey perimeter plot" ]
+     ] ) ;
+     fhir:text [ fhir:v "Humphrey perimeter plot" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/ophthal-patient-example-0> ;
+     fhir:reference [ fhir:v "Patient/ophthal-patient-example-0" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-03-26T12:55:26-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-03-26T13:25:26-07:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Practitioner/ophthal-practitioner-example-0> ;
+       fhir:reference [ fhir:v "Practitioner/ophthal-practitioner-example-0" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

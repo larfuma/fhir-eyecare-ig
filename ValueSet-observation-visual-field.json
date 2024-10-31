@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "observation-visual-field",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet observation-visual-field</b></p><a name=\"observation-visual-field\"> </a><a name=\"hcobservation-visual-field\"> </a><a name=\"observation-visual-field-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/252129004\">252129004</a></td><td style=\"color: #cccccc\">Test duration</td></tr></table></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 73750009 (Visual field)</li><li>Include all codes defined in <code>http://terminology.hl7.org/uv/eyecare/CodeSystem/visual-field-observations</code></li></ul></div>"
+  },
+  "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-field",
+  "version" : "0.1.0",
+  "name" : "OphthalmologyVisualFieldObservableEntitiesValueSet",
+  "title" : "Visual Field Observable Entities ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-05-01",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Visual field observation coding",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "252129004"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "73750009"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/visual-field-observations"
+    }]
+  }
+}

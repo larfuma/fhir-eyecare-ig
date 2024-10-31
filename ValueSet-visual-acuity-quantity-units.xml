@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="visual-acuity-quantity-units"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet visual-acuity-quantity-units</b></p><a name="visual-acuity-quantity-units"> </a><a name="hcvisual-acuity-quantity-units"> </a><a name="visual-acuity-quantity-units-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html"><code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-logMAR">logMAR</a></td><td>Logarithm of the Minimum Angle of Resolution</td><td>Logarithm of the Minimum Angle of Resolution as a Unit of Visual Acuity</td></tr><tr><td><a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-MAR">MAR</a></td><td>Minimum Angle of Resolution</td><td>Minimum Angle of Resolution as a Unit of Visual Acuity</td></tr><tr><td><a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-Decimal">Decimal</a></td><td>Decimal Unit of Visual Acuity</td><td>Reciprocal value of Minimum Angle of Resolution, equivalent to calculating the fraction of a Snellen Ratio</td></tr><tr><td><a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-JaegerJ">Jaeger J</a></td><td>Jaeger type (J) Unit</td><td>Unit of Visual acuity, determined by a the smallest print read on a Jaeger chart</td></tr><tr><td><a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VAS">VAS</a></td><td>Visual Acuity Score</td><td>Unit of Visual acuity, calculated as 100 - 50 x logMAR</td></tr><tr><td><a href="CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-Numberofrecognizedoptotypes">Number of recognized optotypes</a></td><td>Number of recognized optotypes</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units"/>
+  <version value="0.1.0"/>
+  <name value="VisualAcuityQuantityUnits"/>
+  <title value="Visual Acuity Quantity Units"/>
+  <status value="active"/>
+  <date value="2024-10-31T19:17:07+00:00"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Units of Measure of Visual acuity"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"/>
+      <concept>
+        <code value="logMAR"/>
+        <display value="Logarithm of the Minimum Angle of Resolution"/>
+      </concept>
+      <concept>
+        <code value="MAR"/>
+        <display value="Minimum Angle of Resolution"/>
+      </concept>
+      <concept>
+        <code value="Decimal"/>
+        <display value="Decimal Unit of Visual Acuity"/>
+      </concept>
+      <concept>
+        <code value="Jaeger J"/>
+        <display value="Jaeger type (J) Unit"/>
+      </concept>
+      <concept>
+        <code value="VAS"/>
+        <display value="Visual Acuity Score"/>
+      </concept>
+      <concept>
+        <code value="Number of recognized optotypes"/>
+        <display value="Number of recognized optotypes"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "iop-methods",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Methods to measure Intraocular Pressure</h2>\n      <div>\n        <p>Additional coding for IOP observation method</p>\n      </div>\n    </div>"
+  },
+  "url" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods",
+  "version" : "0.1.0",
+  "name" : "IOPMethods",
+  "title" : "IOP Methods Code System",
+  "status" : "draft",
+  "date" : "2021-08-07",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "IOP additional method types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "HL7",
+  "caseSensitive" : true,
+  "compositional" : false,
+  "versionNeeded" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "rebound-tonometry",
+    "display" : "Rebound tonometry",
+    "definition" : "Rebound tonometry"
+  },
+  {
+    "code" : "rebound-tonometry-remote",
+    "display" : "Rebound tonometry remote",
+    "definition" : "Rebound tonometry remote"
+  },
+  {
+    "code" : "contact-lens-tonometry",
+    "display" : "Contact lens tonometry",
+    "definition" : "Contact lens tonometry"
+  }]
+}

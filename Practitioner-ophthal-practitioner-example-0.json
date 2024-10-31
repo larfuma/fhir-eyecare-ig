@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "ophthal-practitioner-example-0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ophthal-practitioner-example-0</b></p><a name=\"ophthal-practitioner-example-0\"> </a><a name=\"hcophthal-practitioner-example-0\"> </a><a name=\"ophthal-practitioner-example-0-en-US\"> </a><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/9941339108, <code>http://www.acme.org/practitioners</code>/25456</p><p><b>name</b>: Ronald Bone </p><p><b>address</b>: 1003 Healthcare Drive Amherst MA 01002 (home)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org.fhir/sid/us-npi",
+    "value" : "9941339108"
+  },
+  {
+    "system" : "http://www.acme.org/practitioners",
+    "value" : "25456"
+  }],
+  "name" : [{
+    "family" : "Bone",
+    "given" : ["Ronald"],
+    "prefix" : ["Dr"]
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["1003 Healthcare Drive"],
+    "city" : "Amherst",
+    "state" : "MA",
+    "postalCode" : "01002"
+  }]
+}
