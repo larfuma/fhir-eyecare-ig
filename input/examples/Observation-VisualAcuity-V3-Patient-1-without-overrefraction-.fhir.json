@@ -64,8 +64,8 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "421632004",
-            "display": "Soft contact lens"
+            "code": "57368009",
+            "display": "Contact lens"
           }
         ]
       },
@@ -78,9 +78,9 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type",
-                    "code": "421632004",
-                    "display": "Soft contact lens"
+                    "system": "http://snomed.info/sct",
+                    "code": "57368009",
+                    "display": "Contact lens"
                   }
                 ]
               }
