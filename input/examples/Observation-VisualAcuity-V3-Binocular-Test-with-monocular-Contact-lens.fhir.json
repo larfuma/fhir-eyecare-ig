@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "va-measurement-example-binocular-50cm-contact-lens-right",
+    "id": "va-measurement-example-patient-2-bino-50cm-with-od-contactlens",
     "text": "Example of a binocular Visual acuity measurement at close distance with just the right eye being corrected by a contact lens",
     "meta": {
       "profile": [

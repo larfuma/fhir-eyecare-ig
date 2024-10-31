@@ -202,8 +202,8 @@
               "path": "code"
             },
             {
-              "type": "pattern",
-              "path": "extension('LensDuringVATestSpecification').extension('type').valueCodeableConcept.coding.code"
+              "type": "value",
+              "path": "value"
             }
           ],
           "ordered": false,
@@ -211,17 +211,17 @@
         }
       },
       {
-        "id": "Observation.component:Position-in-front-of-right-eye",
+        "id": "Observation.component:Correction-in-front-of-right-eye",
         "path": "Observation.component",
-        "sliceName": "Position-in-front-of-right-eye"
+        "sliceName": "Correction-in-front-of-right-eye"
       },
       {
-        "id": "Observation.component:Position-in-front-of-right-eye.extension",
+        "id": "Observation.component:Correction-in-front-of-right-eye.extension",
         "path": "Observation.component.extension",
         "max": "1"
       },
       {
-        "id": "Observation.component:Position-in-front-of-right-eye.extension:LensDuringVATestSpecification",
+        "id": "Observation.component:Correction-in-front-of-right-eye.extension:LensDuringVATestSpecification",
         "path": "Observation.component.extension",
         "sliceName": "LensDuringVATestSpecification",
         "max": "1",
@@ -236,7 +236,7 @@
         "isModifier": false
       },
       {
-        "id": "Observation.component:Position-in-front-of-right-eye.code",
+        "id": "Observation.component:Correction-in-front-of-right-eye.code",
         "path": "Observation.component.code",
         "fixedCodeableConcept": {
           "coding": [
@@ -249,7 +249,7 @@
         }
       },
       {
-        "id": "Observation.component:Position-in-front-of-right-eye.value[x]",
+        "id": "Observation.component:Correction-in-front-of-right-eye.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
@@ -262,17 +262,17 @@
         }
       },
       {
-        "id": "Observation.component:Position-in-front-of-left-eye",
+        "id": "Observation.component:Correction-in-front-of-left-eye",
         "path": "Observation.component",
-        "sliceName": "Position-in-front-of-left-eye"
+        "sliceName": "Correction-in-front-of-left-eye"
       },
       {
-        "id": "Observation.component:Position-in-front-of-left-eye.extension",
+        "id": "Observation.component:Correction-in-front-of-left-eye.extension",
         "path": "Observation.component.extension",
         "max": "1"
       },
       {
-        "id": "Observation.component:Position-in-front-of-left-eye.extension:LensDuringVATestSpecification",
+        "id": "Observation.component:Correction-in-front-of-left-eye.extension:LensDuringVATestSpecification",
         "path": "Observation.component.extension",
         "sliceName": "LensDuringVATestSpecification",
         "max": "1",
@@ -287,7 +287,7 @@
         "isModifier": false
       },
       {
-        "id": "Observation.component:Position-in-front-of-left-eye.code",
+        "id": "Observation.component:Correction-in-front-of-left-eye.code",
         "path": "Observation.component.code",
         "fixedCodeableConcept": {
           "coding": [
@@ -300,7 +300,7 @@
         }
       },
       {
-        "id": "Observation.component:Position-in-front-of-left-eye.value[x]",
+        "id": "Observation.component:Correction-in-front-of-left-eye.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
