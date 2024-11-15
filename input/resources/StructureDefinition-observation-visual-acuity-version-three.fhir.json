@@ -6,7 +6,7 @@
   "title": "Visual Acuity (VA) V3",
   "status": "draft",
   "experimental": true,
-  "description": "An assessment of a patients ability to see - Version three - third time's the charm?",
+  "description": "An assessment of a patients ability to see - Version three",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -169,7 +169,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite"
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-both-eyes.html"
         }
       },
       {
@@ -243,7 +243,7 @@
             {
               "system": "http://loinc.org",
               "code": "29073-4",
-              "display": "RIght Eye position"
+              "display": "Right Eye position"
             }
           ]
         }

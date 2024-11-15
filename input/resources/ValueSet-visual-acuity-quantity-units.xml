@@ -7,7 +7,7 @@
   <description value="Units of Measure of Visual acuity" />
   <compose>
     <include>
-      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC" />
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC" />
       <concept>
         <code value="logMAR" />
         <display value="Logarithm of the Minimum Angle of Resolution" />

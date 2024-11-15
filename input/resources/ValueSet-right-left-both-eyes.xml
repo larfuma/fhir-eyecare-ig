@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
-  <id value="Visual-Acuity-BodySite"/>
-  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Visual-Acuity-BodySite.html"/>
+  <id value="right-left-both-eyes"/>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-both-eyes.html"/>
   <version value="1.0.0"/>
-  <name value="ValueSet-Visual-Acuity-BodySite"/>
-  <title value="ValueSet-Visual-Acuity-BodySite"/>
+  <name value="ValueSet-right-left-both-eyes"/>
+  <title value="ValueSet-right-left-both-eyes"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Lars Fuhrmann"/>
