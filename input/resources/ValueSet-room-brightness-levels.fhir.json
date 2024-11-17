@@ -1,0 +1,33 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
+  <id value="room-brightness-levels"/>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-room-brightness-levels"/>
+  <version value="1.0.0"/>
+  <name value="RoomBrightnessLevels"/>
+  <title value="Room Brightness Levels"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Lars Fuhrmann"/>
+  <description value="This ValueSet contains codes to represent the brightness of the room where a test was performed."/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) and LOINC® which are copyright of their respective owners. Implementers of these artefacts must have the appropriate licenses."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA25332-0"/>
+        <display value="Bright"/>
+      </concept>
+      <concept>
+        <code value="LA32683-7"/>
+        <display value="Dim"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="255419005"/>
+        <display value="Dark"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
+

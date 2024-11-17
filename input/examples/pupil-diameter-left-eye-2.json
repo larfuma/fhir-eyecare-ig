@@ -1,0 +1,61 @@
+{
+    "resourceType": "Observation",
+    "id": "pupil-diameter-left-eye-2",
+    "meta": {
+      "profile": [
+        "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"
+      ]
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LP73214-6",
+          "display": "Pupil diameter"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/123"
+    },
+    "effectiveDateTime": "2023-11-17T10:05:00+00:00",
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "12853009",
+          "display": "Left eye"
+        }
+      ]
+    },
+    "valueQuantity": {
+      "value": 6,
+      "unit": "mm",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm"
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP429645-7",
+              "display": "Room brightness level during testing"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA32683-7",
+              "display": "Dim"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

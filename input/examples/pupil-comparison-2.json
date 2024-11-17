@@ -1,0 +1,54 @@
+{
+    "resourceType": "Observation",
+    "id": "pupil-comparison-2",
+    "meta": {
+      "profile": [
+        "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"
+      ]
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+          "code": "comparison-of-pupil-diameter-between-eyes",
+          "display": "Comparison of Pupil diameters"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/123"
+    },
+    "effectiveDateTime": "2023-11-17T10:05:00+00:00",
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP429645-7",
+              "display": "Room brightness level during testing"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA32683-7",
+              "display": "Dim"
+            }
+          ]
+        }
+      }
+    ],
+    "hasMember": [
+      {
+        "reference": "Observation/pupil-diameter-right-eye-2"
+      },
+      {
+        "reference": "Observation/pupil-diameter-left-eye-2"
+      }
+    ]
+  }
+  

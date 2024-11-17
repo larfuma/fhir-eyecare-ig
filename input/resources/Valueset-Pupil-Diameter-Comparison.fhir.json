@@ -1,0 +1,39 @@
+{
+    "resourceType": "ValueSet",
+    "id": "Pupil-Diameter-Comparison",
+    "url": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-Diameter-Comparison",
+    "version": "0.1.0",
+    "name": "Pupil-Diameter-Comparison",
+    "title": "Pupil-Diameter-Comparison",
+    "status": "draft",
+    "experimental": true,
+    "date": "2023-11-10",
+    "publisher": "Lars Fuhrmann",
+    "description": "A ValueSet containing codes for various pupillomotor function observations.",
+    "compose": {
+      "include": [
+        {
+          "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+          "concept": [
+            {
+              "code": "anisocoria-right-pupil-larger-than-left",
+              "display": "Anisocoria right pupil larger than left pupil"
+            },
+            {
+              "code": "anisocoria-left-pupil-larger-than-right",
+              "display": "Anisocoria left pupil larger than right pupil"
+            }
+          ]
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "concept": [
+            {
+              "code": "301943000",
+              "display": "Pupils equal (finding)"
+            }
+          ]
+        }
+      ]
+    }
+  }

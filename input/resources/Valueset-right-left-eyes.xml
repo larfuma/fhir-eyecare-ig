@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
+  <id value="right-left-eyes"/>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-eyes.html"/>
+  <version value="1.0.0"/>
+  <name value="ValueSet-right-left-eyes"/>
+  <title value="ValueSet-right-left-eyes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Lars Fuhrmann"/>
+  <description value="ValueSet containing laterality codes for ophthalmic observations which should only contain information on either the right or left eye, not both"/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1290043002"/>
+        <display value="Entire right eye proper"/>
+      </concept>
+      <concept>
+        <code value="1290041000"/>
+        <display value="Entire left eye proper"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -7,7 +7,7 @@
   <title value="Codes which were needed, but not found in SNOMED or LOINC, will be submitted there" />
   <status value="draft" />
   <experimental value="true" />
-  <publisher value="Lars Fuhrmann " />
+  <publisher value="Lars Fuhrmann" />
   <description value="Codes which were needed, but not found in SNOMED or LOINC, will be submitted there" />
   <content value="complete" />
   <concept>
@@ -129,5 +129,50 @@
     <code value="Number of recongnized optotypes" />
     <display value="Number of recongnized optotypes" />
     <definition value="Number of optotypes that were correctly identified, usually in terms of Letters read" />
+  </concept>
+  <concept>
+    <code value="pupillomotor-function-finding-narrative"/>
+    <display value="Pupillomotor Function Finding Narrative"/>
+    <definition value="A narrative description of the pupillomotor function assessment."/>
+  </concept>
+  <concept>
+    <code value="comparison-of-pupil-diameter-between-eyes"/>
+    <display value="Comparison of Pupil Diameter between Eyes"/>
+    <definition value="An observation comparing the pupil diameters of both eyes."/>
+  </concept>
+  <concept>
+    <code value="swinging-light-test"/>
+    <display value="Swinging Light Test"/>
+    <definition value="An assessment using the swinging flashlight test to detect a relative afferent pupillary defect (RAPD)."/>
+  </concept>
+  <concept>
+    <code value="near-reaction-assessment"/>
+    <display value="Near Reaction Assessment"/>
+    <definition value="An assessment of the pupil's reaction to near stimuli."/>
+  </concept>
+    <concept>
+    <code value="anisocoria-right-pupil-larger-than-left"/>
+    <display value="Anisocoria right pupil larger than left pupil"/>
+    <definition value="A finding of Anisocoria with the right pupil having a larger diameter than the left pupil."/>
+  </concept>
+  <concept>
+    <code value="anisocoria-left-pupil-larger-than-right"/>
+    <display value="Anisocoria left pupil larger than right pupil"/>
+    <definition value="A finding of Anisocoria with the left pupil having a larger diameter than the right pupil."/>
+  </concept>
+  <concept>
+      <code value="anisocoria-with-larger-pupil-diameter-difference-in-bright-lighting-conditions"/>
+    <display value="Anisocoria more pronounced in bright light"/>
+    <definition value="A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in bright lighting conditions"/>
+  </concept>
+    <concept>
+      <code value="anisocoria-with-larger-pupil-diameter-difference-in-low-lighting-conditions"/>
+    <display value="Anisocoria more pronounced in low lighting"/>
+    <definition value="A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in low lighting conditions"/>
+  </concept>
+  <concept>
+      <code value="anisocoria-independent-of-lighting-conditions"/>
+    <display value="Difference in Pupil size between eyes not different in bright or low light"/>
+    <definition value="A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in low lighting conditions"/>
   </concept>
 </CodeSystem>

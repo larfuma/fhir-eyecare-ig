@@ -1,0 +1,98 @@
+{
+    "resourceType": "Observation",
+    "id": "pupil-diameter-left-eye-3",
+    "meta": {
+      "profile": [
+        "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"
+      ]
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LP73214-6",
+          "display": "Pupil diameter"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/123"
+    },
+    "effectiveDateTime": "2023-11-17T10:35:00+00:00",
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "12853009",
+          "display": "Left eye"
+        }
+      ]
+    },
+    "valueQuantity": {
+      "value": 5,
+      "unit": "mm",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm"
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP429645-7",
+              "display": "Room brightness level during testing"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA25332-0",
+              "display": "Bright"
+            }
+          ]
+        }
+      },
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "82757-5",
+              "display": "Time since administration of medication"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 30,
+          "unit": "minutes",
+          "system": "http://unitsofmeasure.org",
+          "code": "min"
+        }
+      },
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "410942007",
+              "display": "Drug or medicament (substance)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372897005",
+              "display": "Apraclonidine"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,292 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "pupil-comparison",
+  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison",
+  "name": "PupilComparison",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "inv-1",
+            "severity": "error",
+            "human": "Right eye observation must have bodySite code indicating right eye.",
+            "expression": "hasMember.where(sliceName='rightEye').resolve().bodySite.coding.exists(system='http://snomed.info/sct' and code='51285007')"
+          },
+          {
+            "key": "inv-2",
+            "severity": "error",
+            "human": "Left eye observation must have bodySite code indicating left eye.",
+            "expression": "hasMember.where(sliceName='leftEye').resolve().bodySite.coding.exists(system='http://snomed.info/sct' and code='12853009')"
+          },
+          {
+            "key": "inv-3",
+            "severity": "error",
+            "human": "All components in the PupilComparison observation must match components in both hasMember observations.",
+            "expression": "component.forAll(c | hasMember.resolve().component.where(code = c.code).all(inner | c.value = inner.value))"
+          }
+        ]
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+              "code": "comparison-of-pupil-diameter-between-eyes",
+              "display": "Comparison of Pupil diameters"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "362508001",
+              "display": "Both eyes, entire (body structure)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "resolve().bodySite.coding.code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "2"
+      },
+      {
+        "id": "Observation.hasMember:rightEye",
+        "path": "Observation.hasMember",
+        "sliceName": "rightEye",
+        "comment": "Reference to the right eye pupil diameter observation.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-pupil-diameter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.hasMember:leftEye",
+        "path": "Observation.hasMember",
+        "sliceName": "leftEye",
+        "comment": "Reference to the left eye pupil diameter observation.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-pupil-diameter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:RoomBrightness",
+        "path": "Observation.component",
+        "sliceName": "RoomBrightness",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:RoomBrightness.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP429645-7",
+              "display": "Room brightness level during testing"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:RoomBrightness.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:RoomBrightness.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "fixedString": "lux"
+      },
+      {
+        "id": "Observation.component:RoomBrightness.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:RoomBrightness.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "fixedCode": "lx"
+      },
+      {
+        "id": "Observation.component:PupilLuminance",
+        "path": "Observation.component",
+        "sliceName": "PupilLuminance",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:PupilLuminance.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27073006",
+              "display": "Luminance"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:PupilLuminance.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:PupilLuminance.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "fixedString": "cd/m2"
+      },
+      {
+        "id": "Observation.component:PupilLuminance.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:PupilLuminance.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "fixedCode": "cd/m2"
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestDurationSinceAdministration",
+        "path": "Observation.component",
+        "sliceName": "PharmacologicalTestDurationSinceAdministration",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestDurationSinceAdministration.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "82757-5",
+              "display": "Time since administration of medication"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestDurationSinceAdministration.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestDurationSinceAdministration.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "fixedString": "minutes"
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestDurationSinceAdministration.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestDurationSinceAdministration.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "fixedCode": "min"
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestActiveSubstanceInEyedrops",
+        "path": "Observation.component",
+        "sliceName": "PharmacologicalTestActiveSubstanceInEyedrops",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestActiveSubstanceInEyedrops.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "410942007",
+              "display": "Drug or medicament (substance)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:PharmacologicalTestActiveSubstanceInEyedrops.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Valueset of active substances typically used in pharmacological pupil testing",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pupi-testing-active-substances"
+        }
+      }
+    ]
+  }
+}
