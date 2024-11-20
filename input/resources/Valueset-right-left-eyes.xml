@@ -13,12 +13,12 @@
     <include>
       <system value="http://snomed.info/sct"/>
       <concept>
-        <code value="1290043002"/>
-        <display value="Entire right eye proper"/>
+        <code value="362502000"/>
+        <display value="Entire right eye (body structure)"/>
       </concept>
       <concept>
-        <code value="1290041000"/>
-        <display value="Entire left eye proper"/>
+        <code value="362503005"/>
+        <display value="Entire left eye (body structure)"/>
       </concept>
     </include>
   </compose>

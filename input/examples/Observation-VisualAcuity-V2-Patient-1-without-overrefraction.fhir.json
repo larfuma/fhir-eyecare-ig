@@ -25,8 +25,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "1290043002",
-          "display": "Entire right eye proper"
+          "code": "362502000",
+          "display": "Entire right eye (body structure)"
         }
       ]
     },

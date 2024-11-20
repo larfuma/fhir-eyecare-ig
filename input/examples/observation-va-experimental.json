@@ -1,0 +1,93 @@
+{
+  "resourceType": "Observation",
+  
+
+  "id": "va-measurement-experiment",
+  "text": "experiment",
+  "meta": {
+    "profile": [
+      "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "17"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 0.6
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": 1290043002,
+        "display": "Entire right eye proper"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29073-4",
+            "display": "Right Eye position"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "57368009",
+            "display": "Contact lenses, device"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "370115009",
+            "display": "Special Concept"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "257492003",
+            "display": "Pinhole Occluder"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "252124009",
+            "display": "Test distance"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA32577-1",
+            "display": "Far"
+          }
+        ]
+      }
+    }
+  ]
+}
