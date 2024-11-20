@@ -13,10 +13,6 @@
     <include>
       <system value="http://snomed.info/sct" />
       <concept>
-        <code value="257492003" />
-        <display value="Pinhole Occluder" />
-      </concept>
-      <concept>
         <code value="404645008" />
         <display value="Glare Testing" />
       </concept>

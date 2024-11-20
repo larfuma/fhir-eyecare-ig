@@ -433,7 +433,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/special-va-testing-parameters"
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-special-va-testing-parameters.html"
         }
       }
     ]

@@ -116,7 +116,7 @@
           {
             "system": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl",
             "code": "trial-lenses-manifest-without-cycloplegia",
-            "display": "Manifest refraction using trial lenses without cycloplegia"
+            "display": "Trial Lenses with Values based on manifest refraction without Cycloplegia"
           }
         ]
       },
