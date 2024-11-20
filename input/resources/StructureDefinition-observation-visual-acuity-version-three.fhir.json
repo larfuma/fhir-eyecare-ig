@@ -36,7 +36,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity"
+          "valueSet": "http://terminology.hl7.org/uv/eyecare/ValueSet-observation-visual-acuity"
         }
       },
       {
@@ -258,7 +258,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl"
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods-with-sl"
         }
       },
       {
@@ -280,7 +280,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
+              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-LensDuringVATestSpecification"
             ]
           }
         ],
@@ -309,7 +309,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl"
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods-with-sl"
         }
       },
       {
@@ -385,7 +385,7 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+              "system": "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
               "code": "Optotype",
               "display": "Optotype"
             }
