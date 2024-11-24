@@ -1,0 +1,33 @@
+{
+    "resourceType": "BodyStructure",
+    "id": "bodystructure-right-eye-6oclock",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye"
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ophthal-patient-example-0"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "5597008",
+          "display": "Retina of right eye"
+        }
+      ]
+    },
+    "locationQualifier": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "260337008",
+            "display": "6 o'clock position"
+          }
+        ]
+      }
+    ]
+  }
+  

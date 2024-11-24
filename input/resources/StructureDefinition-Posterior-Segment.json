@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative",
+  "name": "Posteriorsegmentnarrative",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "70944-4",
+              "display": "Eye posterior segment narrative"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-eyes.html"
+        }
+      }
+    ]
+  }
+}

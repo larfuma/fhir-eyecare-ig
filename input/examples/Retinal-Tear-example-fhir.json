@@ -1,0 +1,41 @@
+{
+    "resourceType": "Observation",
+    "id": "posteriorsegment-example",
+    "meta": {
+      "profile": [
+        "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative"
+      ]
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "70944-4",
+          "display": "Eye posterior segment narrative"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/ophthal-patient-example-0"
+    },
+    "valueString": "Retinal Tear at 6 o'clock",
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "362502000",
+          "display": "Entire right eye (body structure)"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+          "valueReference": {
+            "reference": "BodyStructure/bodystructure-right-eye-6oclock"
+          }
+        }
+      ]
+    }
+  }
+  
