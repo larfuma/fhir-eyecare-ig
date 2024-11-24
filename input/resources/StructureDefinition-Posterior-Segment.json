@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative",
+  "id": "Posteriorsegment-narrative",
+  "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/Posteriorsegment-narrative",
   "name": "Posteriorsegmentnarrative",
   "status": "draft",
   "fhirVersion": "4.0.1",
