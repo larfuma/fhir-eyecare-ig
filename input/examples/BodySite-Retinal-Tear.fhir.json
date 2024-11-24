@@ -1,6 +1,7 @@
 {
     "resourceType": "Observation",
     "id": "posteriorsegment-example",
+    "text": "Example Instance of a posterior segment narrative with the general eye being represented within the observation, and the more precise bodysite being represented in the BodySite Instance referenced in the extension. "
     "meta": {
       "profile": [
         "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative"
