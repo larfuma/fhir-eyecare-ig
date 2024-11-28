@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="lens-types"/>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types"/>
+  <version value="1.0.0"/>
+  <name value="LensTypes"/>
+  <title value="Lens Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Lars Fuhrmann"/>
+  <description value="This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007)."/>
+  <copyright value="This ValueSet includes content from SNOMED Clinical Terms® (SNOMED CT®), which is copyrighted by the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artifacts must have the appropriate SNOMED CT Affiliate license. For more information, please visit http://www.snomed.org/snomed-ct/get-snomed-ct."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="descendant-of"/>
+        <op value="="/>
+        <value value="57368009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="descendant-of"/>
+        <op value="="/>
+        <value value="50121007"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

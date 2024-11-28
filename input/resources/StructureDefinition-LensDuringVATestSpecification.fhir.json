@@ -74,7 +74,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/lens-type"
+          "valueSet": "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types"
         }
       },
       {
