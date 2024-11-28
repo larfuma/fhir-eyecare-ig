@@ -14,24 +14,24 @@
     <include>
       <system value="http://snomed.info/sct"/>
       <filter>
-        <property value="descendant-of"/>
-        <op value="="/>
+        <property value="concept"/>
+        <op value="descendent-of"/>
         <value value="57368009"/>
       </filter>
     </include>
     <include>
       <system value="http://snomed.info/sct"/>
       <filter>
-        <property value="descendant-of"/>
-        <op value="="/>
+        <property value="concept"/>
+        <op value="descendent-of"/>
         <value value="50121007"/>
       </filter>
     </include>
     <include>
       <system value="http://snomed.info/sct"/>
       <filter>
-        <property value="descendant-of"/>
-        <op value="="/>
+        <property value="concept"/>
+        <op value="descendent-of"/>
         <value value="420330007"/>
       </filter>
     </include>
