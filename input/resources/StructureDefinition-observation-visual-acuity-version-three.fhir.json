@@ -280,7 +280,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-LensDuringVATestSpecification"
+              "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
             ]
           }
         ],
