@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-2> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pupil-comparison-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"^^xsd:anyURI ;
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation pupil-comparison-2</b></p><a name=\"pupil-comparison-2\"> </a><a name=\"hcpupil-comparison-2\"> </a><a name=\"pupil-comparison-2-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC comparison-of-pupil-diameter-between-eyes}\">Comparison of Pupil diameters</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>effective</b>: 2023-11-17 10:05:00+0000</p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-pupil-diameter-right-eye-2.html\">Observation Pupil diameter</a></li><li><a href=\"Observation-pupil-diameter-left-eye-2.html\">Observation Pupil diameter</a></li></ul><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org LP429645-7}\">Room brightness level during testing</span></td><td><span title=\"Codes:{http://loinc.org LA32683-7}\">Dim</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "comparison-of-pupil-diameter-between-eyes" ] ;
+       fhir:display [ fhir:v "Comparison of Pupil diameters" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/123> ;
+     fhir:reference [ fhir:v "Patient/123" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-11-17T10:05:00+00:00"^^xsd:dateTime] ; # 
+  fhir:hasMember ( [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-2> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-2" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-2> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-2" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP429645-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LP429645-7" ] ;
+         fhir:display [ fhir:v "Room brightness level during testing" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA32683-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA32683-7" ] ;
+         fhir:display [ fhir:v "Dim" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

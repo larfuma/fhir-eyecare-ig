@@ -1,0 +1,21 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Media/visual-field-le-0> a fhir:Media ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "visual-field-le-0"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Media visual-field-le-0</b></p><a name=\"visual-field-le-0\"> </a><a name=\"hcvisual-field-le-0\"> </a><a name=\"visual-field-le-0-en-US\"> </a><p><b>status</b>: Completed</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://localhost/media.pdf\">http://localhost/media.pdf</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:content [
+     fhir:url [ fhir:v "http://localhost/media.pdf"^^xsd:anyURI ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

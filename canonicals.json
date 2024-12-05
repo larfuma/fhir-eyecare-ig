@@ -1,0 +1,373 @@
+[
+  {
+    "id" : "body-structure-eye",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye",
+    "version" : "0.1.0",
+    "name" : "BodyStructureEye"
+  },
+  {
+    "id" : "condition-base",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/condition-base",
+    "version" : "0.1.0",
+    "name" : "ConditionBase"
+  },
+  {
+    "id" : "diagnostic-report-base",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/diagnostic-report-base",
+    "version" : "0.1.0",
+    "name" : "OphthalDiagnosticReport"
+  },
+  {
+    "id" : "diagnostic-report-oct-macula",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/diagnostic-report-oct-macula",
+    "version" : "0.1.0",
+    "name" : "OphthalDiagnosticReportOCTMacula"
+  },
+  {
+    "id" : "diagnostic-report-oct-rnfl",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/diagnostic-report-oct-rnfl",
+    "version" : "0.1.0",
+    "name" : "OphthalDiagnosticReportOCTRFNL"
+  },
+  {
+    "id" : "diagnostic-report-visual-field",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/diagnostic-report-visual-field",
+    "version" : "0.1.0",
+    "name" : "OphthalDiagnosticReportForVisualField"
+  },
+  {
+    "id" : "observation-base",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-base",
+    "version" : "0.1.0",
+    "name" : "ObservationBase"
+  },
+  {
+    "id" : "observation-iop",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-iop",
+    "version" : "0.1.0",
+    "name" : "ObservationIOP"
+  },
+  {
+    "id" : "observation-oct-macula",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-oct-macula",
+    "version" : "0.1.0",
+    "name" : "ObservationOCTMacula"
+  },
+  {
+    "id" : "observation-oct-rnfl",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-oct-rnfl",
+    "version" : "0.1.0",
+    "name" : "ObservationOCTRFNL"
+  },
+  {
+    "id" : "observation-visual-field",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-visual-field",
+    "version" : "0.1.0",
+    "name" : "ObservationVisualField"
+  },
+  {
+    "id" : "visual-field-observations",
+    "type" : "CodeSystem",
+    "url" : "http://terminolgy.hl7.org/uv/eyecare/CodeSystem/visual-field-observations",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyVisualFieldObservations"
+  },
+  {
+    "id" : "iop-methods",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods",
+    "version" : "0.1.0",
+    "name" : "IOPMethods"
+  },
+  {
+    "id" : "qualifiers",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers",
+    "version" : "0.1.0",
+    "name" : "BodyStructureQualifiers"
+  },
+  {
+    "id" : "body-site-eye",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/body-site-eye",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyBodySiteEye"
+  },
+  {
+    "id" : "conditions",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/conditions",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyConditionCodesValueSet"
+  },
+  {
+    "id" : "iop-methods",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/iop-methods",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyIOPMethods"
+  },
+  {
+    "id" : "observable-entities",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observable-entities",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyObservableEntitiesValueSet"
+  },
+  {
+    "id" : "observation-final-status",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-final-status",
+    "version" : "0.1.0",
+    "name" : "ObservationStatus"
+  },
+  {
+    "id" : "observation-oct-macula",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-macula",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyOCTMaculaObservableEntitiesValueSet"
+  },
+  {
+    "id" : "observation-oct-rnfl",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-rnfl",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyOCTRNFLObservableEntitiesValueSet"
+  },
+  {
+    "id" : "observation-visual-acuity",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyVisualAcuityObservableEntitiesValueSet"
+  },
+  {
+    "id" : "observation-visual-field",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-field",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyVisualFieldObservableEntitiesValueSet"
+  },
+  {
+    "id" : "procedures",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/procedures",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyProceduresValueSet"
+  },
+  {
+    "id" : "qualifiers",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/qualifiers",
+    "version" : "0.1.0",
+    "name" : "BodyStructureQualifiers"
+  },
+  {
+    "id" : "uv-eyecare",
+    "type" : "ImplementationGuide",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyImplementationGuide"
+  },
+  {
+    "id" : "custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+    "type" : "CodeSystem",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+    "version" : "0.1.0",
+    "name" : "CustomCodeSystem"
+  },
+  {
+    "id" : "observation-visual-acuity",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity",
+    "version" : "0.1.0",
+    "name" : "ObservationVisualAcuity"
+  },
+  {
+    "id" : "observation-visual-acuity-version-three",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three",
+    "version" : "0.1.0",
+    "name" : "ObservationVisualAcuity_version_three"
+  },
+  {
+    "id" : "observation-visual-acuity-version-two",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two",
+    "version" : "0.1.0",
+    "name" : "ObservationVisualAcuity_version_two"
+  },
+  {
+    "id" : "pupil-diameter",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-pupil-diameter",
+    "version" : "0.1.0",
+    "name" : "PupilDiameter"
+  },
+  {
+    "id" : "LensDuringVATestSpecification",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification",
+    "version" : "0.1.0",
+    "name" : "LensDuringVATestSpecification"
+  },
+  {
+    "id" : "OwnLensDuringVATestSpecification",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification",
+    "version" : "0.1.0",
+    "name" : "OwnLensDuringVATestSpecification"
+  },
+  {
+    "id" : "Posteriorsegment-narrative",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/Posteriorsegment-narrative",
+    "version" : "0.1.0",
+    "name" : "Posteriorsegmentnarrative"
+  },
+  {
+    "id" : "PupillomotoricDiagnosticReport",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/PupillomotoricDiagnosticReport",
+    "version" : "0.1.0",
+    "name" : "PupillomotoricDiagnosticReport"
+  },
+  {
+    "id" : "pupil-comparison",
+    "type" : "StructureDefinition",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison",
+    "version" : "0.1.0",
+    "name" : "PupilComparison"
+  },
+  {
+    "id" : "Pupil-Diameter-Comparison",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-Diameter-Comparison",
+    "version" : "0.1.0",
+    "name" : "Pupil-Diameter-Comparison"
+  },
+  {
+    "id" : "Pupil-function-confounders",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-function-confounders",
+    "version" : "0.1.0",
+    "name" : "PupilFunctionConfounders"
+  },
+  {
+    "id" : "lens-types",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types",
+    "version" : "0.1.0",
+    "name" : "LensTypes"
+  },
+  {
+    "id" : "observation-visual-acuity-methods",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods",
+    "version" : "0.1.0",
+    "name" : "OphthalmologyVisualAcuityMethods"
+  },
+  {
+    "id" : "optotype-presentation",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotype-presentation.html",
+    "version" : "0.1.0",
+    "name" : "OptotypePresentation"
+  },
+  {
+    "id" : "optotypes",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes",
+    "version" : "0.1.0",
+    "name" : "Optotypes"
+  },
+  {
+    "id" : "pinhole-occluder-usage",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html",
+    "version" : "0.1.0",
+    "name" : "PinholeOccluderUsage"
+  },
+  {
+    "id" : "pupi-testing-active-substances",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pupi-testing-active-substances",
+    "version" : "0.1.0",
+    "name" : "PupiTestingActiveSubstances"
+  },
+  {
+    "id" : "right-left-both-eyes",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-both-eyes.html",
+    "version" : "0.1.0",
+    "name" : "ValueSet-right-left-both-eyes"
+  },
+  {
+    "id" : "right-left-eyes",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-eyes.html",
+    "version" : "0.1.0",
+    "name" : "ValueSet-right-left-eyes"
+  },
+  {
+    "id" : "room-brightness-levels",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-room-brightness-levels",
+    "version" : "0.1.0",
+    "name" : "RoomBrightnessLevels"
+  },
+  {
+    "id" : "special-va-testing-parameters",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-special-va-testing-parameters",
+    "version" : "0.1.0",
+    "name" : "Special VA testing Parameters"
+  },
+  {
+    "id" : "visual-acuity-categorical-values",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values.html",
+    "version" : "0.1.0",
+    "name" : "VisualAcuityCategoricalValues"
+  },
+  {
+    "id" : "visual-acuity-correction-methods",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods",
+    "version" : "0.1.0",
+    "name" : "VisualAcuityCorrectionMethods"
+  },
+  {
+    "id" : "visual-acuity-correction-methods-with-sl",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods-with-sl",
+    "version" : "0.1.0",
+    "name" : "VisualAcuityCorrectionMethods"
+  },
+  {
+    "id" : "visual-acuity-test-distance",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance",
+    "version" : "0.1.0",
+    "name" : "VisualAcuityTestDistance"
+  },
+  {
+    "id" : "visual-acuity-quantity-units",
+    "type" : "ValueSet",
+    "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units",
+    "version" : "0.1.0",
+    "name" : "VisualAcuityQuantityUnits"
+  }
+]

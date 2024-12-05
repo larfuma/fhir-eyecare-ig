@@ -1,0 +1,58 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "qualifiers",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Additional Body Structure Qualifiers</h2>\n      <div>\n        <p>Additional qualifiers</p>\n      </div>\n    </div>"
+  },
+  "url" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers",
+  "version" : "0.1.0",
+  "name" : "BodyStructureQualifiers",
+  "title" : "Body Structure Qualifiers",
+  "status" : "draft",
+  "date" : "2021-08-03",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Additional body site qualifiers",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "HL7",
+  "caseSensitive" : true,
+  "compositional" : false,
+  "versionNeeded" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "superotemporal",
+    "display" : "Superotemporal",
+    "definition" : "Superotemporal"
+  },
+  {
+    "code" : "superonasal",
+    "display" : "Superonasal",
+    "definition" : "Superonasal"
+  },
+  {
+    "code" : "inferotemporal",
+    "display" : "Inferotemporal",
+    "definition" : "Inferotemporal"
+  },
+  {
+    "code" : "inferonasal",
+    "display" : "Inferonasal",
+    "definition" : "Inferonasal"
+  }]
+}

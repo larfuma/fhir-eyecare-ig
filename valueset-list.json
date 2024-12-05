@@ -1,0 +1,285 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/body-site-eye",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyBodySiteEye",
+      "title" : "Ophthalmic anatomical location",
+      "description" : "Describes the ophthalmic structure being referenced",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/conditions",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyConditionCodesValueSet",
+      "title" : "Ophthalmology Condition ICD10 and SNOMED codes ValueSet",
+      "description" : "Clinical findings for the eye region.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/iop-methods",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyIOPMethods",
+      "title" : "Intraocular pressure (IOP) method valueset",
+      "description" : "Describes the various methods of capturing IOP that relate to the IOP Observation profile",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods"
+      ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observable-entities",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyObservableEntitiesValueSet",
+      "title" : "Ophthalmology observations (SNOMED)",
+      "description" : "Concept descends from 363926002 - Eye/vision observable (observable entity)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-final-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Describes whether a recorded observation is either final or amended",
+      "systems" : ["http://hl7.org/fhir/observation-status"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-macula",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyOCTMaculaObservableEntitiesValueSet",
+      "title" : "OCT Macula Observable Entities ValueSet",
+      "description" : "OCT Macula observations coding",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-rnfl",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyOCTRNFLObservableEntitiesValueSet",
+      "title" : "OCT RNFL Observable Entities ValueSet",
+      "description" : "OCT RNFL observations coding",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyVisualAcuityObservableEntitiesValueSet",
+      "title" : "Visual acuity method valueset (SNOMED)",
+      "description" : "Describes the visual acuity observation result, where concept descends from 363983007 (Visual acuity)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-field",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyVisualFieldObservableEntitiesValueSet",
+      "title" : "Visual Field Observable Entities ValueSet",
+      "description" : "Visual field observation coding",
+      "systems" : [
+        "http://terminology.hl7.org/uv/eyecare/CodeSystem/visual-field-observations",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/procedures",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyProceduresValueSet",
+      "title" : "Ophthalmology Procedures Valueset",
+      "description" : "This ValueSet represents procedure codes for clinical and billing purposes.",
+      "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/qualifiers",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "BodyStructureQualifiers",
+      "title" : "Ophthalmic anatomical location qualifiers",
+      "description" : "Describes whether a recorded observation is either final or amended",
+      "systems" : [
+        "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-Diameter-Comparison",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Pupil-Diameter-Comparison",
+      "title" : "Pupil-Diameter-Comparison",
+      "description" : "A ValueSet containing codes for various pupillomotor function observations.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-function-confounders",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PupilFunctionConfounders",
+      "title" : "Pupil Function Confounders",
+      "description" : "ValueSet including codes that represent confounders due to pupil function that may affect visual acuity measurements.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "LensTypes",
+      "title" : "Lens Types",
+      "description" : "This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyVisualAcuityMethods",
+      "title" : "Visual Acuity Measurement Methods valueset",
+      "description" : "Describes the various charts that can be used to assess visual acuity where concept descends from 400912000 (Visual acuity test equipment (physical object))",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotype-presentation.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OptotypePresentation",
+      "title" : "Optotype Presentation ValueSet",
+      "description" : "A ValueSet that includes codes representing the type of optotype presentation used during visual acuity testing.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Optotypes",
+      "title" : "Optotype ValueSet",
+      "description" : "A ValueSet that includes codes representing optotype used during visual acuity testing.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-Codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://loinc.org",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PinholeOccluderUsage",
+      "title" : "Pinhole Occluder Usage Values",
+      "description" : "This ValueSet contains SNOMED CT codes to represent whether a pinhole occluder was used during a visual acuity measurement.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pupi-testing-active-substances",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PupiTestingActiveSubstances",
+      "title" : "Pupil Testing Active Substances",
+      "description" : "This ValueSet contains codes to represent active substances used in pharmacological testing during pupil diameter measurements.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-both-eyes.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ValueSet-right-left-both-eyes",
+      "title" : "ValueSet-right-left-both-eyes",
+      "description" : "ValueSet containing laterality codes for ophthalmic observations which may contain information on one or both eyes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-eyes.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ValueSet-right-left-eyes",
+      "title" : "ValueSet-right-left-eyes",
+      "description" : "ValueSet containing laterality codes for ophthalmic observations which should only contain information on either the right or left eye, not both",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-room-brightness-levels",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoomBrightnessLevels",
+      "title" : "Room Brightness Levels",
+      "description" : "This ValueSet contains codes to represent the brightness of the room where a test was performed.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-special-va-testing-parameters",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Special VA testing Parameters",
+      "title" : "Special VA testing Parameters",
+      "description" : "This ValueSet contains codes to represent whether special testing parameters, such as a pinhole occluder or glare light, were used during a visual acuity measurement.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VisualAcuityCategoricalValues",
+      "title" : "Visual Acuity Categorical Values",
+      "description" : "ValueSet containing categorical values for visual acuity observations.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VisualAcuityCorrectionMethods",
+      "title" : "Visual Acuity Correction Methods",
+      "description" : "Methods of correction used during a visual acuity test.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods-with-sl",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VisualAcuityCorrectionMethods",
+      "title" : "Visual Acuity Correction Methods",
+      "description" : "Methods of correction used during a visual acuity test.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VisualAcuityTestDistance",
+      "title" : "Visual Acuity Test Distance",
+      "description" : "Codes representing the distances at which visual acuity tests are performed.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VisualAcuityQuantityUnits",
+      "title" : "Visual Acuity Quantity Units",
+      "description" : "Units of Measure of Visual acuity",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC"
+      ]
+    }
+  ]
+}

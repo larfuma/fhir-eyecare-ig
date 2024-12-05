@@ -1,0 +1,95 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "qualifiers",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet qualifiers</b></p><a name=\"qualifiers\"> </a><a name=\"hcqualifiers\"> </a><a name=\"qualifiers-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left</td></tr><tr><td><a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right</td></tr><tr><td><a href=\"http://snomed.info/id/51440002\">51440002</a></td><td>Bilateral</td></tr><tr><td><a href=\"http://snomed.info/id/261183002\">261183002</a></td><td>Upper</td></tr><tr><td><a href=\"http://snomed.info/id/261122009\">261122009</a></td><td>Lower</td></tr><tr><td><a href=\"http://snomed.info/id/264217000\">264217000</a></td><td>Superior</td></tr><tr><td><a href=\"http://snomed.info/id/261089000\">261089000</a></td><td>Inferior</td></tr><tr><td><a href=\"http://snomed.info/id/255551008\">255551008</a></td><td>Posterior</td></tr><tr><td><a href=\"http://snomed.info/id/255549009\">255549009</a></td><td>Anterior</td></tr><tr><td><a href=\"http://snomed.info/id/255570003\">255570003</a></td><td>Temporal</td></tr><tr><td><a href=\"http://snomed.info/id/260540009\">260540009</a></td><td>Nasal</td></tr></table></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 272485000 (Clockface position)</li><li>Include all codes defined in <a href=\"CodeSystem-qualifiers.html\"><code>http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers</code></a></li></ul></div>"
+  },
+  "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/qualifiers",
+  "version" : "0.1.0",
+  "name" : "BodyStructureQualifiers",
+  "title" : "Ophthalmic anatomical location qualifiers",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-05-01",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Describes whether a recorded observation is either final or amended",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "7771000",
+        "display" : "Left"
+      },
+      {
+        "code" : "24028007",
+        "display" : "Right"
+      },
+      {
+        "code" : "51440002",
+        "display" : "Bilateral"
+      },
+      {
+        "code" : "261183002",
+        "display" : "Upper"
+      },
+      {
+        "code" : "261122009",
+        "display" : "Lower"
+      },
+      {
+        "code" : "264217000",
+        "display" : "Superior"
+      },
+      {
+        "code" : "261089000",
+        "display" : "Inferior"
+      },
+      {
+        "code" : "255551008",
+        "display" : "Posterior"
+      },
+      {
+        "code" : "255549009",
+        "display" : "Anterior"
+      },
+      {
+        "code" : "255570003",
+        "display" : "Temporal"
+      },
+      {
+        "code" : "260540009",
+        "display" : "Nasal"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "272485000"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers"
+    }]
+  }
+}

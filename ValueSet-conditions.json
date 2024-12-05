@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "conditions",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet conditions</b></p><a name=\"conditions\"> </a><a name=\"hcconditions\"> </a><a name=\"conditions-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 371409005 (Disorder of eye region (disorder))</li></ul></div>"
+  },
+  "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/conditions",
+  "version" : "0.1.0",
+  "name" : "OphthalmologyConditionCodesValueSet",
+  "title" : "Ophthalmology Condition ICD10 and SNOMED codes ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-05-01",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Clinical findings for the eye region.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "371409005"
+      }]
+    }]
+  }
+}

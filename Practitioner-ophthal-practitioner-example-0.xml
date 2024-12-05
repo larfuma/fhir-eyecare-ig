@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="ophthal-practitioner-example-0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner ophthal-practitioner-example-0</b></p><a name="ophthal-practitioner-example-0"> </a><a name="hcophthal-practitioner-example-0"> </a><a name="ophthal-practitioner-example-0-en-US"> </a><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/9941339108, <code>http://www.acme.org/practitioners</code>/25456</p><p><b>name</b>: Ronald Bone </p><p><b>address</b>: 1003 Healthcare Drive Amherst MA 01002 (home)</p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org.fhir/sid/us-npi"/>
+    <value value="9941339108"/>
+  </identifier>
+  <identifier>
+    <system value="http://www.acme.org/practitioners"/>
+    <value value="25456"/>
+  </identifier>
+  <name>
+    <family value="Bone"/>
+    <given value="Ronald"/>
+    <prefix value="Dr"/>
+  </name>
+  <address>
+    <use value="home"/>
+    <line value="1003 Healthcare Drive"/>
+    <city value="Amherst"/>
+    <state value="MA"/>
+    <postalCode value="01002"/>
+  </address>
+</Practitioner>

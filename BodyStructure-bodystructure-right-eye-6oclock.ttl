@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-right-eye-6oclock> a fhir:BodyStructure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bodystructure-right-eye-6oclock"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BodyStructure bodystructure-right-eye-6oclock</b></p><a name=\"bodystructure-right-eye-6oclock\"> </a><a name=\"hcbodystructure-right-eye-6oclock\"> </a><a name=\"bodystructure-right-eye-6oclock-en-US\"> </a><p><b>location</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Retina of right eye</span></p><p><b>locationQualifier</b>: <span title=\"Codes:{http://snomed.info/sct 260337008}\">6 o'clock position</span></p><p><b>patient</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p></div>"
+  ] ; # 
+  fhir:location [
+     fhir:coding ( [
+       a sct:5597008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5597008" ] ;
+       fhir:display [ fhir:v "Retina of right eye" ]
+     ] )
+  ] ; # 
+  fhir:locationQualifier ( [
+     fhir:coding ( [
+       a sct:260337008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "260337008" ] ;
+       fhir:display [ fhir:v "6 o'clock position" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/ophthal-patient-example-0> ;
+     fhir:reference [ fhir:v "Patient/ophthal-patient-example-0" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

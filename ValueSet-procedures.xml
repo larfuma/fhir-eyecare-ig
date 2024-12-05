@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="procedures"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet procedures</b></p><a name="procedures"> </a><a name="hcprocedures"> </a><a name="procedures-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 371548008 (Procedure on eye region (procedure))</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 371560009 (Procedure on visual system (procedure))</li><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.1.0/CodeSystem-CPT.html"><code>http://www.ama-assn.org/go/cpt</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>92081</td><td>Scanning computerized ophthalmic diagnostic imaging, posterior segment, with interpretation and report, unilateral or bilateral; optic nerve</td></tr><tr><td>92082</td><td>Visual field examination, unilateral or bilateral, with interpretation and report; intermediate examination (e.g., at least 2 isopters on Goldmann perimeter, or semiquantitative, automated suprathreshold screening program, Humphrey suprathreshold automatic diagnostic test, Octopus program 33)</td></tr><tr><td>92083</td><td>Visual field examination, unilateral or bilateral, with interpretation and report; extended examination (e.g., Goldmann visual fields with at least 3 isopters plotted and static determination within the central 30 degrees, or quantitative, automated threshold perimetry, Octopus program G-1, 32, or 42, Humphrey visual field analyzer full threshold programs 30-2, 24-2, or 30 / 60-2)</td></tr><tr><td>92133</td><td>Scanning computerized ophthalmic diagnostic imaging, posterior segment, with interpretation and report, unilateral or bilateral; optic nerve.</td></tr><tr><td>92134</td><td>Scanning computerized ophthalmic diagnostic imaging, posterior segment, with interpretation and report, unilateral or bilateral; retina</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/ValueSet/procedures"/>
+  <version value="0.1.0"/>
+  <name value="OphthalmologyProceduresValueSet"/>
+  <title value="Ophthalmology Procedures Valueset"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2019-05-01"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet represents procedure codes for clinical and billing purposes."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="371548008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="371560009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://www.ama-assn.org/go/cpt"/>
+      <concept>
+        <code value="92081"/>
+        <display value="Scanning computerized ophthalmic diagnostic imaging, posterior segment, with interpretation and report, unilateral or bilateral; optic nerve"/>
+      </concept>
+      <concept>
+        <code value="92082"/>
+        <display value="Visual field examination, unilateral or bilateral, with interpretation and report; intermediate examination (e.g., at least 2 isopters on Goldmann perimeter, or semiquantitative, automated suprathreshold screening program, Humphrey suprathreshold automatic diagnostic test, Octopus program 33)"/>
+      </concept>
+      <concept>
+        <code value="92083"/>
+        <display value="Visual field examination, unilateral or bilateral, with interpretation and report; extended examination (e.g., Goldmann visual fields with at least 3 isopters plotted and static determination within the central 30 degrees, or quantitative, automated threshold perimetry, Octopus program G-1, 32, or 42, Humphrey visual field analyzer full threshold programs 30-2, 24-2, or 30 / 60-2)"/>
+      </concept>
+      <concept>
+        <code value="92133"/>
+        <display value="Scanning computerized ophthalmic diagnostic imaging, posterior segment, with interpretation and report, unilateral or bilateral; optic nerve."/>
+      </concept>
+      <concept>
+        <code value="92134"/>
+        <display value="Scanning computerized ophthalmic diagnostic imaging, posterior segment, with interpretation and report, unilateral or bilateral; retina"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

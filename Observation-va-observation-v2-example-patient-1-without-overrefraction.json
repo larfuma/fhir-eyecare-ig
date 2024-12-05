@@ -1,0 +1,136 @@
+{
+  "resourceType" : "Observation",
+  "id" : "va-observation-v2-example-patient-1-without-overrefraction",
+  "meta" : {
+    "profile" : ["https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation va-observation-v2-example-patient-1-without-overrefraction</b></p><a name=\"va-observation-v2-example-patient-1-without-overrefraction\"> </a><a name=\"hcva-observation-v2-example-patient-1-without-overrefraction\"> </a><a name=\"va-observation-v2-example-patient-1-without-overrefraction-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 260246004}\">Visual Acuity finding</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>effective</b>: 2023-10-31 09:00:00+0000</p><p><b>value</b>: 6 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span>/18 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span></p><p><b>method</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods chart}\">Visual Acuity Chart</span></p><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Refractive-Correction-Type-Glasses</blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org LL6028-6}\">Refraction Type</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 50121007}\">Eye glasses</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Lens-in-front-of-right-eye-spectacle</blockquote><blockquote><p><b>LensDuringVATestSpecification</b></p><ul><li>type: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type 421591000}\">Spectacle Lens</span></li><li>sphere: 1.00</li><li>cylinder: -0.50</li><li>axis: 90</li></ul></blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29073-4}\">Right Eye position</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Test-Distance</blockquote><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252124009}\">Test distance</span></p><p><b>value</b>: 6 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Optotype-used</blockquote><p><b>code</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC Optotype}\">Optotype</span></p><p><b>value</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes LA25497-1}\">Numbers</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "260246004",
+      "display" : "Visual Acuity finding"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/123"
+  },
+  "effectiveDateTime" : "2023-10-31T09:00:00+00:00",
+  "valueRatio" : {
+    "numerator" : {
+      "value" : 6,
+      "unit" : "m",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "m"
+    },
+    "denominator" : {
+      "value" : 18,
+      "unit" : "m",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "m"
+    }
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "362502000",
+      "display" : "Entire right eye (body structure)"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods",
+      "code" : "chart",
+      "display" : "Visual Acuity Chart"
+    }]
+  },
+  "component" : [{
+    "id" : "Refractive-Correction-Type-Glasses",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LL6028-6",
+        "display" : "Refraction Type"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "50121007",
+        "display" : "Eye glasses"
+      }]
+    }
+  },
+  {
+    "id" : "Lens-in-front-of-right-eye-spectacle",
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type",
+            "code" : "421591000",
+            "display" : "Spectacle Lens"
+          }]
+        }
+      },
+      {
+        "url" : "sphere",
+        "valueDecimal" : 1.00
+      },
+      {
+        "url" : "cylinder",
+        "valueDecimal" : -0.50
+      },
+      {
+        "url" : "axis",
+        "valueInteger" : 90
+      }],
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29073-4",
+        "display" : "Right Eye position"
+      }]
+    }
+  },
+  {
+    "id" : "Test-Distance",
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "252124009",
+        "display" : "Test distance"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 6,
+      "unit" : "m",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "m"
+    }
+  },
+  {
+    "id" : "Optotype-used",
+    "code" : {
+      "coding" : [{
+        "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "code" : "Optotype",
+        "display" : "Optotype"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes",
+        "code" : "LA25497-1",
+        "display" : "Numbers"
+      }]
+    }
+  }]
+}

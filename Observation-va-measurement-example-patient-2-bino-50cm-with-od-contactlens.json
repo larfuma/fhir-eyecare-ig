@@ -1,0 +1,134 @@
+{
+  "resourceType" : "Observation",
+  "id" : "va-measurement-example-patient-2-bino-50cm-with-od-contactlens",
+  "meta" : {
+    "profile" : ["https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation va-measurement-example-patient-2-bino-50cm-with-od-contactlens</b></p><a name=\"va-measurement-example-patient-2-bino-50cm-with-od-contactlens\"> </a><a name=\"hcva-measurement-example-patient-2-bino-50cm-with-od-contactlens\"> </a><a name=\"va-measurement-example-patient-2-bino-50cm-with-od-contactlens-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 260246004}\">Visual Acuity finding</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>effective</b>: 2023-10-31 09:00:00+0000</p><p><b>value</b>: 0.8(unit Decimal from https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units)<span style=\"background: LightGoldenRodYellow\"> (Details: visual-acuity-quantity-units  codeDecimal = 'Decimal')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362508001}\">Both eyes, entire (body structure)</span></p><p><b>method</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods 418295001}\">Near Card</span></p><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Contact-lens-in-front-of-right-eye</blockquote><blockquote><p><b>LensDuringVATestSpecification</b></p><ul><li>type: <span title=\"Codes:{http://snomed.info/sct 57368009}\">Contact Lens</span></li><li>diameter: 14</li><li>power: -2.25</li><li>backCurve: 8.3</li></ul></blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29073-4}\">Right Eye position</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 57368009}\">Contact Lens</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Uncorrected-left-eye</blockquote><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29074-2}\">Left Eye position</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 420050001}\">Uncorrected visual acuity</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Test-Distance</blockquote><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252124009}\">Test distance</span></p><p><b>value</b>: 0.5 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Optotype-used</blockquote><p><b>code</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC Optotype}\">Optotype</span></p><p><b>value</b>: <span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes LA25497-1}\">Numbers</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "260246004",
+      "display" : "Visual Acuity finding"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/123"
+  },
+  "effectiveDateTime" : "2023-10-31T09:00:00+00:00",
+  "valueQuantity" : {
+    "value" : 0.8,
+    "system" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units",
+    "code" : "Decimal"
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "362508001",
+      "display" : "Both eyes, entire (body structure)"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods",
+      "code" : "418295001",
+      "display" : "Near Card"
+    }]
+  },
+  "component" : [{
+    "id" : "Contact-lens-in-front-of-right-eye",
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "57368009",
+            "display" : "Contact Lens"
+          }]
+        }
+      },
+      {
+        "url" : "diameter",
+        "valueDecimal" : 14
+      },
+      {
+        "url" : "power",
+        "valueDecimal" : -2.25
+      },
+      {
+        "url" : "backCurve",
+        "valueDecimal" : 8.3
+      }],
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29073-4",
+        "display" : "Right Eye position"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "57368009",
+        "display" : "Contact Lens"
+      }]
+    }
+  },
+  {
+    "id" : "Uncorrected-left-eye",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29074-2",
+        "display" : "Left Eye position"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "420050001",
+        "display" : "Uncorrected visual acuity"
+      }]
+    }
+  },
+  {
+    "id" : "Test-Distance",
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "252124009",
+        "display" : "Test distance"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0.5,
+      "unit" : "m",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "m"
+    }
+  },
+  {
+    "id" : "Optotype-used",
+    "code" : {
+      "coding" : [{
+        "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "code" : "Optotype",
+        "display" : "Optotype"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes",
+        "code" : "LA25497-1",
+        "display" : "Numbers"
+      }]
+    }
+  }]
+}

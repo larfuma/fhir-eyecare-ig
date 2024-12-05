@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/iop-methods> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "iop-methods"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Methods to measure Intraocular Pressure</h2>\n      <div>\n        <p>Additional coding for IOP observation method</p>\n      </div>\n    </div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IOPMethods"] ; # 
+  fhir:title [ fhir:v "IOP Methods Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2021-08-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "IOP additional method types"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "HL7"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:versionNeeded [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "rebound-tonometry" ] ;
+     fhir:display [ fhir:v "Rebound tonometry" ] ;
+     fhir:definition [ fhir:v "Rebound tonometry" ]
+  ] [
+     fhir:code [ fhir:v "rebound-tonometry-remote" ] ;
+     fhir:display [ fhir:v "Rebound tonometry remote" ] ;
+     fhir:definition [ fhir:v "Rebound tonometry remote" ]
+  ] [
+     fhir:code [ fhir:v "contact-lens-tonometry" ] ;
+     fhir:display [ fhir:v "Contact lens tonometry" ] ;
+     fhir:definition [ fhir:v "Contact lens tonometry" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

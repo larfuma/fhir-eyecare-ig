@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="diagnostic-report-visual-field-test-le-0"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/diagnostic-report-visual-field"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnostic-report-visual-field-test-le-0</b></p><a name="diagnostic-report-visual-field-test-le-0"> </a><a name="hcdiagnostic-report-visual-field-test-le-0"> </a><a name="diagnostic-report-visual-field-test-le-0-en-US"> </a><h2><span title="Codes:{http://snomed.info/sct 103752008}">Perimetry</span> (<span title="Codes:{http://snomed.info/sct 394594003}">Ophthalmology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</td></tr><tr><td>When For</td><td>2019-02-03 19:43:30+0000</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-vf-mean-deviation-le-0.html"><span title="Codes:{http://snomed.info/sct 422859007}">Mean deviation</span></a> (<span title="Codes:"></span>)</td><td>5.78 decibels</td><td>Final</td><td>2013-06-27 17:04:20+0400</td></tr><tr><td><a href="Observation-vf-pattern-standard-deviation-le-0.html"><span title="Codes:{http://snomed.info/sct 421362004}">Pattern standard deviation</span></a> (<span title="Codes:"></span>)</td><td>4.8 decibels</td><td>Final</td><td>2013-06-27 17:04:20+0400</td></tr><tr><td><a href="Observation-vf-test-duration-le-0.html"><span title="Codes:{http://snomed.info/sct 252129004}">Test duration</span></a> (<span title="Codes:"></span>)</td><td>300 seconds</td><td>Final</td><td>2013-06-27 17:04:20+0400</td></tr><tr><td><a href="Observation-vf-fixation-loss-le-0.html"><span title="Codes:{http://hl7.org/fhir/uv/eyecare/CodeSystem/visual-field-observations 400204}">Fixation loss</span></a> (<span title="Codes:"></span>)</td><td>2/15</td><td>Final</td><td>2013-06-27 17:04:20+0400</td></tr><tr><td><a href="Observation-vf-false-positives-le-0.html"><span title="Codes:{http://hl7.org/fhir/uv/eyecare/CodeSystem/visual-field-observations 400205}">False positive ratio</span></a> (<span title="Codes:"></span>)</td><td>1/100</td><td>Final</td><td>2013-06-27 17:04:20+0400</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394594003"/>
+      <display value="Ophthalmology"/>
+    </coding>
+    <text value="Ophthalmology"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103752008"/>
+      <display value="Perimetry"/>
+    </coding>
+    <text value="Perimetry"/>
+  </code>
+  <subject>
+    <reference value="Patient/ophthal-patient-example-0"/>
+  </subject>
+  <effectiveDateTime value="2019-02-03T19:43:30.000Z"/>
+  <result>
+    <reference value="Observation/vf-mean-deviation-le-0"/>
+  </result>
+  <result>
+    <reference value="Observation/vf-pattern-standard-deviation-le-0"/>
+  </result>
+  <result>
+    <reference value="Observation/vf-test-duration-le-0"/>
+  </result>
+  <result>
+    <reference value="Observation/vf-fixation-loss-le-0"/>
+  </result>
+  <result>
+    <reference value="Observation/vf-false-positives-le-0"/>
+  </result>
+  <media>
+    <link>
+      <reference value="Media/visual-field-le-0"/>
+    </link>
+  </media>
+</DiagnosticReport>

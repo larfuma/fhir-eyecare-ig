@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="va-measurement-experiment"/>
+  <meta>
+    <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation va-measurement-experiment</b></p><a name="va-measurement-experiment"> </a><a name="hcva-measurement-experiment"> </a><a name="va-measurement-experiment-en-US"> </a><p><b>code</b>: <span title="Codes:">17</span></p><p><b>value</b>: 0.6</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 1290043002}">Entire right eye proper</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29073-4}">Right Eye position</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 57368009}">Contact lenses, device</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 370115009}">Special Concept</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 257492003}">Pinhole Occluder</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 252124009}">Test distance</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA32577-1}">Far</span></p></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <code value="17"/>
+    </coding>
+  </code>
+  <valueQuantity>
+    <value value="0.6"/>
+  </valueQuantity>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1290043002"/>
+      <display value="Entire right eye proper"/>
+    </coding>
+  </bodySite>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29073-4"/>
+        <display value="Right Eye position"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="57368009"/>
+        <display value="Contact lenses, device"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="370115009"/>
+        <display value="Special Concept"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="257492003"/>
+        <display value="Pinhole Occluder"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="252124009"/>
+        <display value="Test distance"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA32577-1"/>
+        <display value="Far"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

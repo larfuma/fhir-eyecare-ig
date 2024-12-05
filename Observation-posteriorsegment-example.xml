@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="posteriorsegment-example"/>
+  <meta>
+    <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation posteriorsegment-example</b></p><a name="posteriorsegment-example"> </a><a name="hcposteriorsegment-example"> </a><a name="posteriorsegment-example-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 70944-4}">Eye posterior segment narrative</span></p><p><b>subject</b>: <a href="Patient-ophthal-patient-example-0.html">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>value</b>: Retinal Tear at 6 o'clock</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 362502000}">Entire right eye (body structure)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="70944-4"/>
+      <display value="Eye posterior segment narrative"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ophthal-patient-example-0"/>
+  </subject>
+  <valueString value="Retinal Tear at 6 o'clock"/>
+  <bodySite>
+    <extension url="http://hl7.org/fhir/StructureDefinition/bodySite">
+      <valueReference>
+        <reference value="BodyStructure/bodystructure-right-eye-6oclock"/>
+      </valueReference>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="362502000"/>
+      <display value="Entire right eye (body structure)"/>
+    </coding>
+  </bodySite>
+</Observation>

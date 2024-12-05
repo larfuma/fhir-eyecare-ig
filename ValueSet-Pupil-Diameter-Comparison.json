@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Pupil-Diameter-Comparison",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Pupil-Diameter-Comparison</b></p><a name=\"Pupil-Diameter-Comparison\"> </a><a name=\"hcPupil-Diameter-Comparison\"> </a><a name=\"Pupil-Diameter-Comparison-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html\"><code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-right-pupil-larger-than-left\">anisocoria-right-pupil-larger-than-left</a></td><td>Anisocoria right pupil larger than left pupil</td><td>A finding of Anisocoria with the right pupil having a larger diameter than the left pupil.</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-left-pupil-larger-than-right\">anisocoria-left-pupil-larger-than-right</a></td><td>Anisocoria left pupil larger than right pupil</td><td>A finding of Anisocoria with the left pupil having a larger diameter than the right pupil.</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/301943000\">301943000</a></td><td>Pupils equal (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-Diameter-Comparison",
+  "version" : "0.1.0",
+  "name" : "Pupil-Diameter-Comparison",
+  "title" : "Pupil-Diameter-Comparison",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-11-10",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "A ValueSet containing codes for various pupillomotor function observations.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+      "concept" : [{
+        "code" : "anisocoria-right-pupil-larger-than-left",
+        "display" : "Anisocoria right pupil larger than left pupil"
+      },
+      {
+        "code" : "anisocoria-left-pupil-larger-than-right",
+        "display" : "Anisocoria left pupil larger than right pupil"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "301943000",
+        "display" : "Pupils equal (finding)"
+      }]
+    }]
+  }
+}

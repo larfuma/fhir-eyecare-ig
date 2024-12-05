@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="visual-field-observations"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Visual field test parameter obsevations</h2>
+    </div>
+  </text>
+  <url value="http://terminolgy.hl7.org/uv/eyecare/CodeSystem/visual-field-observations"/>
+  <version value="0.1.0"/>
+  <name value="OphthalmologyVisualFieldObservations"/>
+  <title value="Visual field test parameter observations"/>
+  <status value="draft"/>
+  <date value="2021-08-07"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Visual field observation additional codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="HL7"/>
+  <caseSensitive value="true"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="400204"/>
+    <display value="Fixation loss"/>
+    <definition value="Fixation loss occurs when the patient reports seeing a stimulus that is presented in the predicted area of the physiologic blind spot"/>
+  </concept>
+  <concept>
+    <code value="400202"/>
+    <display value="False positive percent"/>
+    <definition value="Percentage of false positive responses"/>
+  </concept>
+  <concept>
+    <code value="400203"/>
+    <display value="False negative percent"/>
+    <definition value="Percentage of false negative reponses"/>
+  </concept>
+  <concept>
+    <code value="400205"/>
+    <display value="False positive ratio"/>
+    <definition value="Ratio of false positive responses to total responses"/>
+  </concept>
+  <concept>
+    <code value="400206"/>
+    <display value="False negative ratio"/>
+    <definition value="Ratio of false negative responses to total responses"/>
+  </concept>
+</CodeSystem>

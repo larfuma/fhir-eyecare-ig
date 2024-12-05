@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="bodystructure-right-eye-6oclock"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: BodyStructure bodystructure-right-eye-6oclock</b></p><a name="bodystructure-right-eye-6oclock"> </a><a name="hcbodystructure-right-eye-6oclock"> </a><a name="bodystructure-right-eye-6oclock-en-US"> </a><p><b>location</b>: <span title="Codes:{http://snomed.info/sct 5597008}">Retina of right eye</span></p><p><b>locationQualifier</b>: <span title="Codes:{http://snomed.info/sct 260337008}">6 o'clock position</span></p><p><b>patient</b>: <a href="Patient-ophthal-patient-example-0.html">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p></div>
+  </text>
+  <location>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5597008"/>
+      <display value="Retina of right eye"/>
+    </coding>
+  </location>
+  <locationQualifier>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="260337008"/>
+      <display value="6 o'clock position"/>
+    </coding>
+  </locationQualifier>
+  <patient>
+    <reference value="Patient/ophthal-patient-example-0"/>
+  </patient>
+</BodyStructure>
