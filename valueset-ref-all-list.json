@@ -1,0 +1,802 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodystructure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMorphologicAbnormalities",
+      "title" : "SNOMED CT Morphologic Abnormalities",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.142"],
+      "sources" : ["2.16.840.1.113883.4.642.3.142"],
+      "uses" : {
+      },
+      "StructureDefinition-body-structure-eye.html" : "Ocular anatomical location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-diagnostic-report-oct-macula.html" : "OCT macula Diagnostic Report",
+      "StructureDefinition-diagnostic-report-base.html" : "Ophthalmic diagnostic test report",
+      "StructureDefinition-PupillomotoricDiagnosticReport.html" : "PupillomotoricDiagnosticReport",
+      "StructureDefinition-diagnostic-report-oct-rnfl.html" : "OCT RNFL Diagnostic Report",
+      "StructureDefinition-diagnostic-report-visual-field.html" : "VF Diagnostic Report "
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-diagnostic-report-oct-macula.html" : "OCT macula Diagnostic Report",
+      "StructureDefinition-diagnostic-report-base.html" : "Ophthalmic diagnostic test report",
+      "StructureDefinition-PupillomotoricDiagnosticReport.html" : "PupillomotoricDiagnosticReport",
+      "StructureDefinition-diagnostic-report-oct-rnfl.html" : "OCT RNFL Diagnostic Report",
+      "StructureDefinition-diagnostic-report-visual-field.html" : "VF Diagnostic Report "
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-diagnostic-report-oct-macula.html" : "OCT macula Diagnostic Report",
+      "StructureDefinition-diagnostic-report-base.html" : "Ophthalmic diagnostic test report",
+      "StructureDefinition-PupillomotoricDiagnosticReport.html" : "PupillomotoricDiagnosticReport",
+      "StructureDefinition-diagnostic-report-oct-rnfl.html" : "OCT RNFL Diagnostic Report",
+      "StructureDefinition-diagnostic-report-visual-field.html" : "VF Diagnostic Report "
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-diagnostic-report-oct-rnfl.html" : "OCT RNFL Diagnostic Report",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations",
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses",
+      "StructureDefinition-diagnostic-report-oct-macula.html" : "OCT macula Diagnostic Report",
+      "StructureDefinition-diagnostic-report-base.html" : "Ophthalmic diagnostic test report",
+      "StructureDefinition-PupillomotoricDiagnosticReport.html" : "PupillomotoricDiagnosticReport",
+      "StructureDefinition-body-structure-eye.html" : "Ocular anatomical location",
+      "StructureDefinition-diagnostic-report-visual-field.html" : "VF Diagnostic Report ",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCDiagnosticReportCodes",
+      "title" : "LOINC Diagnostic Report Codes",
+      "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.233"],
+      "sources" : ["2.16.840.1.113883.4.642.3.233"],
+      "uses" : {
+      },
+      "StructureDefinition-diagnostic-report-oct-macula.html" : "OCT macula Diagnostic Report",
+      "StructureDefinition-diagnostic-report-base.html" : "Ophthalmic diagnostic test report",
+      "StructureDefinition-PupillomotoricDiagnosticReport.html" : "PupillomotoricDiagnosticReport",
+      "StructureDefinition-diagnostic-report-oct-rnfl.html" : "OCT RNFL Diagnostic Report",
+      "StructureDefinition-diagnostic-report-visual-field.html" : "VF Diagnostic Report "
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/body-site-eye",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyBodySiteEye",
+      "title" : "Ophthalmic anatomical location",
+      "description" : "Describes the ophthalmic structure being referenced",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-body-structure-eye.html" : "Ocular anatomical location"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/conditions",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyConditionCodesValueSet",
+      "title" : "Ophthalmology Condition ICD10 and SNOMED codes ValueSet",
+      "description" : "Clinical findings for the eye region.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-base.html" : "Ophthalmic Diagnoses"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/iop-methods",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyIOPMethods",
+      "title" : "Intraocular pressure (IOP) method valueset",
+      "description" : "Describes the various methods of capturing IOP that relate to the IOP Observation profile",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observable-entities",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyObservableEntitiesValueSet",
+      "title" : "Ophthalmology observations (SNOMED)",
+      "description" : "Concept descends from 363926002 - Eye/vision observable (observable entity)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-final-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Describes whether a recorded observation is either final or amended",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-iop.html" : "Intraocular Pressure (IOP)",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations",
+      "StructureDefinition-observation-visual-field.html" : "VF Observations",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative",
+      "StructureDefinition-observation-base.html" : "Base ophthalmic Observation profile",
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-macula",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyOCTMaculaObservableEntitiesValueSet",
+      "title" : "OCT Macula Observable Entities ValueSet",
+      "description" : "OCT Macula observations coding",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-oct-macula.html" : "OCT macula Observations"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-rnfl",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyOCTRNFLObservableEntitiesValueSet",
+      "title" : "OCT RNFL Observable Entities ValueSet",
+      "description" : "OCT RNFL observations coding",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-oct-rnfl.html" : "OCT RFNL Observations"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-acuity",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyVisualAcuityObservableEntitiesValueSet",
+      "title" : "Visual acuity method valueset (SNOMED)",
+      "description" : "Describes the visual acuity observation result, where concept descends from 363983007 (Visual acuity)",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-visual-field",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyVisualFieldObservableEntitiesValueSet",
+      "title" : "Visual Field Observable Entities ValueSet",
+      "description" : "Visual field observation coding",
+      "systems" : [
+        "http://terminology.hl7.org/uv/eyecare/CodeSystem/visual-field-observations",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-field.html" : "VF Observations"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/procedures",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyProceduresValueSet",
+      "title" : "Ophthalmology Procedures Valueset",
+      "description" : "This ValueSet represents procedure codes for clinical and billing purposes.",
+      "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/ValueSet/qualifiers",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "BodyStructureQualifiers",
+      "title" : "Ophthalmic anatomical location qualifiers",
+      "description" : "Describes whether a recorded observation is either final or amended",
+      "systems" : [
+        "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-body-structure-eye.html" : "Ocular anatomical location"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-Diameter-Comparison",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Pupil-Diameter-Comparison",
+      "title" : "Pupil-Diameter-Comparison",
+      "description" : "A ValueSet containing codes for various pupillomotor function observations.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-function-confounders",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PupilFunctionConfounders",
+      "title" : "Pupil Function Confounders",
+      "description" : "ValueSet including codes that represent confounders due to pupil function that may affect visual acuity measurements.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "LensTypes",
+      "title" : "Lens Types",
+      "description" : "This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-LensDuringVATestSpecification.html" : "LensDuringVATestSpecification"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OphthalmologyVisualAcuityMethods",
+      "title" : "Visual Acuity Measurement Methods valueset",
+      "description" : "Describes the various charts that can be used to assess visual acuity where concept descends from 400912000 (Visual acuity test equipment (physical object))",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotype-presentation.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OptotypePresentation",
+      "title" : "Optotype Presentation ValueSet",
+      "description" : "A ValueSet that includes codes representing the type of optotype presentation used during visual acuity testing.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Optotypes",
+      "title" : "Optotype ValueSet",
+      "description" : "A ValueSet that includes codes representing optotype used during visual acuity testing.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-Codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://loinc.org",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pinhole-occluder-usage.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PinholeOccluderUsage",
+      "title" : "Pinhole Occluder Usage Values",
+      "description" : "This ValueSet contains SNOMED CT codes to represent whether a pinhole occluder was used during a visual acuity measurement.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pupi-testing-active-substances",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PupiTestingActiveSubstances",
+      "title" : "Pupil Testing Active Substances",
+      "description" : "This ValueSet contains codes to represent active substances used in pharmacological testing during pupil diameter measurements.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-pupil-comparison.html" : "PupilComparison",
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-both-eyes.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ValueSet-right-left-both-eyes",
+      "title" : "ValueSet-right-left-both-eyes",
+      "description" : "ValueSet containing laterality codes for ophthalmic observations which may contain information on one or both eyes",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-right-left-eyes.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ValueSet-right-left-eyes",
+      "title" : "ValueSet-right-left-eyes",
+      "description" : "ValueSet containing laterality codes for ophthalmic observations which should only contain information on either the right or left eye, not both",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter",
+      "StructureDefinition-Posteriorsegment-narrative.html" : "Posteriorsegmentnarrative"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-room-brightness-levels",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoomBrightnessLevels",
+      "title" : "Room Brightness Levels",
+      "description" : "This ValueSet contains codes to represent the brightness of the room where a test was performed.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-pupil-diameter.html" : "PupilDiameter"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-special-va-testing-parameters",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Special VA testing Parameters",
+      "title" : "Special VA testing Parameters",
+      "description" : "This ValueSet contains codes to represent whether special testing parameters, such as a pinhole occluder or glare light, were used during a visual acuity measurement.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-categorical-values.html",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VisualAcuityCategoricalValues",
+      "title" : "Visual Acuity Categorical Values",
+      "description" : "ValueSet containing categorical values for visual acuity observations.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VisualAcuityCorrectionMethods",
+      "title" : "Visual Acuity Correction Methods",
+      "description" : "Methods of correction used during a visual acuity test.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods-with-sl",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VisualAcuityCorrectionMethods",
+      "title" : "Visual Acuity Correction Methods",
+      "description" : "Methods of correction used during a visual acuity test.",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-test-distance",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VisualAcuityTestDistance",
+      "title" : "Visual Acuity Test Distance",
+      "description" : "Codes representing the distances at which visual acuity tests are performed.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VisualAcuityQuantityUnits",
+      "title" : "Visual Acuity Quantity Units",
+      "description" : "Units of Measure of Visual acuity",
+      "systems" : [
+        "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-observation-visual-acuity-version-three.html" : "Visual Acuity (VA) V3",
+      "StructureDefinition-observation-visual-acuity-version-two.html" : "Visual Acuity (VA) V2",
+      "StructureDefinition-observation-visual-acuity.html" : "Visual Acuity (VA)"
+    }
+  ]
+}

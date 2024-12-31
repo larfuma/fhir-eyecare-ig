@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="bodystructure-left-eye"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: BodyStructure bodystructure-left-eye</b></p><a name="bodystructure-left-eye"> </a><a name="hcbodystructure-left-eye"> </a><a name="bodystructure-left-eye-en-US"> </a><p><b>location</b>: <span title="Codes:{http://snomed.info/sct 244486005}">Entire eye</span></p><p><b>locationQualifier</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>patient</b>: <a href="Patient-ophthal-patient-example-0.html">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p></div>
+  </text>
+  <location>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="244486005"/>
+      <display value="Entire eye"/>
+    </coding>
+  </location>
+  <locationQualifier>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="7771000"/>
+      <display value="Left"/>
+    </coding>
+  </locationQualifier>
+  <patient>
+    <reference value="Patient/ophthal-patient-example-0"/>
+  </patient>
+</BodyStructure>

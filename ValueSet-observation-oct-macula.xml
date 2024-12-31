@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="observation-oct-macula"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet observation-oct-macula</b></p><a name="observation-oct-macula"> </a><a name="hcobservation-oct-macula"> </a><a name="observation-oct-macula-en-US"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/57108-3/">57108-3</a></td><td>Macular grid.center point thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57109-1/">57109-1</a></td><td>Macular grid.center subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57110-9/">57110-9</a></td><td>Macular grid.inner superior subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57111-7/">57111-7</a></td><td>Macular grid.inner nasal subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57112-5/">57112-5</a></td><td>Macular grid.inner inferior subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57113-3/">57113-3</a></td><td>Macular grid.inner temporal subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57114-1/">57114-1</a></td><td>Macular grid.outer superior subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57115-8/">57115-8</a></td><td>Macular grid.outer nasal subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57116-6/">57116-6</a></td><td>Macular grid.outer inferior subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57117-4/">57117-4</a></td><td>Macular grid.outer temporal subfield thickness by OCT</td></tr><tr><td><a href="https://loinc.org/57118-2/">57118-2</a></td><td>Macular grid.total volume by OCT</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-macula"/>
+  <version value="0.1.0"/>
+  <name value="OphthalmologyOCTMaculaObservableEntitiesValueSet"/>
+  <title value="OCT Macula Observable Entities ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2019-05-01"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="OCT Macula observations coding"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="57108-3"/>
+        <display value="Macular grid.center point thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57109-1"/>
+        <display value="Macular grid.center subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57110-9"/>
+        <display value="Macular grid.inner superior subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57111-7"/>
+        <display value="Macular grid.inner nasal subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57112-5"/>
+        <display value="Macular grid.inner inferior subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57113-3"/>
+        <display value="Macular grid.inner temporal subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57114-1"/>
+        <display value="Macular grid.outer superior subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57115-8"/>
+        <display value="Macular grid.outer nasal subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57116-6"/>
+        <display value="Macular grid.outer inferior subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57117-4"/>
+        <display value="Macular grid.outer temporal subfield thickness by OCT"/>
+      </concept>
+      <concept>
+        <code value="57118-2"/>
+        <display value="Macular grid.total volume by OCT"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

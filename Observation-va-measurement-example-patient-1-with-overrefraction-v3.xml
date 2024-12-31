@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="va-measurement-example-patient-1-with-overrefraction-v3"/>
+  <meta>
+    <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation va-measurement-example-patient-1-with-overrefraction-v3</b></p><a name="va-measurement-example-patient-1-with-overrefraction-v3"> </a><a name="hcva-measurement-example-patient-1-with-overrefraction-v3"> </a><a name="va-measurement-example-patient-1-with-overrefraction-v3-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 260246004}">Visual Acuity finding</span></p><p><b>subject</b>: <a href="Patient/123">Patient/123</a></p><p><b>effective</b>: 2023-10-31 09:00:00+0000</p><p><b>value</b>: 6/6</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 362502000}">Entire right eye (body structure)</span></p><p><b>method</b>: <span title="Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods chart}">Visual Acuity Chart</span></p><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Soft-contact-lens-in-front-of-right-eye</blockquote><blockquote><p><b>LensDuringVATestSpecification</b></p><ul><li>type: <span title="Codes:{http://snomed.info/sct 57368009}">Contact lens</span></li><li>diameter: 14.0</li><li>power: -2.25</li><li>backCurve: 8.3</li></ul></blockquote><p><b>code</b>: <span title="Codes:{http://loinc.org 29073-4}">Right Eye position</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 57368009}">Contact lens</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Trial-Lenses-in-front-of-right-eye</blockquote><blockquote><p><b>LensDuringVATestSpecification</b></p><ul><li>type: <span title="Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type 5420330007}">Trial Lens</span></li><li>sphere: -2.00</li><li>cylinder: -1.5</li><li>axis: 36</li></ul></blockquote><p><b>code</b>: <span title="Codes:{http://loinc.org 29073-4}">Right Eye position</span></p><p><b>value</b>: <span title="Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl trial-lenses-manifest-without-cycloplegia}">Trial Lenses with Values based on manifest refraction without Cycloplegia</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Test-Distance</blockquote><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 252124009}">Test distance</span></p><p><b>value</b>: 6 m<span style="background: LightGoldenRodYellow"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><blockquote><p><b>id</b></p>Optotype-used</blockquote><p><b>code</b>: <span title="Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC Optotype}">Optotype</span></p><p><b>value</b>: <span title="Codes:{https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes LA25497-1}">Numbers</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="260246004"/>
+      <display value="Visual Acuity finding"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/123"/>
+  </subject>
+  <effectiveDateTime value="2023-10-31T09:00:00+00:00"/>
+  <valueRatio>
+    <numerator>
+      <value value="6"/>
+    </numerator>
+    <denominator>
+      <value value="6"/>
+    </denominator>
+  </valueRatio>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="362502000"/>
+      <display value="Entire right eye (body structure)"/>
+    </coding>
+  </bodySite>
+  <method>
+    <coding>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-observation-visual-acuity-methods"/>
+      <code value="chart"/>
+      <display value="Visual Acuity Chart"/>
+    </coding>
+  </method>
+  <component id="Soft-contact-lens-in-front-of-right-eye">
+    <extension url="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="57368009"/>
+            <display value="Contact lens"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="diameter">
+        <valueDecimal value="14.0"/>
+      </extension>
+      <extension url="power">
+        <valueDecimal value="-2.25"/>
+      </extension>
+      <extension url="backCurve">
+        <valueDecimal value="8.3"/>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29073-4"/>
+        <display value="Right Eye position"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="57368009"/>
+        <display value="Contact lens"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component id="Trial-Lenses-in-front-of-right-eye">
+    <extension url="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/lens-type"/>
+            <code value="5420330007"/>
+            <display value="Trial Lens"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="sphere">
+        <valueDecimal value="-2.00"/>
+      </extension>
+      <extension url="cylinder">
+        <valueDecimal value="-1.5"/>
+      </extension>
+      <extension url="axis">
+        <valueInteger value="36"/>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29073-4"/>
+        <display value="Right Eye position"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl"/>
+        <code value="trial-lenses-manifest-without-cycloplegia"/>
+        <display value="Trial Lenses with Values based on manifest refraction without Cycloplegia"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component id="Test-Distance">
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="252124009"/>
+        <display value="Test distance"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="6"/>
+      <unit value="m"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="m"/>
+    </valueQuantity>
+  </component>
+  <component id="Optotype-used">
+    <code>
+      <coding>
+        <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"/>
+        <code value="Optotype"/>
+        <display value="Optotype"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes"/>
+        <code value="LA25497-1"/>
+        <display value="Numbers"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/qualifiers> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "qualifiers"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet qualifiers</b></p><a name=\"qualifiers\"> </a><a name=\"hcqualifiers\"> </a><a name=\"qualifiers-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left</td></tr><tr><td><a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right</td></tr><tr><td><a href=\"http://snomed.info/id/51440002\">51440002</a></td><td>Bilateral</td></tr><tr><td><a href=\"http://snomed.info/id/261183002\">261183002</a></td><td>Upper</td></tr><tr><td><a href=\"http://snomed.info/id/261122009\">261122009</a></td><td>Lower</td></tr><tr><td><a href=\"http://snomed.info/id/264217000\">264217000</a></td><td>Superior</td></tr><tr><td><a href=\"http://snomed.info/id/261089000\">261089000</a></td><td>Inferior</td></tr><tr><td><a href=\"http://snomed.info/id/255551008\">255551008</a></td><td>Posterior</td></tr><tr><td><a href=\"http://snomed.info/id/255549009\">255549009</a></td><td>Anterior</td></tr><tr><td><a href=\"http://snomed.info/id/255570003\">255570003</a></td><td>Temporal</td></tr><tr><td><a href=\"http://snomed.info/id/260540009\">260540009</a></td><td>Nasal</td></tr></table></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 272485000 (Clockface position)</li><li>Include all codes defined in <a href=\"CodeSystem-qualifiers.html\"><code>http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/uv/eyecare/ValueSet/qualifiers"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BodyStructureQualifiers"] ; # 
+  fhir:title [ fhir:v "Ophthalmic anatomical location qualifiers"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-05-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Describes whether a recorded observation is either final or amended"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "7771000" ] ;
+         fhir:display [ fhir:v "Left" ]
+       ] [
+         fhir:code [ fhir:v "24028007" ] ;
+         fhir:display [ fhir:v "Right" ]
+       ] [
+         fhir:code [ fhir:v "51440002" ] ;
+         fhir:display [ fhir:v "Bilateral" ]
+       ] [
+         fhir:code [ fhir:v "261183002" ] ;
+         fhir:display [ fhir:v "Upper" ]
+       ] [
+         fhir:code [ fhir:v "261122009" ] ;
+         fhir:display [ fhir:v "Lower" ]
+       ] [
+         fhir:code [ fhir:v "264217000" ] ;
+         fhir:display [ fhir:v "Superior" ]
+       ] [
+         fhir:code [ fhir:v "261089000" ] ;
+         fhir:display [ fhir:v "Inferior" ]
+       ] [
+         fhir:code [ fhir:v "255551008" ] ;
+         fhir:display [ fhir:v "Posterior" ]
+       ] [
+         fhir:code [ fhir:v "255549009" ] ;
+         fhir:display [ fhir:v "Anterior" ]
+       ] [
+         fhir:code [ fhir:v "255570003" ] ;
+         fhir:display [ fhir:v "Temporal" ]
+       ] [
+         fhir:code [ fhir:v "260540009" ] ;
+         fhir:display [ fhir:v "Nasal" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "272485000" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

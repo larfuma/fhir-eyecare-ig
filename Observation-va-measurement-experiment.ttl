@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/va-measurement-experiment> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "va-measurement-experiment"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"^^xsd:anyURI ;
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation va-measurement-experiment</b></p><a name=\"va-measurement-experiment\"> </a><a name=\"hcva-measurement-experiment\"> </a><a name=\"va-measurement-experiment-en-US\"> </a><p><b>code</b>: <span title=\"Codes:\">17</span></p><p><b>value</b>: 0.6</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 1290043002}\">Entire right eye proper</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29073-4}\">Right Eye position</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 57368009}\">Contact lenses, device</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 370115009}\">Special Concept</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 257492003}\">Pinhole Occluder</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252124009}\">Test distance</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA32577-1}\">Far</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "17" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.6"^^xsd:decimal ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:1290043002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1290043002" ] ;
+       fhir:display [ fhir:v "Entire right eye proper" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:29073-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29073-4" ] ;
+         fhir:display [ fhir:v "Right Eye position" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:57368009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57368009" ] ;
+         fhir:display [ fhir:v "Contact lenses, device" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:370115009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "370115009" ] ;
+         fhir:display [ fhir:v "Special Concept" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:257492003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "257492003" ] ;
+         fhir:display [ fhir:v "Pinhole Occluder" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:252124009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "252124009" ] ;
+         fhir:display [ fhir:v "Test distance" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA32577-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA32577-1" ] ;
+         fhir:display [ fhir:v "Far" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

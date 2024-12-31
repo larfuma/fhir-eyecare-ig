@@ -1,0 +1,28 @@
+{
+  "resourceType" : "BodyStructure",
+  "id" : "bodystructure-right-eye-6oclock",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BodyStructure bodystructure-right-eye-6oclock</b></p><a name=\"bodystructure-right-eye-6oclock\"> </a><a name=\"hcbodystructure-right-eye-6oclock\"> </a><a name=\"bodystructure-right-eye-6oclock-en-US\"> </a><p><b>location</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Retina of right eye</span></p><p><b>locationQualifier</b>: <span title=\"Codes:{http://snomed.info/sct 260337008}\">6 o'clock position</span></p><p><b>patient</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number:\u00a002134005)</a></p></div>"
+  },
+  "location" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "5597008",
+      "display" : "Retina of right eye"
+    }]
+  },
+  "locationQualifier" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "260337008",
+      "display" : "6 o'clock position"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/ophthal-patient-example-0"
+  }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="body-site-eye"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet body-site-eye</b></p><a name="body-site-eye"> </a><a name="hcbody-site-eye"> </a><a name="body-site-eye-en-US"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 371398005 (Eye region structure (body structure))</li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/ValueSet/body-site-eye"/>
+  <version value="0.1.0"/>
+  <name value="OphthalmologyBodySiteEye"/>
+  <title value="Ophthalmic anatomical location"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2021-08-03"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Describes the ophthalmic structure being referenced"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="371398005"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

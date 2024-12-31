@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="pupil-diameter-left-eye-1"/>
+  <meta>
+    <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation pupil-diameter-left-eye-1</b></p><a name="pupil-diameter-left-eye-1"> </a><a name="hcpupil-diameter-left-eye-1"> </a><a name="pupil-diameter-left-eye-1-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org LP73214-6}">Pupil diameter</span></p><p><b>subject</b>: <a href="Patient/123">Patient/123</a></p><p><b>effective</b>: 2023-11-17 10:00:00+0000</p><p><b>value</b>: 4 mm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm = 'mm')</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 12853009}">Left eye</span></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org LP429645-7}">Room brightness level during testing</span></td><td><span title="Codes:{http://loinc.org LA25332-0}">Bright</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LP73214-6"/>
+      <display value="Pupil diameter"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/123"/>
+  </subject>
+  <effectiveDateTime value="2023-11-17T10:00:00+00:00"/>
+  <valueQuantity>
+    <value value="4"/>
+    <unit value="mm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mm"/>
+  </valueQuantity>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="12853009"/>
+      <display value="Left eye"/>
+    </coding>
+  </bodySite>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LP429645-7"/>
+        <display value="Room brightness level during testing"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA25332-0"/>
+        <display value="Bright"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

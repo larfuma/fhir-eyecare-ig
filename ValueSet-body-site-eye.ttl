@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/body-site-eye> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "body-site-eye"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet body-site-eye</b></p><a name=\"body-site-eye\"> </a><a name=\"hcbody-site-eye\"> </a><a name=\"body-site-eye-en-US\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 371398005 (Eye region structure (body structure))</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/uv/eyecare/ValueSet/body-site-eye"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OphthalmologyBodySiteEye"] ; # 
+  fhir:title [ fhir:v "Ophthalmic anatomical location"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-08-03"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Describes the ophthalmic structure being referenced"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "371398005" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

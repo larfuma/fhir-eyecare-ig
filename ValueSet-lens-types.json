@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "lens-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet lens-types</b></p><a name=\"lens-types\"> </a><a name=\"hclens-types\"> </a><a name=\"lens-types-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 57368009 (Contact lenses)</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 50121007 (Eye glasses, device (physical object))</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 420330007 (Trial lens (physical object))</li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types",
+  "version" : "0.1.0",
+  "name" : "LensTypes",
+  "title" : "Lens Types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-12-31T12:44:09+00:00",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "This ValueSet includes content from SNOMED Clinical Terms® (SNOMED CT®), which is copyrighted by the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artifacts must have the appropriate SNOMED CT Affiliate license. For more information, please visit http://www.snomed.org/snomed-ct/get-snomed-ct.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "57368009"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "50121007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "420330007"
+      }]
+    }]
+  }
+}

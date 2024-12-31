@@ -1,0 +1,114 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "optotypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet optotypes</b></p><a name=\"optotypes\"> </a><a name=\"hcoptotypes\"> </a><a name=\"optotypes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-Codes-to-be-submitted-to-SNOMED-or-LOINC</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Landolt C</td><td>Landolt C</td></tr><tr><td>Sjogren's Hand Test</td><td>Sjogren's Hand Test</td></tr><tr><td>Lea Symbol Test</td><td>Lea Symbol Test</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1220561009\">1220561009</a></td><td>Not recorded</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr><tr><td><a href=\"http://snomed.info/id/400911007\">400911007</a></td><td>E test</td></tr><tr><td><a href=\"http://snomed.info/id/252982005\">252982005</a></td><td>Kay picture test</td></tr><tr><td><a href=\"http://snomed.info/id/252977003\">252977003</a></td><td>Cambridge crowded letter charts</td></tr><tr><td><a href=\"http://snomed.info/id/252976007\">252976007</a></td><td>Sonsken charts</td></tr><tr><td><a href=\"http://snomed.info/id/252978008\">252978008</a></td><td>Sheridan Gardiner test (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/252884005\">252884005</a></td><td>Stycar vision test</td></tr><tr><td><a href=\"http://snomed.info/id/285805006\">285805006</a></td><td>Cardiff acuity cards (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/285803004\">285803004</a></td><td>Teller acuity cards</td></tr><tr><td><a href=\"http://snomed.info/id/285804005\">285804005</a></td><td>Keeler acuity cards</td></tr><tr><td><a href=\"http://snomed.info/id/400914004\">400914004</a></td><td>Early Treatment of Diabetic Retinopathy Study visual acuity chart (physical object)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA25494-8/\">LA25494-8</a></td><td>Teller</td></tr><tr><td><a href=\"https://loinc.org/LA25495-5/\">LA25495-5</a></td><td>Allen figure</td></tr><tr><td><a href=\"https://loinc.org/LA25496-3/\">LA25496-3</a></td><td>HOTV</td></tr><tr><td><a href=\"https://loinc.org/LA25497-1/\">LA25497-1</a></td><td>Numbers</td></tr><tr><td><a href=\"https://loinc.org/LA25498-9/\">LA25498-9</a></td><td>Snellen</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Optotypes"] ; # 
+  fhir:title [ fhir:v "Optotype ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-31T12:44:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A ValueSet that includes codes representing optotype used during visual acuity testing."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-Codes-to-be-submitted-to-SNOMED-or-LOINC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Landolt C" ] ;
+         fhir:display [ fhir:v "Landolt C" ]
+       ] [
+         fhir:code [ fhir:v "Sjogren's Hand Test" ] ;
+         fhir:display [ fhir:v "Sjogren's Hand Test" ]
+       ] [
+         fhir:code [ fhir:v "Lea Symbol Test" ] ;
+         fhir:display [ fhir:v "Lea Symbol Test" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1220561009" ] ;
+         fhir:display [ fhir:v "Not recorded" ]
+       ] [
+         fhir:code [ fhir:v "261665006" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] [
+         fhir:code [ fhir:v "400911007" ] ;
+         fhir:display [ fhir:v "E test" ]
+       ] [
+         fhir:code [ fhir:v "252982005" ] ;
+         fhir:display [ fhir:v "Kay picture test" ]
+       ] [
+         fhir:code [ fhir:v "252977003" ] ;
+         fhir:display [ fhir:v "Cambridge crowded letter charts" ]
+       ] [
+         fhir:code [ fhir:v "252976007" ] ;
+         fhir:display [ fhir:v "Sonsken charts" ]
+       ] [
+         fhir:code [ fhir:v "252978008" ] ;
+         fhir:display [ fhir:v "Sheridan Gardiner test (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "252884005" ] ;
+         fhir:display [ fhir:v "Stycar vision test" ]
+       ] [
+         fhir:code [ fhir:v "285805006" ] ;
+         fhir:display [ fhir:v "Cardiff acuity cards (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "285803004" ] ;
+         fhir:display [ fhir:v "Teller acuity cards" ]
+       ] [
+         fhir:code [ fhir:v "285804005" ] ;
+         fhir:display [ fhir:v "Keeler acuity cards" ]
+       ] [
+         fhir:code [ fhir:v "400914004" ] ;
+         fhir:display [ fhir:v "Early Treatment of Diabetic Retinopathy Study visual acuity chart (physical object)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA25494-8" ] ;
+         fhir:display [ fhir:v "Teller" ]
+       ] [
+         fhir:code [ fhir:v "LA25495-5" ] ;
+         fhir:display [ fhir:v "Allen figure" ]
+       ] [
+         fhir:code [ fhir:v "LA25496-3" ] ;
+         fhir:display [ fhir:v "HOTV" ]
+       ] [
+         fhir:code [ fhir:v "LA25497-1" ] ;
+         fhir:display [ fhir:v "Numbers" ]
+       ] [
+         fhir:code [ fhir:v "LA25498-9" ] ;
+         fhir:display [ fhir:v "Snellen" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

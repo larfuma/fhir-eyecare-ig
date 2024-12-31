@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="observable-entities"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet observable-entities</b></p><a name="observable-entities"> </a><a name="hcobservable-entities"> </a><a name="observable-entities-en-US"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 363926002 (Eye/vision observable (observable entity))</li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/ValueSet/observable-entities"/>
+  <version value="0.1.0"/>
+  <name value="OphthalmologyObservableEntitiesValueSet"/>
+  <title value="Ophthalmology observations (SNOMED)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2019-05-01"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Concept descends from 363926002 - Eye/vision observable (observable entity)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="363926002"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

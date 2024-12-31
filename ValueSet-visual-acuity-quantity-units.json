@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "visual-acuity-quantity-units",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet visual-acuity-quantity-units</b></p><a name=\"visual-acuity-quantity-units\"> </a><a name=\"hcvisual-acuity-quantity-units\"> </a><a name=\"visual-acuity-quantity-units-en-US\"> </a><ul><li>Include these codes as defined in <code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>logMAR</td><td>Logarithm of the Minimum Angle of Resolution</td></tr><tr><td>MAR</td><td>Minimum Angle of Resolution</td></tr><tr><td>Decimal</td><td>Decimal Unit of Visual Acuity</td></tr><tr><td>Jaeger J</td><td>Jaeger type (J) Unit</td></tr><tr><td>VAS</td><td>Visual Acuity Score</td></tr><tr><td>Number of recognized optotypes</td><td>Number of recognized optotypes</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units",
+  "version" : "0.1.0",
+  "name" : "VisualAcuityQuantityUnits",
+  "title" : "Visual Acuity Quantity Units",
+  "status" : "active",
+  "date" : "2024-12-31T12:44:09+00:00",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Units of Measure of Visual acuity",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+      "concept" : [{
+        "code" : "logMAR",
+        "display" : "Logarithm of the Minimum Angle of Resolution"
+      },
+      {
+        "code" : "MAR",
+        "display" : "Minimum Angle of Resolution"
+      },
+      {
+        "code" : "Decimal",
+        "display" : "Decimal Unit of Visual Acuity"
+      },
+      {
+        "code" : "Jaeger J",
+        "display" : "Jaeger type (J) Unit"
+      },
+      {
+        "code" : "VAS",
+        "display" : "Visual Acuity Score"
+      },
+      {
+        "code" : "Number of recognized optotypes",
+        "display" : "Number of recognized optotypes"
+      }]
+    }]
+  }
+}

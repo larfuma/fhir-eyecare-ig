@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="lens-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet lens-types</b></p><a name="lens-types"> </a><a name="hclens-types"> </a><a name="lens-types-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 57368009 (Contact lenses)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 50121007 (Eye glasses, device (physical object))</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 420330007 (Trial lens (physical object))</li></ul></div>
+  </text>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types"/>
+  <version value="0.1.0"/>
+  <name value="LensTypes"/>
+  <title value="Lens Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-12-31T12:44:09+00:00"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007)."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This ValueSet includes content from SNOMED Clinical Terms® (SNOMED CT®), which is copyrighted by the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artifacts must have the appropriate SNOMED CT Affiliate license. For more information, please visit http://www.snomed.org/snomed-ct/get-snomed-ct."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="57368009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="50121007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="420330007"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

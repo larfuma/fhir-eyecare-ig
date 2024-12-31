@@ -1,0 +1,19 @@
+{
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig",
+  "name" : "OphthalmologyImplementationGuide",
+  "title" : "Eyes back on FHIR? An experimental continuation of the Eyes on FHIR working group's HL7 FHIR® IG",
+  "description" : "My attempts at continuing on the development of a Ophtalmologiy Implementation Guide. IMPORTANT: At the moment this IG mostly a fork of the 'Eyes on FHIR' working groups STU 1 Ballot version published here: https://hl7.org/fhir/uv/eyecare/2021Sep/index.html , with minor modifications",
+  "status" : "draft",
+  "package-id" : "eyes.back.on.FHIR",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 31 Dec, 2024 12:44:09 +0000",
+  "dateISO8601" : "2024-12-31T12:44:09+00:00",
+  "errs" : 448,
+  "warnings" : 199,
+  "hints" : 62,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 31,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1367734640
+}

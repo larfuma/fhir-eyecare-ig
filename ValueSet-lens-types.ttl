@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/lens-types> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "lens-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet lens-types</b></p><a name=\"lens-types\"> </a><a name=\"hclens-types\"> </a><a name=\"lens-types-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 57368009 (Contact lenses)</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 50121007 (Eye glasses, device (physical object))</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 420330007 (Trial lens (physical object))</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-lens-types"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "LensTypes"] ; # 
+  fhir:title [ fhir:v "Lens Types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-31T12:44:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This ValueSet includes content from SNOMED Clinical Terms® (SNOMED CT®), which is copyrighted by the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artifacts must have the appropriate SNOMED CT Affiliate license. For more information, please visit http://www.snomed.org/snomed-ct/get-snomed-ct."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "57368009" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "50121007" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "420330007" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

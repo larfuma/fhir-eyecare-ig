@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/pupi-testing-active-substances> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pupi-testing-active-substances"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet pupi-testing-active-substances</b></p><a name=\"pupi-testing-active-substances\"> </a><a name=\"hcpupi-testing-active-substances\"> </a><a name=\"pupi-testing-active-substances-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/391786008\">391786008</a></td><td>Apraclonidine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372895002\">372895002</a></td><td>Pilocarpine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372832002\">372832002</a></td><td>Atropine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387085005\">387085005</a></td><td>Cocaine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387290000\">387290000</a></td><td>Hydroxyamfetamine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372766003\">372766003</a></td><td>Methacholine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387526001\">387526001</a></td><td>Tropicamide (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372771005\">372771005</a></td><td>Phenylephrine (substance)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-pupi-testing-active-substances"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PupiTestingActiveSubstances"] ; # 
+  fhir:title [ fhir:v "Pupil Testing Active Substances"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-31T12:44:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This ValueSet contains codes to represent active substances used in pharmacological testing during pupil diameter measurements."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "391786008" ] ;
+         fhir:display [ fhir:v "Apraclonidine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "372895002" ] ;
+         fhir:display [ fhir:v "Pilocarpine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "372832002" ] ;
+         fhir:display [ fhir:v "Atropine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387085005" ] ;
+         fhir:display [ fhir:v "Cocaine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387290000" ] ;
+         fhir:display [ fhir:v "Hydroxyamfetamine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "372766003" ] ;
+         fhir:display [ fhir:v "Methacholine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387526001" ] ;
+         fhir:display [ fhir:v "Tropicamide (substance)" ]
+       ] [
+         fhir:code [ fhir:v "372771005" ] ;
+         fhir:display [ fhir:v "Phenylephrine (substance)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

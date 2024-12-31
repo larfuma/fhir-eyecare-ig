@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="pupil-comparison-2"/>
+  <meta>
+    <profile value="https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation pupil-comparison-2</b></p><a name="pupil-comparison-2"> </a><a name="hcpupil-comparison-2"> </a><a name="pupil-comparison-2-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC comparison-of-pupil-diameter-between-eyes}">Comparison of Pupil diameters</span></p><p><b>subject</b>: <a href="Patient/123">Patient/123</a></p><p><b>effective</b>: 2023-11-17 10:05:00+0000</p><p><b>hasMember</b>: </p><ul><li><a href="Observation-pupil-diameter-right-eye-2.html">Observation Pupil diameter</a></li><li><a href="Observation-pupil-diameter-left-eye-2.html">Observation Pupil diameter</a></li></ul><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org LP429645-7}">Room brightness level during testing</span></td><td><span title="Codes:{http://loinc.org LA32683-7}">Dim</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"/>
+      <code value="comparison-of-pupil-diameter-between-eyes"/>
+      <display value="Comparison of Pupil diameters"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/123"/>
+  </subject>
+  <effectiveDateTime value="2023-11-17T10:05:00+00:00"/>
+  <hasMember>
+    <reference value="Observation/pupil-diameter-right-eye-2"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/pupil-diameter-left-eye-2"/>
+  </hasMember>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LP429645-7"/>
+        <display value="Room brightness level during testing"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA32683-7"/>
+        <display value="Dim"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

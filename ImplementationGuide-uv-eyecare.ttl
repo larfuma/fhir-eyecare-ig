@@ -1,0 +1,1802 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ImplementationGuide/uv-eyecare> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uv-eyecare"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide uv-eyecare</b></p><a name=\"uv-eyecare\"> </a><a name=\"hcuv-eyecare\"> </a><a name=\"uv-eyecare-en-US\"> </a><h2>OphthalmologyImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://larfuma.github.io/fhir-eyecare-ig</pre><div><p>My attempts at continuing on the development of a Ophtalmologiy Implementation Guide. IMPORTANT: At the moment this IG mostly a fork of the 'Eyes on FHIR' working groups STU 1 Ballot version published here: https://hl7.org/fhir/uv/eyecare/2021Sep/index.html , with minor modifications</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OphthalmologyImplementationGuide"] ; # 
+  fhir:title [ fhir:v "Eyes back on FHIR? An experimental continuation of the Eyes on FHIR working group's HL7 FHIR® IG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-31T12:44:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "My attempts at continuing on the development of a Ophtalmologiy Implementation Guide. IMPORTANT: At the moment this IG mostly a fork of the 'Eyes on FHIR' working groups STU 1 Ballot version published here: https://hl7.org/fhir/uv/eyecare/2021Sep/index.html , with minor modifications"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "eyes.back.on.FHIR"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2024" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "experimental" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "jira-code" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "uv-eyecare" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools.r4#0.3.0" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2024" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "experimental" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "jira-code" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "uv-eyecare" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BodyStructure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-right-eye> ;
+         fhir:reference [ fhir:v "BodyStructure/bodystructure-right-eye" ]
+       ] ;
+       fhir:name [ fhir:v "Right Eye Body Structure" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BodyStructure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-left-eye> ;
+         fhir:reference [ fhir:v "BodyStructure/bodystructure-left-eye" ]
+       ] ;
+       fhir:name [ fhir:v "Left Eye Body Structure" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Practitioner/ophthal-practitioner-example-0> ;
+         fhir:reference [ fhir:v "Practitioner/ophthal-practitioner-example-0" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/ophthal-patient-example-0> ;
+         fhir:reference [ fhir:v "Patient/ophthal-patient-example-0" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Media" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Media/visual-field-le-0> ;
+         fhir:reference [ fhir:v "Media/visual-field-le-0" ]
+       ] ;
+       fhir:name [ fhir:v "Media Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Media" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Media/visual-field-re-0> ;
+         fhir:reference [ fhir:v "Media/visual-field-re-0" ]
+       ] ;
+       fhir:name [ fhir:v "Media Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/posteriorsegment-example> ;
+         fhir:reference [ fhir:v "Observation/posteriorsegment-example" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - posteriorsegment-example" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/va-observation-v2-example-patient-1-with-overrefraction> ;
+         fhir:reference [ fhir:v "Observation/va-observation-v2-example-patient-1-with-overrefraction" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - va-observation-v2-example-patient-1-with-overrefraction" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/va-observation-v2-example-patient-1-without-overrefraction> ;
+         fhir:reference [ fhir:v "Observation/va-observation-v2-example-patient-1-without-overrefraction" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - va-observation-v2-example-patient-1-without-overrefraction" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-two>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/va-measurement-example-patient-2-bino-50cm-with-od-contactlens> ;
+         fhir:reference [ fhir:v "Observation/va-measurement-example-patient-2-bino-50cm-with-od-contactlens" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - va-measurement-example-patient-2-bino-50cm-with-od-contactlens" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/va-measurement-example-patient-1-with-overrefraction-v3> ;
+         fhir:reference [ fhir:v "Observation/va-measurement-example-patient-1-with-overrefraction-v3" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - va-measurement-example-patient-1-with-overrefraction-v3" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/va-measurement-example-patient-1-without-overrefraction-v3> ;
+         fhir:reference [ fhir:v "Observation/va-measurement-example-patient-1-without-overrefraction-v3" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - va-measurement-example-patient-1-without-overrefraction-v3" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BodyStructure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-right-eye-6oclock> ;
+         fhir:reference [ fhir:v "BodyStructure/bodystructure-right-eye-6oclock" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Condition/condition-ophthal-glaucoma> ;
+         fhir:reference [ fhir:v "Condition/condition-ophthal-glaucoma" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/DiagnosticReport/diagnostic-report-visual-field-test-re-0> ;
+         fhir:reference [ fhir:v "DiagnosticReport/diagnostic-report-visual-field-test-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/DiagnosticReport/diagnostic-report-visual-field-test-le-0> ;
+         fhir:reference [ fhir:v "DiagnosticReport/diagnostic-report-visual-field-test-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-iop-goldman-re-0> ;
+         fhir:reference [ fhir:v "Observation/observation-iop-goldman-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-iop-goldman-le-0> ;
+         fhir:reference [ fhir:v "Observation/observation-iop-goldman-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-iop-icare-home-re-0> ;
+         fhir:reference [ fhir:v "Observation/observation-iop-icare-home-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-iop-icare-home-le-0> ;
+         fhir:reference [ fhir:v "Observation/observation-iop-icare-home-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-refraction-re-0> ;
+         fhir:reference [ fhir:v "Observation/observation-refraction-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-refraction-le-0> ;
+         fhir:reference [ fhir:v "Observation/observation-refraction-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/va-measurement-experiment> ;
+         fhir:reference [ fhir:v "Observation/va-measurement-experiment" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - va-measurement-experiment" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-observation-visual-acuity-version-three>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-false-positives-re-0> ;
+         fhir:reference [ fhir:v "Observation/vf-false-positives-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-false-positives-le-0> ;
+         fhir:reference [ fhir:v "Observation/vf-false-positives-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-fixation-loss-re-0> ;
+         fhir:reference [ fhir:v "Observation/vf-fixation-loss-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-fixation-loss-le-0> ;
+         fhir:reference [ fhir:v "Observation/vf-fixation-loss-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-mean-deviation-re-0> ;
+         fhir:reference [ fhir:v "Observation/vf-mean-deviation-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-mean-deviation-le-0> ;
+         fhir:reference [ fhir:v "Observation/vf-mean-deviation-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-pattern-standard-deviation-re-0> ;
+         fhir:reference [ fhir:v "Observation/vf-pattern-standard-deviation-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-pattern-standard-deviation-le-0> ;
+         fhir:reference [ fhir:v "Observation/vf-pattern-standard-deviation-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-test-duration-re-0> ;
+         fhir:reference [ fhir:v "Observation/vf-test-duration-re-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-test-duration-le-0> ;
+         fhir:reference [ fhir:v "Observation/vf-test-duration-le-0" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Procedure/perimetry-24-2-perimetry-test> ;
+         fhir:reference [ fhir:v "Procedure/perimetry-24-2-perimetry-test" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-1> ;
+         fhir:reference [ fhir:v "Observation/pupil-comparison-1" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-comparison-1" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-2> ;
+         fhir:reference [ fhir:v "Observation/pupil-comparison-2" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-comparison-2" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-3> ;
+         fhir:reference [ fhir:v "Observation/pupil-comparison-3" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-comparison-3" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-4> ;
+         fhir:reference [ fhir:v "Observation/pupil-comparison-4" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-comparison-4" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-1> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-1" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-left-eye-1" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-2> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-2" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-left-eye-2" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-3> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-3" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-left-eye-3" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-4> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-4" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-left-eye-4" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-1> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-1" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-right-eye-1" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-2> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-2" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-right-eye-2" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-3> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-3" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-right-eye-3" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-4> ;
+         fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-4" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - pupil-diameter-right-eye-4" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/DiagnosticReport/pupillomotoric-report-1> ;
+         fhir:reference [ fhir:v "DiagnosticReport/pupillomotoric-report-1" ]
+       ] ;
+       fhir:name [ fhir:v "Example DiagnosticReport - pupillomotoric-report-1" ] ;
+       fhir:example [
+         fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-PupillomotoricDiagnosticReport"^^xsd:anyURI ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-PupillomotoricDiagnosticReport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC> ;
+         fhir:reference [ fhir:v "CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC" ]
+       ] ;
+       fhir:name [ fhir:v "Codes which were needed, but not found in SNOMED or LOINC, will be submitted there" ] ;
+       fhir:description [ fhir:v "Codes which were needed, but not found in SNOMED or LOINC, will be submitted there" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/iop-methods> ;
+         fhir:reference [ fhir:v "CodeSystem/iop-methods" ]
+       ] ;
+       fhir:name [ fhir:v "IOP Methods Code System" ] ;
+       fhir:description [ fhir:v "IOP additional method types" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/qualifiers> ;
+         fhir:reference [ fhir:v "CodeSystem/qualifiers" ]
+       ] ;
+       fhir:name [ fhir:v "Body Structure Qualifiers" ] ;
+       fhir:description [ fhir:v "Additional body site qualifiers" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/visual-field-observations> ;
+         fhir:reference [ fhir:v "CodeSystem/visual-field-observations" ]
+       ] ;
+       fhir:name [ fhir:v "Visual field test parameter observations" ] ;
+       fhir:description [ fhir:v "Visual field observation additional codes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/PupillomotoricDiagnosticReport> ;
+         fhir:reference [ fhir:v "StructureDefinition/PupillomotoricDiagnosticReport" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification> ;
+         fhir:reference [ fhir:v "StructureDefinition/LensDuringVATestSpecification" ]
+       ] ;
+       fhir:description [ fhir:v "Specification any Lens that was n front of an eye during a Visual Acuity test test" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification> ;
+         fhir:reference [ fhir:v "StructureDefinition/OwnLensDuringVATestSpecification" ]
+       ] ;
+       fhir:description [ fhir:v "Specification of the Lens that was worn during the Visual Acuity test test" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/Posteriorsegment-narrative> ;
+         fhir:reference [ fhir:v "StructureDefinition/Posteriorsegment-narrative" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison> ;
+         fhir:reference [ fhir:v "StructureDefinition/pupil-comparison" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter> ;
+         fhir:reference [ fhir:v "StructureDefinition/pupil-diameter" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/body-structure-eye> ;
+         fhir:reference [ fhir:v "StructureDefinition/body-structure-eye" ]
+       ] ;
+       fhir:name [ fhir:v "Ocular anatomical location" ] ;
+       fhir:description [ fhir:v "The description of an ophthalmic anatomical site that is located within the following structures: the eyeball or the periocular or orbital regions (as opposed to non-ocular anatomical locations). This profile is used by combining the unique valueset (hyperlink) for relevant ophthalmic specific BodyStructure.locationQualifier (Body Site modifier) in combination with the base Observation BodyStructure.location (Body Site; descendants from SNOMED 371398005 (Eye Region Structure), each with a preferred binding in order to refine the accuracy of the location decription of occular structures. This unique qualifying element is important because these locations are routinely described either diffently and/or more granularly than other body parts. Of note - non occular (or surrounding) anatomical location references of Observations (eg - arm) do not need to use this modified specialty profile." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/condition-base> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-base" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmic Diagnoses" ] ;
+       fhir:description [ fhir:v "A profile to describe the formal past/present clinical diagnosis of a specific non-ophthalmic pathological Condition. As noted above, although the Condition Resource is also referenced in the non-ophthalmic findings profile, this profile is a modification of the base Condition Resource (as opposed to a base Obervation Resource modification, referencing Condition)." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/diagnostic-report-base> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnostic-report-base" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmic diagnostic test report" ] ;
+       fhir:description [ fhir:v "Base profile specifically constrained for describing ophthalmic reports" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/diagnostic-report-oct-macula> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnostic-report-oct-macula" ]
+       ] ;
+       fhir:name [ fhir:v "OCT macula Diagnostic Report" ] ;
+       fhir:description [ fhir:v "The DiagnosticReport profile for an OCT macula" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/diagnostic-report-oct-rnfl> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnostic-report-oct-rnfl" ]
+       ] ;
+       fhir:name [ fhir:v "OCT RNFL Diagnostic Report" ] ;
+       fhir:description [ fhir:v "The DiagnosticReport profile for an OCT RNFL" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/diagnostic-report-visual-field> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnostic-report-visual-field" ]
+       ] ;
+       fhir:name [ fhir:v "VF Diagnostic Report " ] ;
+       fhir:description [ fhir:v "The DiagnosticReport profile for a visual field DT" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-base> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-base" ]
+       ] ;
+       fhir:name [ fhir:v "Base ophthalmic Observation profile" ] ;
+       fhir:description [ fhir:v "Base profile specifically constrained for describing ophthalmic Observations" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-iop> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-iop" ]
+       ] ;
+       fhir:name [ fhir:v "Intraocular Pressure (IOP)" ] ;
+       fhir:description [ fhir:v "A measurement of a patient's intraocular (within the eyeball) pressure (in mmHg)." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-oct-macula> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-oct-macula" ]
+       ] ;
+       fhir:name [ fhir:v "OCT macula Observations" ] ;
+       fhir:description [ fhir:v "The Observations associated with the OCT macula DiagnosticReport (note: this valueset can also be used independently to describe specific findings/Observations captured by a OCT test, which may not necessarily be referenced by the DiagnosticReport.)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-oct-rnfl> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-oct-rnfl" ]
+       ] ;
+       fhir:name [ fhir:v "OCT RFNL Observations" ] ;
+       fhir:description [ fhir:v "The Observations associated with the OCT RNFL DiagnosticReport (note: this valueset can also be used independently to describe specific findings/Observations captured by a OCT test, which may not necessarily be referenced by the DiagnosticReport.)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-visual-acuity-version-three> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-visual-acuity-version-three" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity (VA) V3" ] ;
+       fhir:description [ fhir:v "An assessment of a patients ability to see - Version three" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-visual-acuity-version-two> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-visual-acuity-version-two" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity (VA) V2" ] ;
+       fhir:description [ fhir:v "An assessment of a patients ability to see - Version two - simpler structure than Version 1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-visual-acuity> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-visual-acuity" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity (VA)" ] ;
+       fhir:description [ fhir:v "An assessment of a patients ability to see." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/observation-visual-field> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-visual-field" ]
+       ] ;
+       fhir:name [ fhir:v "VF Observations" ] ;
+       fhir:description [ fhir:v "The Observations associated with the VF DiagnosticReport (note: this valueset can also be used independently to describe specific findings/Observations captured by a VF test, which may not necessarily be referenced by the DiagnosticReport.)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/Pupil-function-confounders> ;
+         fhir:reference [ fhir:v "ValueSet/Pupil-function-confounders" ]
+       ] ;
+       fhir:name [ fhir:v "Pupil Function Confounders" ] ;
+       fhir:description [ fhir:v "ValueSet including codes that represent confounders due to pupil function that may affect visual acuity measurements." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-categorical-values> ;
+         fhir:reference [ fhir:v "ValueSet/visual-acuity-categorical-values" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity Categorical Values" ] ;
+       fhir:description [ fhir:v "ValueSet containing categorical values for visual acuity observations." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/body-site-eye> ;
+         fhir:reference [ fhir:v "ValueSet/body-site-eye" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmic anatomical location" ] ;
+       fhir:description [ fhir:v "Describes the ophthalmic structure being referenced" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/conditions> ;
+         fhir:reference [ fhir:v "ValueSet/conditions" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmology Condition ICD10 and SNOMED codes ValueSet" ] ;
+       fhir:description [ fhir:v "Clinical findings for the eye region." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/iop-methods> ;
+         fhir:reference [ fhir:v "ValueSet/iop-methods" ]
+       ] ;
+       fhir:name [ fhir:v "Intraocular pressure (IOP) method valueset" ] ;
+       fhir:description [ fhir:v "Describes the various methods of capturing IOP that relate to the IOP Observation profile" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observable-entities> ;
+         fhir:reference [ fhir:v "ValueSet/observable-entities" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmology observations (SNOMED)" ] ;
+       fhir:description [ fhir:v "Concept descends from 363926002 - Eye/vision observable (observable entity)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-final-status> ;
+         fhir:reference [ fhir:v "ValueSet/observation-final-status" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Status" ] ;
+       fhir:description [ fhir:v "Describes whether a recorded observation is either final or amended" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-oct-macula> ;
+         fhir:reference [ fhir:v "ValueSet/observation-oct-macula" ]
+       ] ;
+       fhir:name [ fhir:v "OCT Macula Observable Entities ValueSet" ] ;
+       fhir:description [ fhir:v "OCT Macula observations coding" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-oct-rnfl> ;
+         fhir:reference [ fhir:v "ValueSet/observation-oct-rnfl" ]
+       ] ;
+       fhir:name [ fhir:v "OCT RNFL Observable Entities ValueSet" ] ;
+       fhir:description [ fhir:v "OCT RNFL observations coding" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-visual-acuity> ;
+         fhir:reference [ fhir:v "ValueSet/observation-visual-acuity" ]
+       ] ;
+       fhir:name [ fhir:v "Visual acuity method valueset (SNOMED)" ] ;
+       fhir:description [ fhir:v "Describes the visual acuity observation result, where concept descends from 363983007 (Visual acuity)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-visual-field> ;
+         fhir:reference [ fhir:v "ValueSet/observation-visual-field" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Field Observable Entities ValueSet" ] ;
+       fhir:description [ fhir:v "Visual field observation coding" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotype-presentation> ;
+         fhir:reference [ fhir:v "ValueSet/optotype-presentation" ]
+       ] ;
+       fhir:name [ fhir:v "Optotype Presentation ValueSet" ] ;
+       fhir:description [ fhir:v "A ValueSet that includes codes representing the type of optotype presentation used during visual acuity testing." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/optotypes> ;
+         fhir:reference [ fhir:v "ValueSet/optotypes" ]
+       ] ;
+       fhir:name [ fhir:v "Optotype ValueSet" ] ;
+       fhir:description [ fhir:v "A ValueSet that includes codes representing optotype used during visual acuity testing." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/pinhole-occluder-usage> ;
+         fhir:reference [ fhir:v "ValueSet/pinhole-occluder-usage" ]
+       ] ;
+       fhir:name [ fhir:v "Pinhole Occluder Usage Values" ] ;
+       fhir:description [ fhir:v "This ValueSet contains SNOMED CT codes to represent whether a pinhole occluder was used during a visual acuity measurement." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/procedures> ;
+         fhir:reference [ fhir:v "ValueSet/procedures" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmology Procedures Valueset" ] ;
+       fhir:description [ fhir:v "This ValueSet represents procedure codes for clinical and billing purposes." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/qualifiers> ;
+         fhir:reference [ fhir:v "ValueSet/qualifiers" ]
+       ] ;
+       fhir:name [ fhir:v "Ophthalmic anatomical location qualifiers" ] ;
+       fhir:description [ fhir:v "Describes whether a recorded observation is either final or amended" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/right-left-both-eyes> ;
+         fhir:reference [ fhir:v "ValueSet/right-left-both-eyes" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet-right-left-both-eyes" ] ;
+       fhir:description [ fhir:v "ValueSet containing laterality codes for ophthalmic observations which may contain information on one or both eyes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/room-brightness-levels> ;
+         fhir:reference [ fhir:v "ValueSet/room-brightness-levels" ]
+       ] ;
+       fhir:name [ fhir:v "Room Brightness Levels" ] ;
+       fhir:description [ fhir:v "This ValueSet contains codes to represent the brightness of the room where a test was performed." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/special-va-testing-parameters> ;
+         fhir:reference [ fhir:v "ValueSet/special-va-testing-parameters" ]
+       ] ;
+       fhir:name [ fhir:v "Special VA testing Parameters" ] ;
+       fhir:description [ fhir:v "This ValueSet contains codes to represent whether special testing parameters, such as a pinhole occluder or glare light, were used during a visual acuity measurement." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods-with-sl> ;
+         fhir:reference [ fhir:v "ValueSet/visual-acuity-correction-methods-with-sl" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity Correction Methods" ] ;
+       fhir:description [ fhir:v "Methods of correction used during a visual acuity test." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-correction-methods> ;
+         fhir:reference [ fhir:v "ValueSet/visual-acuity-correction-methods" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity Correction Methods" ] ;
+       fhir:description [ fhir:v "Methods of correction used during a visual acuity test." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-visual-acuity-methods> ;
+         fhir:reference [ fhir:v "ValueSet/observation-visual-acuity-methods" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity Measurement Methods valueset" ] ;
+       fhir:description [ fhir:v "Describes the various charts that can be used to assess visual acuity where concept descends from 400912000 (Visual acuity test equipment (physical object))" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-quantity-units> ;
+         fhir:reference [ fhir:v "ValueSet/visual-acuity-quantity-units" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity Quantity Units" ] ;
+       fhir:description [ fhir:v "Units of Measure of Visual acuity" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/visual-acuity-test-distance> ;
+         fhir:reference [ fhir:v "ValueSet/visual-acuity-test-distance" ]
+       ] ;
+       fhir:name [ fhir:v "Visual Acuity Test Distance" ] ;
+       fhir:description [ fhir:v "Codes representing the distances at which visual acuity tests are performed." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/Pupil-Diameter-Comparison> ;
+         fhir:reference [ fhir:v "ValueSet/Pupil-Diameter-Comparison" ]
+       ] ;
+       fhir:name [ fhir:v "Pupil-Diameter-Comparison" ] ;
+       fhir:description [ fhir:v "A ValueSet containing codes for various pupillomotor function observations." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/lens-types> ;
+         fhir:reference [ fhir:v "ValueSet/lens-types" ]
+       ] ;
+       fhir:name [ fhir:v "Lens Types" ] ;
+       fhir:description [ fhir:v "This ValueSet includes all SNOMED CT codes that are descendants of 'Contact lenses, device' (57368009) and 'Eye glasses, device' (50121007)." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/pupi-testing-active-substances> ;
+         fhir:reference [ fhir:v "ValueSet/pupi-testing-active-substances" ]
+       ] ;
+       fhir:name [ fhir:v "Pupil Testing Active Substances" ] ;
+       fhir:description [ fhir:v "This ValueSet contains codes to represent active substances used in pharmacological testing during pupil diameter measurements." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/ValueSet/right-left-eyes> ;
+         fhir:reference [ fhir:v "ValueSet/right-left-eyes" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet-right-left-eyes" ] ;
+       fhir:description [ fhir:v "ValueSet containing laterality codes for ophthalmic observations which should only contain information on either the right or left eye, not both" ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home Page" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient_journey.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "patient_journey.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Journey Use Case" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "physician_tools.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "physician_tools.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Physician Tools Use Case" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "registry.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "registry.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Registry Use Case" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "life_science.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "life_science.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Life Science Use Case" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "clinic_optimisation.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "clinic_optimisation.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Clinic Optimisation Use Case" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "profiles.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "usecases.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "usecases.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Use Cases" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "guidance.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Guidance" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "terminology.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "terminology.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Terminology" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "contributors.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "contributors.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Contributors" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Useful Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "changes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "changes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "IG Change History" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

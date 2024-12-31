@@ -1,0 +1,45 @@
+{
+  "resourceType" : "Observation",
+  "id" : "vf-mean-deviation-re-0",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-visual-field"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation vf-mean-deviation-re-0</b></p><a name=\"vf-mean-deviation-re-0\"> </a><a name=\"hcvf-mean-deviation-re-0\"> </a><a name=\"vf-mean-deviation-re-0-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 422859007}\">Mean deviation</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number:\u00a002134005)</a></p><p><b>effective</b>: 2013-06-27 17:04:20+0400</p><p><b>value</b>: 4.56 decibels</p><p><b>bodySite</b>: <span title=\"Codes:\"></span></p><p><b>derivedFrom</b>: <a href=\"Media-visual-field-re-0.html\">Media: status = completed</a></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "422859007",
+      "display" : "Mean deviation"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ophthal-patient-example-0"
+  },
+  "effectiveDateTime" : "2013-06-27T17:04:20+04:00",
+  "valueQuantity" : {
+    "value" : 4.56,
+    "unit" : "decibels"
+  },
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/bodySite",
+      "valueReference" : {
+        "reference" : "BodyStructure/bodystructure-right-eye"
+      }
+    }]
+  },
+  "derivedFrom" : [{
+    "reference" : "Media/visual-field-re-0"
+  }]
+}

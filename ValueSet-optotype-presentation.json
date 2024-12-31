@@ -1,0 +1,58 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "optotype-presentation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet optotype-presentation</b></p><a name=\"optotype-presentation\"> </a><a name=\"hcoptotype-presentation\"> </a><a name=\"optotype-presentation-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>single-optotypes</td><td>Single Optotypes</td></tr><tr><td>optotype-rows</td><td>Optotype Rows</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1220561009\">1220561009</a></td><td>Not recorded</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotype-presentation.html",
+  "version" : "0.1.0",
+  "name" : "OptotypePresentation",
+  "title" : "Optotype Presentation ValueSet",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-31T12:44:09+00:00",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "A ValueSet that includes codes representing the type of optotype presentation used during visual acuity testing.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html",
+      "concept" : [{
+        "code" : "single-optotypes",
+        "display" : "Single Optotypes"
+      },
+      {
+        "code" : "optotype-rows",
+        "display" : "Optotype Rows"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1220561009",
+        "display" : "Not recorded"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

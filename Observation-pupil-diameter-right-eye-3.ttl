@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-3> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pupil-diameter-right-eye-3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"^^xsd:anyURI ;
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation pupil-diameter-right-eye-3</b></p><a name=\"pupil-diameter-right-eye-3\"> </a><a name=\"hcpupil-diameter-right-eye-3\"> </a><a name=\"pupil-diameter-right-eye-3-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>effective</b>: 2023-11-17 10:35:00+0000</p><p><b>value</b>: 7 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP429645-7}\">Room brightness level during testing</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA25332-0}\">Bright</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82757-5}\">Time since administration of medication</span></p><p><b>value</b>: 30 minutes<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 410942007}\">Drug or medicament (substance)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 372897005}\">Apraclonidine</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:LP73214-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LP73214-6" ] ;
+       fhir:display [ fhir:v "Pupil diameter" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/123> ;
+     fhir:reference [ fhir:v "Patient/123" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-11-17T10:35:00+00:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mm" ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:362502000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "362502000" ] ;
+       fhir:display [ fhir:v "Entire right eye (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP429645-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LP429645-7" ] ;
+         fhir:display [ fhir:v "Room brightness level during testing" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA25332-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA25332-0" ] ;
+         fhir:display [ fhir:v "Bright" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:82757-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "82757-5" ] ;
+         fhir:display [ fhir:v "Time since administration of medication" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "minutes" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "min" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:410942007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "410942007" ] ;
+         fhir:display [ fhir:v "Drug or medicament (substance)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:372897005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "372897005" ] ;
+         fhir:display [ fhir:v "Apraclonidine" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

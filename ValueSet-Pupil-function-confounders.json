@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Pupil-function-confounders",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Pupil-function-confounders</b></p><a name=\"Pupil-function-confounders\"> </a><a name=\"hcPupil-function-confounders\"> </a><a name=\"Pupil-function-confounders-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html\"><code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounder_Right_Pupil_Dilated\">VA_Confounder_Right_Pupil_Dilated</a></td><td>The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use</td><td>The Pupil of the Right eye is in a Mydriatic state because dilating Eyedrops were used</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounder_Left_Pupil_Dilated\">VA_Confounder_Left_Pupil_Dilated</a></td><td>The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use</td><td>The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounded_pathological_right_pupil_function\">VA_Confounded_pathological_right_pupil_function</a></td><td>The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops</td><td>The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounded_pathological_left_pupil_function\">VA_Confounded_pathological_left_pupil_function</a></td><td>The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops</td><td>The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_not_confounded_by_pupil_function\">VA_not_confounded_by_pupil_function</a></td><td>Absence of significant confounding effect of pupil function on VA measurement</td><td>Absence of significant confounding effect of pupil function on VA measurement</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-function-confounders",
+  "version" : "0.1.0",
+  "name" : "PupilFunctionConfounders",
+  "title" : "Pupil Function Confounders",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-31T12:44:09+00:00",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "ValueSet including codes that represent confounders due to pupil function that may affect visual acuity measurements.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+      "concept" : [{
+        "code" : "VA_Confounder_Right_Pupil_Dilated",
+        "display" : "The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use"
+      },
+      {
+        "code" : "VA_Confounder_Left_Pupil_Dilated",
+        "display" : "The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use"
+      },
+      {
+        "code" : "VA_Confounded_pathological_right_pupil_function",
+        "display" : "The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops"
+      },
+      {
+        "code" : "VA_Confounded_pathological_left_pupil_function",
+        "display" : "The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops"
+      },
+      {
+        "code" : "VA_not_confounded_by_pupil_function",
+        "display" : "Absence of significant confounding effect of pupil function on VA measurement"
+      }]
+    }]
+  }
+}

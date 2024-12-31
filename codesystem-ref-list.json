@@ -1,0 +1,127 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
+      "uses" : {
+      },
+      "ValueSet-observation-final-status.html" : "Observation Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10CM",
+      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.90"],
+      "uses" : {
+      },
+      "ValueSet-conditions.html" : "Ophthalmology Condition ICD10 and SNOMED codes ValueSet"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-observation-oct-rnfl.html" : "OCT RNFL Observable Entities ValueSet",
+      "ValueSet-observation-oct-macula.html" : "OCT Macula Observable Entities ValueSet",
+      "ValueSet-room-brightness-levels.html" : "Room Brightness Levels",
+      "ValueSet-special-va-testing-parameters.html" : "Special VA testing Parameters",
+      "ValueSet-optotypes.html" : "Optotype ValueSet",
+      "ValueSet-visual-acuity-categorical-values.html" : "Visual Acuity Categorical Values",
+      "ValueSet-visual-acuity-test-distance.html" : "Visual Acuity Test Distance"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-pupi-testing-active-substances.html" : "Pupil Testing Active Substances",
+      "ValueSet-right-left-both-eyes.html" : "ValueSet-right-left-both-eyes",
+      "ValueSet-lens-types.html" : "Lens Types",
+      "ValueSet-optotype-presentation.html" : "Optotype Presentation ValueSet",
+      "ValueSet-observation-visual-field.html" : "Visual Field Observable Entities ValueSet",
+      "ValueSet-right-left-eyes.html" : "ValueSet-right-left-eyes",
+      "ValueSet-conditions.html" : "Ophthalmology Condition ICD10 and SNOMED codes ValueSet",
+      "ValueSet-visual-acuity-categorical-values.html" : "Visual Acuity Categorical Values",
+      "ValueSet-Pupil-Diameter-Comparison.html" : "Pupil-Diameter-Comparison",
+      "ValueSet-observation-visual-acuity.html" : "Visual acuity method valueset (SNOMED)",
+      "ValueSet-visual-acuity-correction-methods-with-sl.html" : "Visual Acuity Correction Methods",
+      "ValueSet-observation-visual-acuity-methods.html" : "Visual Acuity Measurement Methods valueset",
+      "ValueSet-room-brightness-levels.html" : "Room Brightness Levels",
+      "ValueSet-qualifiers.html" : "Ophthalmic anatomical location qualifiers",
+      "ValueSet-pinhole-occluder-usage.html" : "Pinhole Occluder Usage Values",
+      "ValueSet-special-va-testing-parameters.html" : "Special VA testing Parameters",
+      "ValueSet-iop-methods.html" : "Intraocular pressure (IOP) method valueset",
+      "ValueSet-optotypes.html" : "Optotype ValueSet",
+      "ValueSet-observable-entities.html" : "Ophthalmology observations (SNOMED)",
+      "ValueSet-visual-acuity-correction-methods.html" : "Visual Acuity Correction Methods",
+      "ValueSet-body-site-eye.html" : "Ophthalmic anatomical location",
+      "ValueSet-procedures.html" : "Ophthalmology Procedures Valueset"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/iop-methods",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IOPMethods",
+      "title" : "IOP Methods Code System",
+      "description" : "IOP additional method types",
+      "uses" : {
+      },
+      "ValueSet-iop-methods.html" : "Intraocular pressure (IOP) method valueset"
+    },
+    {
+      "url" : "http://terminology.hl7.org/uv/eyecare/CodeSystem/qualifiers",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BodyStructureQualifiers",
+      "title" : "Body Structure Qualifiers",
+      "description" : "Additional body site qualifiers",
+      "uses" : {
+      },
+      "ValueSet-qualifiers.html" : "Ophthalmic anatomical location qualifiers"
+    },
+    {
+      "url" : "http://www.ama-assn.org/go/cpt",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "CPT",
+      "title" : "Current Procedural Terminology (CPT®)",
+      "description" : "The Current Procedural Terminology (CPT) code set, created and maintained by the American Medical Association, is the language of medicine today and the code to its future. This system of terminology is the most widely accepted medical nomenclature used to report medical procedures and services under public and private health insurance programs. CPT coding is also used for administrative management purposes such as claims processing and developing guidelines for medical care review. Each year, via a rigorous, evidence-based and transparent process, the independent CPT Editorial Panel revises, creates or deletes hundreds of codes in order to reflect current medical practice.\r\n\r\nDesignated by the U.S. Department of Health and Human Services under the Health Insurance Portability and Accountability Act (HIPAA) as a national coding set for physician and other health care professional services and procedures, CPT’s evidence-based codes accurately encompass the full range of health care services.\r\n\r\nAll CPT codes are five-digits and can be either numeric or alphanumeric, depending on the category. CPT code descriptors are clinically focused and utilize common standards so that a diverse set of users can have common understanding across the clinical health care paradigm.\r\n\r\nThere are various types of CPT codes:\r\n\r\nCategory I: These codes have descriptors that correspond to a procedure or service. Codes range from 00100–99499 and are generally ordered into sub-categories based on procedure/service type and anatomy.\r\n\r\nCategory II: These alphanumeric tracking codes are supplemental codes used for performance measurement. Using them is optional and not required for correct coding.\r\n\r\nCategory III: These are temporary alphanumeric codes for new and developing technology, procedures and services. They were created for data collection, assessment and in some instances, payment of new services and procedures that currently don’t meet the criteria for a Category I code.\r\n\r\nProprietary Laboratory Analyses (PLA) codes: These codes describe proprietary clinical laboratory analyses and can be either provided by a single (“solesource”) laboratory or licensed or marketed to multiple providing laboratories that are cleared or approved by the Food and Drug Administration (FDA)). This category includes but is not limited to Advanced Diagnostic Laboratory Tests (ADLTs) and Clinical Diagnostic Laboratory Tests (CDLTs), as defined under the Protecting Access to Medicare Act of 2014 (PAMA).",
+      "oids" : ["2.16.840.1.113883.6.12"],
+      "uses" : {
+      },
+      "ValueSet-procedures.html" : "Ophthalmology Procedures Valueset"
+    },
+    {
+      "url" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CustomCodeSystem",
+      "title" : "Codes which were needed, but not found in SNOMED or LOINC, will be submitted there",
+      "description" : "Codes which were needed, but not found in SNOMED or LOINC, will be submitted there",
+      "uses" : {
+      },
+      "ValueSet-visual-acuity-correction-methods-with-sl.html" : "Visual Acuity Correction Methods",
+      "ValueSet-Pupil-function-confounders.html" : "Pupil Function Confounders",
+      "ValueSet-visual-acuity-correction-methods.html" : "Visual Acuity Correction Methods",
+      "ValueSet-Pupil-Diameter-Comparison.html" : "Pupil-Diameter-Comparison"
+    }
+  ]
+}

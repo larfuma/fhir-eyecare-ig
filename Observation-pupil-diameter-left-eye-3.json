@@ -1,0 +1,83 @@
+{
+  "resourceType" : "Observation",
+  "id" : "pupil-diameter-left-eye-3",
+  "meta" : {
+    "profile" : ["https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-diameter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation pupil-diameter-left-eye-3</b></p><a name=\"pupil-diameter-left-eye-3\"> </a><a name=\"hcpupil-diameter-left-eye-3\"> </a><a name=\"pupil-diameter-left-eye-3-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>effective</b>: 2023-11-17 10:35:00+0000</p><p><b>value</b>: 5 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 12853009}\">Left eye</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP429645-7}\">Room brightness level during testing</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA25332-0}\">Bright</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82757-5}\">Time since administration of medication</span></p><p><b>value</b>: 30 minutes<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 410942007}\">Drug or medicament (substance)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 372897005}\">Apraclonidine</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP73214-6",
+      "display" : "Pupil diameter"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/123"
+  },
+  "effectiveDateTime" : "2023-11-17T10:35:00+00:00",
+  "valueQuantity" : {
+    "value" : 5,
+    "unit" : "mm",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mm"
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "12853009",
+      "display" : "Left eye"
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LP429645-7",
+        "display" : "Room brightness level during testing"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA25332-0",
+        "display" : "Bright"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "82757-5",
+        "display" : "Time since administration of medication"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 30,
+      "unit" : "minutes",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "min"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "410942007",
+        "display" : "Drug or medicament (substance)"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "372897005",
+        "display" : "Apraclonidine"
+      }]
+    }
+  }]
+}

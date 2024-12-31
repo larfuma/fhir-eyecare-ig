@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="custom-codes-to-be-submitted-to-SNOMED-or-LOINC"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem custom-codes-to-be-submitted-to-SNOMED-or-LOINC</b></p><a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC"> </a><a name="hccustom-codes-to-be-submitted-to-SNOMED-or-LOINC"> </a><a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-en-US"> </a><p>This  code system <code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">single-optotypes<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-single-optotypes"> </a></td><td>Single Optotypes</td><td>The visual acuity test was conducted using single optotypes.</td></tr><tr><td style="white-space:nowrap">optotype-rows<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-optotype-rows"> </a></td><td>Optotype Rows</td><td>The visual acuity test was conducted using rows of optotypes.</td></tr><tr><td style="white-space:nowrap">optotype-presentation<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-optotype-presentation"> </a></td><td>Optotype Presentation</td><td>Whether the optotypes were presented as single optotypes or as rows of optotypes</td></tr><tr><td style="white-space:nowrap">Optotype<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-Optotype"> </a></td><td>Optotype</td><td>Figures or letters of different sizes, which are discriminated by a patient in Visual acuity testing</td></tr><tr><td style="white-space:nowrap">Landolt C<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-LandoltC"> </a></td><td>Landolt C</td><td>Landolt C Optotype, also known as Landolt Ring Optotype</td></tr><tr><td style="white-space:nowrap">Sjogren's Hand Test<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-Sjogren.39sHandTest"> </a></td><td>Sjogren's Hand Test</td><td>A Visual Acuity Test with a Chart consisting of pictures of hands with fingers pointing towards various directions.</td></tr><tr><td style="white-space:nowrap">Lea Symbol Test<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-LeaSymbolTest"> </a></td><td>Lea Symbol Test</td><td>A four-Optotype Visual acuity Test for Children developed by Dr Lea Hyvaerinen</td></tr><tr><td style="white-space:nowrap">Refractive Correction<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-RefractiveCorrection"> </a></td><td>Refractive Correction</td><td>The process of improving visual acuity by changing the paths of light rays by in order to more accurately focus it on the retina</td></tr><tr><td style="white-space:nowrap">trial-lenses-autorefraction<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-autorefraction"> </a></td><td>Trial Lenses - Values from Autorefraction</td><td>Trial lenses used for visual acuity testing based on values obtained from an autorefractor.</td></tr><tr><td style="white-space:nowrap">trial-lenses-manifest-without-cycloplegia<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-manifest-without-cycloplegia"> </a></td><td>Trial Lenses - Values from Manifest Refraction without Cycloplegia</td><td>Trial lenses used for visual acuity testing based on values from manifest refraction without cycloplegia.</td></tr><tr><td style="white-space:nowrap">trial-lenses-manifest-with-cycloplegia<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-manifest-with-cycloplegia"> </a></td><td>Trial Lenses - Values from Manifest Refraction with Cycloplegia</td><td>Trial lenses used for visual acuity testing based on values from manifest refraction with cycloplegia.</td></tr><tr><td style="white-space:nowrap">trial-lenses-retinoscopy<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-retinoscopy"> </a></td><td>Trial Lenses - Values from Retinoscopy</td><td>Trial lenses used for visual acuity testing based on values from retinoscopy.</td></tr><tr><td style="white-space:nowrap">trial-lenses-unspecified-origin<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-unspecified-origin"> </a></td><td>Trial Lenses - Values of Unspecified Origin</td><td>Trial lenses used for visual acuity testing where the origin of the refractive values is unspecified.</td></tr><tr><td style="white-space:nowrap">VA_Confounder_Right_Pupil_Dilated<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounder_Right_Pupil_Dilated"> </a></td><td>The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use</td><td>The Pupil of the Right eye is in a Mydriatic state because dilating Eyedrops were used</td></tr><tr><td style="white-space:nowrap">VA_Confounder_Left_Pupil_Dilated<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounder_Left_Pupil_Dilated"> </a></td><td>The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use</td><td>The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use</td></tr><tr><td style="white-space:nowrap">VA_Confounded_pathological_right_pupil_function<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounded_pathological_right_pupil_function"> </a></td><td>The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops</td><td>The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops</td></tr><tr><td style="white-space:nowrap">VA_Confounded_pathological_left_pupil_function<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounded_pathological_left_pupil_function"> </a></td><td>The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops</td><td>The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops</td></tr><tr><td style="white-space:nowrap">VA_not_confounded_by_pupil_function<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_not_confounded_by_pupil_function"> </a></td><td>Absence of significant confounding effect of pupil function on VA measurement</td><td>Absence of significant confounding effect of pupil function on VA measurement</td></tr><tr><td style="white-space:nowrap">logMAR<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-logMAR"> </a></td><td>Logarithm of the Minimum Angle of Resolution</td><td>Logarithm of the Minimum Angle of Resolution as a Unit of Visual Acuity</td></tr><tr><td style="white-space:nowrap">MAR<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-MAR"> </a></td><td>Minimum Angle of Resolution</td><td>Minimum Angle of Resolution as a Unit of Visual Acuity</td></tr><tr><td style="white-space:nowrap">Decimal<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-Decimal"> </a></td><td>Decimal Unit of Visual Acuity</td><td>Reciprocal value of Minimum Angle of Resolution, equivalent to calculating the fraction of a Snellen Ratio</td></tr><tr><td style="white-space:nowrap">Jaeger J<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-JaegerJ"> </a></td><td>Jaeger type (J) Unit</td><td>Unit of Visual acuity, determined by a the smallest print read on a Jaeger chart</td></tr><tr><td style="white-space:nowrap">VAS<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VAS"> </a></td><td>Visual Acuity Score</td><td>Unit of Visual acuity, calculated as 100 - 50 x logMAR</td></tr><tr><td style="white-space:nowrap">Number of recongnized optotypes<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-Numberofrecongnizedoptotypes"> </a></td><td>Number of recongnized optotypes</td><td>Number of optotypes that were correctly identified, usually in terms of Letters read</td></tr><tr><td style="white-space:nowrap">pupillomotor-function-finding-narrative<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-pupillomotor-function-finding-narrative"> </a></td><td>Pupillomotor Function Finding Narrative</td><td>A narrative description of the pupillomotor function assessment.</td></tr><tr><td style="white-space:nowrap">comparison-of-pupil-diameter-between-eyes<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-comparison-of-pupil-diameter-between-eyes"> </a></td><td>Comparison of Pupil Diameter between Eyes</td><td>An observation comparing the pupil diameters of both eyes.</td></tr><tr><td style="white-space:nowrap">swinging-light-test<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-swinging-light-test"> </a></td><td>Swinging Light Test</td><td>An assessment using the swinging flashlight test to detect a relative afferent pupillary defect (RAPD).</td></tr><tr><td style="white-space:nowrap">near-reaction-assessment<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-near-reaction-assessment"> </a></td><td>Near Reaction Assessment</td><td>An assessment of the pupil's reaction to near stimuli.</td></tr><tr><td style="white-space:nowrap">anisocoria-right-pupil-larger-than-left<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-right-pupil-larger-than-left"> </a></td><td>Anisocoria right pupil larger than left pupil</td><td>A finding of Anisocoria with the right pupil having a larger diameter than the left pupil.</td></tr><tr><td style="white-space:nowrap">anisocoria-left-pupil-larger-than-right<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-left-pupil-larger-than-right"> </a></td><td>Anisocoria left pupil larger than right pupil</td><td>A finding of Anisocoria with the left pupil having a larger diameter than the right pupil.</td></tr><tr><td style="white-space:nowrap">anisocoria-with-larger-pupil-diameter-difference-in-bright-lighting-conditions<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-with-larger-pupil-diameter-difference-in-bright-lighting-conditions"> </a></td><td>Anisocoria more pronounced in bright light</td><td>A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in bright lighting conditions</td></tr><tr><td style="white-space:nowrap">anisocoria-with-larger-pupil-diameter-difference-in-low-lighting-conditions<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-with-larger-pupil-diameter-difference-in-low-lighting-conditions"> </a></td><td>Anisocoria more pronounced in low lighting</td><td>A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in low lighting conditions</td></tr><tr><td style="white-space:nowrap">anisocoria-independent-of-lighting-conditions<a name="custom-codes-to-be-submitted-to-SNOMED-or-LOINC-anisocoria-independent-of-lighting-conditions"> </a></td><td>Difference in Pupil size between eyes not different in bright or low light</td><td>A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in low lighting conditions</td></tr></table></div>
+  </text>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"/>
+  <version value="0.1.0"/>
+  <name value="CustomCodeSystem"/>
+  <title value="Codes which were needed, but not found in SNOMED or LOINC, will be submitted there"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-31T12:44:09+00:00"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Codes which were needed, but not found in SNOMED or LOINC, will be submitted there"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="single-optotypes"/>
+    <display value="Single Optotypes"/>
+    <definition value="The visual acuity test was conducted using single optotypes."/>
+  </concept>
+  <concept>
+    <code value="optotype-rows"/>
+    <display value="Optotype Rows"/>
+    <definition value="The visual acuity test was conducted using rows of optotypes."/>
+  </concept>
+  <concept>
+    <code value="optotype-presentation"/>
+    <display value="Optotype Presentation"/>
+    <definition value="Whether the optotypes were presented as single optotypes or as rows of optotypes"/>
+  </concept>
+  <concept>
+    <code value="Optotype"/>
+    <display value="Optotype"/>
+    <definition value="Figures or letters of different sizes, which are discriminated by a patient in Visual acuity testing"/>
+  </concept>
+  <concept>
+    <code value="Landolt C"/>
+    <display value="Landolt C"/>
+    <definition value="Landolt C Optotype, also known as Landolt Ring Optotype"/>
+  </concept>
+  <concept>
+    <code value="Sjogren's Hand Test"/>
+    <display value="Sjogren's Hand Test"/>
+    <definition value="A Visual Acuity Test with a Chart consisting of pictures of hands with fingers pointing towards various directions."/>
+  </concept>
+  <concept>
+    <code value="Lea Symbol Test"/>
+    <display value="Lea Symbol Test"/>
+    <definition value="A four-Optotype Visual acuity Test for Children developed by Dr Lea Hyvaerinen"/>
+  </concept>
+  <concept>
+    <code value="Refractive Correction"/>
+    <display value="Refractive Correction"/>
+    <definition value="The process of improving visual acuity by changing the paths of light rays by in order to more accurately focus it on the retina"/>
+  </concept>
+  <concept>
+    <code value="trial-lenses-autorefraction"/>
+    <display value="Trial Lenses - Values from Autorefraction"/>
+    <definition value="Trial lenses used for visual acuity testing based on values obtained from an autorefractor."/>
+  </concept>
+  <concept>
+    <code value="trial-lenses-manifest-without-cycloplegia"/>
+    <display value="Trial Lenses - Values from Manifest Refraction without Cycloplegia"/>
+    <definition value="Trial lenses used for visual acuity testing based on values from manifest refraction without cycloplegia."/>
+  </concept>
+  <concept>
+    <code value="trial-lenses-manifest-with-cycloplegia"/>
+    <display value="Trial Lenses - Values from Manifest Refraction with Cycloplegia"/>
+    <definition value="Trial lenses used for visual acuity testing based on values from manifest refraction with cycloplegia."/>
+  </concept>
+  <concept>
+    <code value="trial-lenses-retinoscopy"/>
+    <display value="Trial Lenses - Values from Retinoscopy"/>
+    <definition value="Trial lenses used for visual acuity testing based on values from retinoscopy."/>
+  </concept>
+  <concept>
+    <code value="trial-lenses-unspecified-origin"/>
+    <display value="Trial Lenses - Values of Unspecified Origin"/>
+    <definition value="Trial lenses used for visual acuity testing where the origin of the refractive values is unspecified."/>
+  </concept>
+  <concept>
+    <code value="VA_Confounder_Right_Pupil_Dilated"/>
+    <display value="The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use"/>
+    <definition value="The Pupil of the Right eye is in a Mydriatic state because dilating Eyedrops were used"/>
+  </concept>
+  <concept>
+    <code value="VA_Confounder_Left_Pupil_Dilated"/>
+    <display value="The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use"/>
+    <definition value="The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use"/>
+  </concept>
+  <concept>
+    <code value="VA_Confounded_pathological_right_pupil_function"/>
+    <display value="The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops"/>
+    <definition value="The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops"/>
+  </concept>
+  <concept>
+    <code value="VA_Confounded_pathological_left_pupil_function"/>
+    <display value="The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops"/>
+    <definition value="The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops"/>
+  </concept>
+  <concept>
+    <code value="VA_not_confounded_by_pupil_function"/>
+    <display value="Absence of significant confounding effect of pupil function on VA measurement"/>
+    <definition value="Absence of significant confounding effect of pupil function on VA measurement"/>
+  </concept>
+  <concept>
+    <code value="logMAR"/>
+    <display value="Logarithm of the Minimum Angle of Resolution"/>
+    <definition value="Logarithm of the Minimum Angle of Resolution as a Unit of Visual Acuity"/>
+  </concept>
+  <concept>
+    <code value="MAR"/>
+    <display value="Minimum Angle of Resolution"/>
+    <definition value="Minimum Angle of Resolution as a Unit of Visual Acuity"/>
+  </concept>
+  <concept>
+    <code value="Decimal"/>
+    <display value="Decimal Unit of Visual Acuity"/>
+    <definition value="Reciprocal value of Minimum Angle of Resolution, equivalent to calculating the fraction of a Snellen Ratio"/>
+  </concept>
+  <concept>
+    <code value="Jaeger J"/>
+    <display value="Jaeger type (J) Unit"/>
+    <definition value="Unit of Visual acuity, determined by a the smallest print read on a Jaeger chart"/>
+  </concept>
+  <concept>
+    <code value="VAS"/>
+    <display value="Visual Acuity Score"/>
+    <definition value="Unit of Visual acuity, calculated as 100 - 50 x logMAR"/>
+  </concept>
+  <concept>
+    <code value="Number of recongnized optotypes"/>
+    <display value="Number of recongnized optotypes"/>
+    <definition value="Number of optotypes that were correctly identified, usually in terms of Letters read"/>
+  </concept>
+  <concept>
+    <code value="pupillomotor-function-finding-narrative"/>
+    <display value="Pupillomotor Function Finding Narrative"/>
+    <definition value="A narrative description of the pupillomotor function assessment."/>
+  </concept>
+  <concept>
+    <code value="comparison-of-pupil-diameter-between-eyes"/>
+    <display value="Comparison of Pupil Diameter between Eyes"/>
+    <definition value="An observation comparing the pupil diameters of both eyes."/>
+  </concept>
+  <concept>
+    <code value="swinging-light-test"/>
+    <display value="Swinging Light Test"/>
+    <definition value="An assessment using the swinging flashlight test to detect a relative afferent pupillary defect (RAPD)."/>
+  </concept>
+  <concept>
+    <code value="near-reaction-assessment"/>
+    <display value="Near Reaction Assessment"/>
+    <definition value="An assessment of the pupil's reaction to near stimuli."/>
+  </concept>
+  <concept>
+    <code value="anisocoria-right-pupil-larger-than-left"/>
+    <display value="Anisocoria right pupil larger than left pupil"/>
+    <definition value="A finding of Anisocoria with the right pupil having a larger diameter than the left pupil."/>
+  </concept>
+  <concept>
+    <code value="anisocoria-left-pupil-larger-than-right"/>
+    <display value="Anisocoria left pupil larger than right pupil"/>
+    <definition value="A finding of Anisocoria with the left pupil having a larger diameter than the right pupil."/>
+  </concept>
+  <concept>
+    <code value="anisocoria-with-larger-pupil-diameter-difference-in-bright-lighting-conditions"/>
+    <display value="Anisocoria more pronounced in bright light"/>
+    <definition value="A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in bright lighting conditions"/>
+  </concept>
+  <concept>
+    <code value="anisocoria-with-larger-pupil-diameter-difference-in-low-lighting-conditions"/>
+    <display value="Anisocoria more pronounced in low lighting"/>
+    <definition value="A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in low lighting conditions"/>
+  </concept>
+  <concept>
+    <code value="anisocoria-independent-of-lighting-conditions"/>
+    <display value="Difference in Pupil size between eyes not different in bright or low light"/>
+    <definition value="A finding that the absolute Difference in Diameter between the Pupils of both eyes is larger in low lighting conditions"/>
+  </concept>
+</CodeSystem>

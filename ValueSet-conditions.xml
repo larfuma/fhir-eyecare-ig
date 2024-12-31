@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="conditions"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet conditions</b></p><a name="conditions"> </a><a name="hcconditions"> </a><a name="conditions-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/6.1.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 371409005 (Disorder of eye region (disorder))</li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/uv/eyecare/ValueSet/conditions"/>
+  <version value="0.1.0"/>
+  <name value="OphthalmologyConditionCodesValueSet"/>
+  <title value="Ophthalmology Condition ICD10 and SNOMED codes ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2019-05-01"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Clinical findings for the eye region."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="371409005"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

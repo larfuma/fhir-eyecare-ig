@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Observation",
+  "id" : "vf-false-positives-le-0",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-visual-field"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation vf-false-positives-le-0</b></p><a name=\"vf-false-positives-le-0\"> </a><a name=\"hcvf-false-positives-le-0\"> </a><a name=\"vf-false-positives-le-0-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/eyecare/CodeSystem/visual-field-observations 400205}\">False positive ratio</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number:\u00a002134005)</a></p><p><b>effective</b>: 2013-06-27 17:04:20+0400</p><p><b>value</b>: 1/100</p><p><b>bodySite</b>: <span title=\"Codes:\"></span></p><p><b>derivedFrom</b>: <a href=\"Media-visual-field-le-0.html\">Media: status = completed</a></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/eyecare/CodeSystem/visual-field-observations",
+      "code" : "400205",
+      "display" : "False positive ratio"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ophthal-patient-example-0"
+  },
+  "effectiveDateTime" : "2013-06-27T17:04:20+04:00",
+  "valueRatio" : {
+    "numerator" : {
+      "value" : 1
+    },
+    "denominator" : {
+      "value" : 100
+    }
+  },
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/bodySite",
+      "valueReference" : {
+        "reference" : "BodyStructure/bodystructure-left-eye"
+      }
+    }]
+  },
+  "derivedFrom" : [{
+    "reference" : "Media/visual-field-le-0"
+  }]
+}

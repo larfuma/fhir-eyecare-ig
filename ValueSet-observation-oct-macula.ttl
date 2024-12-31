@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/observation-oct-macula> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-oct-macula"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet observation-oct-macula</b></p><a name=\"observation-oct-macula\"> </a><a name=\"hcobservation-oct-macula\"> </a><a name=\"observation-oct-macula-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/57108-3/\">57108-3</a></td><td>Macular grid.center point thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57109-1/\">57109-1</a></td><td>Macular grid.center subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57110-9/\">57110-9</a></td><td>Macular grid.inner superior subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57111-7/\">57111-7</a></td><td>Macular grid.inner nasal subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57112-5/\">57112-5</a></td><td>Macular grid.inner inferior subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57113-3/\">57113-3</a></td><td>Macular grid.inner temporal subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57114-1/\">57114-1</a></td><td>Macular grid.outer superior subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57115-8/\">57115-8</a></td><td>Macular grid.outer nasal subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57116-6/\">57116-6</a></td><td>Macular grid.outer inferior subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57117-4/\">57117-4</a></td><td>Macular grid.outer temporal subfield thickness by OCT</td></tr><tr><td><a href=\"https://loinc.org/57118-2/\">57118-2</a></td><td>Macular grid.total volume by OCT</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/uv/eyecare/ValueSet/observation-oct-macula"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OphthalmologyOCTMaculaObservableEntitiesValueSet"] ; # 
+  fhir:title [ fhir:v "OCT Macula Observable Entities ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-05-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "OCT Macula observations coding"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "57108-3" ] ;
+         fhir:display [ fhir:v "Macular grid.center point thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57109-1" ] ;
+         fhir:display [ fhir:v "Macular grid.center subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57110-9" ] ;
+         fhir:display [ fhir:v "Macular grid.inner superior subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57111-7" ] ;
+         fhir:display [ fhir:v "Macular grid.inner nasal subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57112-5" ] ;
+         fhir:display [ fhir:v "Macular grid.inner inferior subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57113-3" ] ;
+         fhir:display [ fhir:v "Macular grid.inner temporal subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57114-1" ] ;
+         fhir:display [ fhir:v "Macular grid.outer superior subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57115-8" ] ;
+         fhir:display [ fhir:v "Macular grid.outer nasal subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57116-6" ] ;
+         fhir:display [ fhir:v "Macular grid.outer inferior subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57117-4" ] ;
+         fhir:display [ fhir:v "Macular grid.outer temporal subfield thickness by OCT" ]
+       ] [
+         fhir:code [ fhir:v "57118-2" ] ;
+         fhir:display [ fhir:v "Macular grid.total volume by OCT" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

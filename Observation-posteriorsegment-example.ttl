@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/posteriorsegment-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "posteriorsegment-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative"^^xsd:anyURI ;
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-Posteriorsegment-narrative>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation posteriorsegment-example</b></p><a name=\"posteriorsegment-example\"> </a><a name=\"hcposteriorsegment-example\"> </a><a name=\"posteriorsegment-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 70944-4}\">Eye posterior segment narrative</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>value</b>: Retinal Tear at 6 o'clock</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:70944-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "70944-4" ] ;
+       fhir:display [ fhir:v "Eye posterior segment narrative" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/ophthal-patient-example-0> ;
+     fhir:reference [ fhir:v "Patient/ophthal-patient-example-0" ]
+  ] ; # 
+  fhir:value [ fhir:v "Retinal Tear at 6 o'clock"] ; # 
+  fhir:bodySite [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/bodySite"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-right-eye-6oclock> ;
+         fhir:reference [ fhir:v "BodyStructure/bodystructure-right-eye-6oclock" ]
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:362502000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "362502000" ] ;
+       fhir:display [ fhir:v "Entire right eye (body structure)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

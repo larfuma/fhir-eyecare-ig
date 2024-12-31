@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/ValueSet/Pupil-function-confounders> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Pupil-function-confounders"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Pupil-function-confounders</b></p><a name=\"Pupil-function-confounders\"> </a><a name=\"hcPupil-function-confounders\"> </a><a name=\"Pupil-function-confounders-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html\"><code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounder_Right_Pupil_Dilated\">VA_Confounder_Right_Pupil_Dilated</a></td><td>The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use</td><td>The Pupil of the Right eye is in a Mydriatic state because dilating Eyedrops were used</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounder_Left_Pupil_Dilated\">VA_Confounder_Left_Pupil_Dilated</a></td><td>The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use</td><td>The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounded_pathological_right_pupil_function\">VA_Confounded_pathological_right_pupil_function</a></td><td>The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops</td><td>The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_Confounded_pathological_left_pupil_function\">VA_Confounded_pathological_left_pupil_function</a></td><td>The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops</td><td>The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-VA_not_confounded_by_pupil_function\">VA_not_confounded_by_pupil_function</a></td><td>Absence of significant confounding effect of pupil function on VA measurement</td><td>Absence of significant confounding effect of pupil function on VA measurement</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-Pupil-function-confounders"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PupilFunctionConfounders"] ; # 
+  fhir:title [ fhir:v "Pupil Function Confounders"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-31T12:44:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Lars Fuhrmann"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Lars Fuhrmann" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fuhr.lars@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet including codes that represent confounders due to pupil function that may affect visual acuity measurements."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "VA_Confounder_Right_Pupil_Dilated" ] ;
+         fhir:display [ fhir:v "The Visual Acuity measurement is confounded by a right dilated pupil after dilating eyedrop use" ]
+       ] [
+         fhir:code [ fhir:v "VA_Confounder_Left_Pupil_Dilated" ] ;
+         fhir:display [ fhir:v "The Visual Acuity measurement is confounded by a left dilated pupil after dilating eyedrop use" ]
+       ] [
+         fhir:code [ fhir:v "VA_Confounded_pathological_right_pupil_function" ] ;
+         fhir:display [ fhir:v "The Visual Acuity measurement is confounded by a pathological right pupil function, independent of eyedrops" ]
+       ] [
+         fhir:code [ fhir:v "VA_Confounded_pathological_left_pupil_function" ] ;
+         fhir:display [ fhir:v "The Visual Acuity measurement is confounded by a pathological left pupil function, independent of eyedrops" ]
+       ] [
+         fhir:code [ fhir:v "VA_not_confounded_by_pupil_function" ] ;
+         fhir:display [ fhir:v "Absence of significant confounding effect of pupil function on VA measurement" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

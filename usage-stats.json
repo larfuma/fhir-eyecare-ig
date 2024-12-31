@@ -1,0 +1,227 @@
+{
+  "package": "eyes.back.on.FHIR",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "276",
+  "extensions": [
+    {
+      "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification",
+      "title": "LensDuringVATestSpecification",
+      "types": [
+        "Reference",
+        "CodeableConcept",
+        "decimal",
+        "decimal",
+        "Quantity",
+        "integer",
+        "decimal",
+        "CodeableConcept",
+        "decimal",
+        "decimal",
+        "decimal",
+        "decimal",
+        "Quantity",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification",
+      "title": "OwnLensDuringVATestSpecification",
+      "types": [
+        "Reference",
+        "CodeableConcept",
+        "decimal",
+        "decimal",
+        "Quantity",
+        "integer",
+        "decimal",
+        "code",
+        "decimal",
+        "decimal",
+        "decimal",
+        "decimal",
+        "Quantity",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "BodyStructure": [
+      {
+        "url": "http://hl7.org/fhir/uv/eyecare/StructureDefinition/body-structure-eye",
+        "title": "Ocular anatomical location"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://hl7.org/fhir/uv/eyecare/StructureDefinition/condition-base",
+        "title": "Ophthalmic Diagnoses"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/PupillomotoricDiagnosticReport",
+        "title": "PupillomotoricDiagnosticReport"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/pupil-comparison",
+        "title": "PupilComparison"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Condition.bodySite",
+      "Observation.bodySite"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification": [
+      "Observation.component"
+    ],
+    "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/OwnLensDuringVATestSpecification": [
+      "Observation.component"
+    ]
+  }
+}

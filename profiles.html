@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Profiles - Eyes back on FHIR? An experimental continuation of the Eyes on FHIR working group's HL7 FHIR&reg; IG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Eyes back on FHIR? An experimental continuation of the Eyes on FHIR working group's HL7 FHIR&reg; IG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - experimental
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="guidance.html">Guidance</a></li>
+  <li><a href="usecases.html">Use Cases</a></li>
+  <li><a href="profiles.html">Profiles</a></li>
+  <li><a href="terminology.html">Terminology</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li><a href="contributors.html">Contributors</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Profiles</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Eyes back on FHIR? An experimental continuation of the Eyes on FHIR working group's HL7 FHIR&reg; IG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://larfuma.github.io/fhir-eyecare-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Profiles</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#opthalmic-observations" id="markdown-toc-opthalmic-observations">Opthalmic Observations</a></li>
+  <li><a href="#ophthalmic-diagnoses--conditions" id="markdown-toc-ophthalmic-diagnoses--conditions">Ophthalmic Diagnoses / Conditions</a></li>
+  <li><a href="#ophthalmic-procedures" id="markdown-toc-ophthalmic-procedures">Ophthalmic Procedures</a></li>
+  <li><a href="#diagnostic-tests" id="markdown-toc-diagnostic-tests">Diagnostic Tests</a></li>
+</ul>
+
+</div>
+<p>These profiles have been defined by this implementation guide.</p>
+
+<p>The following clinical profiles have been technically validated.</p>
+
+<h3 id="opthalmic-observations">Opthalmic Observations</h3>
+
+<ul>
+  <li><a href="StructureDefinition-observation-base.html">Base ophthalmic Observation profile</a> - Base profile specifically constrained for describing ophthalmic Observations</li>
+  <li><a href="StructureDefinition-body-structure-eye.html">Ocular anatomical location</a> -The description of an ophthalmic anatomical site that is located within the following structures: the eyeball or the periocular or orbital regions (as opposed to non-ocular anatomical locations).
+This profile is used by combining the unique valueset (hyperlink) for relevant ophthalmic specific BodyStructure.locationQualifier (Body Site modifier) in combination with the base Observation BodyStructure.location (Body Site; descendants from SNOMED 371398005 ““Eye Region Structure), each with a preferred binding in order to refine the accuracy of the location decription of occular structures. This unique qualifying element is important because these locations are routinely described either diffently and/or more granularly than other body parts.
+Of note - non occular (or surrounding) anatomical location references of Observations (eg - arm) do not need to use this modified specialty profile.</li>
+</ul>
+
+<h4 id="clinical-observations-measurable-findings">Clinical Observations (measurable findings)</h4>
+<ul>
+  <li><a href="StructureDefinition-observation-iop.html">Intraocular Pressure (IOP)</a> - A measurement of a patient’s intraocular (within the eyeball) pressure (in mmHg).</li>
+  <li><a href="StructureDefinition-observation-visual-acuity.html">Visual Acuity (VA)</a> - Base profile specifically constrained for describing ophthalmic Observations</li>
+</ul>
+
+<h4 id="clinical-observations-observed-findings">Clinical Observations (observed findings)</h4>
+
+<ul>
+  <li><a name="l304">​</a><a href="StructureDefinition-observation-eye-region-finding.html">Other ophthalmic clinical Observation</a> - Obsvervations made during an ophthalmic clinical examination that relate to ocular structures (and hence should use the ““ocular anatomic location”” profile). 
+Although the Condition resource is used in this profile (with the preferred binding of a specific ophthalmic valueset), this does not intend to indicate that a definitive clinical diagnosis has been made. Rather, that a certain finding has been observed.
+Observations made during a clinical examination which may or may not be related to the routine ophthalmic examination, but describes findings that are not necessarily related to the ocular, periocular or orbital anatomical location or pathology (and hence is unlikely to requre the use of the “ocular anatomic profile”). <br/></li>
+</ul>
+<p text-indent="50px">
+The following examples illustrate scenarios where this may apply; a practitioner may identify <br/>
+i) likely unrelated - an incidental gait as the patient walks into the room<br/>
+ii) possibly related - an enlarged thyroid gland, which could be associated with thyroid eye disease<br/>
+iii) likely related - a high blood pressure reading. This may be a non-ocular/systemic cause of numerous potentially blinding ophthalmic conditions, such as severe hypertensive retinopathy or a retinal vascular occlusion.
+In this case it is appropriate to use an Observation resource not profiled as an 'Opthalmic Clinical Observation'.<br/>
+
+Again, although the Condition resource is referenced in this profile (with the preferred binding of a specific ophthalmic valueset), this does not intend to indicate that a definitive clinical diagnosis has been made. Rather, that a certain finding has been observed.  
+</p>
+
+<h3 id="ophthalmic-diagnoses--conditions">Ophthalmic Diagnoses / Conditions</h3>
+<ul>
+  <li><a href="StructureDefinition-condition-base.html">Ophthalmic Diagnoses</a> - A profile to describe the past/present clinical diagnosis of a specific ophthalmic Condition made by a Practitioner.
+As noted above, although this same Condition Resource / ValueSet combination is referenced as in the ‘Other ophthalmic clinical Observation’ profile, this profile is a modification of the base Condition Resource (as opposed to a base Obervation Resource modification, referencing Condition).
+The ‘Ocular anatomical location’ profile should be used together with this profile.
+When a past/present clinical diagnosis of a specific non-ophthalmic pathological Condition is to be made it is expected the Condition resource will be used not profiled as ‘Opthalmic Diagnoses’.<br/>
+It is not expected that the ‘Ocular anatomical location’ profile will be used together with this profile.</li>
+</ul>
+
+<h3 id="ophthalmic-procedures">Ophthalmic Procedures</h3>
+<ul>
+  <li><a name="l340">​</a><a href="StructureDefinition-procedure-base.html">Opththalmic Procedure</a> - A profile indicating that an active ophthlmic intervention is or was performed on or for a patient.
+The ‘Ocular anatomical location’ profile should be used together with this profile.</li>
+</ul>
+
+<h3 id="diagnostic-tests">Diagnostic Tests</h3>
+
+<ul>
+  <li><a href="StructureDefinition-diagnostic-report-base.html">Base ophthalmic DiagnosticReport profile</a> - Base profile specifically constrained for describing ophthalmic DiagnosticReports</li>
+</ul>
+
+<h4 id="visual-field">Visual Field</h4>
+<ul>
+  <li><a href="StructureDefinition-observation-visual-field.html">VF Observations</a> - The Observations associated with the VF DiagnosticReport (note: this valueset can also be used independently to describe specific findings/Observations captured by a VF test, which may not necessarily be referenced by the DiagnosticReport.)</li>
+  <li><a href="StructureDefinition-diagnostic-report-visual-field.html">VF Diagnostic Report</a> - The DiagnosticReport profile for a visual field DT</li>
+</ul>
+
+<h4 id="oct-macula">OCT Macula</h4>
+<ul>
+  <li><a href="StructureDefinition-observation-oct-macula.html">OCT macula Observations</a> - The Observations associated with the OCT macula DiagnosticReport (note: this valueset can also be used independently to describe specific findings/Observations captured by a OCT test, which may not necessarily be referenced by the DiagnosticReport.)</li>
+  <li><a href="StructureDefinition-diagnostic-report-oct-macula.html">OCT macula Diagnostic Report</a> -The DiagnosticReport profile for an OCT macula</li>
+</ul>
+
+<h4 id="oct-rnfl">OCT RNFL</h4>
+<ul>
+  <li><a href="StructureDefinition-observation-oct-rnfl.html">OCT RNFL Observations</a> - The Observations associated with the OCT RNFL DiagnosticReport (note: this valueset can also be used independently to describe specific findings/Observations captured by a OCT test, which may not necessarily be referenced by the DiagnosticReport.)</li>
+  <li><a href="StructureDefinition-diagnostic-report-oct-rnfl.html">OCT RNFL Diagnostic Report</a> - The DiagnosticReport profile for an OCT RNFL</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://larfuma.github.io/fhir-eyecare-ig/">Lars Fuhrmann</a>.  Package eyes.back.on.FHIR#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 31, 2024 12:44+0000">2024-12-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

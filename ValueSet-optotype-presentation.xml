@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="optotype-presentation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet optotype-presentation</b></p><a name="optotype-presentation"> </a><a name="hcoptotype-presentation"> </a><a name="optotype-presentation-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>single-optotypes</td><td>Single Optotypes</td></tr><tr><td>optotype-rows</td><td>Optotype Rows</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1220561009">1220561009</a></td><td>Not recorded</td></tr><tr><td><a href="http://snomed.info/id/261665006">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://larfuma.github.io/fhir-eyecare-ig/ValueSet-optotype-presentation.html"/>
+  <version value="0.1.0"/>
+  <name value="OptotypePresentation"/>
+  <title value="Optotype Presentation ValueSet"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-31T12:44:09+00:00"/>
+  <publisher value="Lars Fuhrmann"/>
+  <contact>
+    <name value="Lars Fuhrmann"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://larfuma.github.io/fhir-eyecare-ig/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fuhr.lars@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="A ValueSet that includes codes representing the type of optotype presentation used during visual acuity testing."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://larfuma.github.io/fhir-eyecare-ig/CodeSystem-optotype-presentation-codes.html"/>
+      <concept>
+        <code value="single-optotypes"/>
+        <display value="Single Optotypes"/>
+      </concept>
+      <concept>
+        <code value="optotype-rows"/>
+        <display value="Optotype Rows"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1220561009"/>
+        <display value="Not recorded"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

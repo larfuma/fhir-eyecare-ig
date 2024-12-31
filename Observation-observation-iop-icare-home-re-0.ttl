@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/observation-iop-icare-home-re-0> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-iop-icare-home-re-0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-iop"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-iop>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-iop-icare-home-re-0</b></p><a name=\"observation-iop-icare-home-re-0\"> </a><a name=\"hcobservation-iop-icare-home-re-0\"> </a><a name=\"observation-iop-icare-home-re-0-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 41633001}\">Intraocular pressure</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>effective</b>: 2013-06-27 17:04:20+0400</p><p><b>issued</b>: 2013-06-27 17:04:20+0400</p><p><b>value</b>: 25.4 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>bodySite</b>: <span title=\"Codes:\"></span></p><p><b>method</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/eyecare/CodeSystem/iop-methods rebound-tonometry}\">Rebound Tonometry</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "exam" ] ;
+       fhir:display [ fhir:v "Exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:41633001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "41633001" ] ;
+       fhir:display [ fhir:v "Intraocular pressure" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/ophthal-patient-example-0> ;
+     fhir:reference [ fhir:v "Patient/ophthal-patient-example-0" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2013-06-27T17:04:20+04:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2013-06-27T17:04:20.643+04:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "25.4"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mm[Hg]" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mm[Hg]" ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/bodySite"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-right-eye> ;
+         fhir:reference [ fhir:v "BodyStructure/bodystructure-right-eye" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/eyecare/CodeSystem/iop-methods"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "rebound-tonometry" ] ;
+       fhir:display [ fhir:v "Rebound Tonometry" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

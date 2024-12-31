@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/Observation/vf-false-positives-re-0> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vf-false-positives-re-0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-visual-field"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/eyecare/StructureDefinition/observation-visual-field>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation vf-false-positives-re-0</b></p><a name=\"vf-false-positives-re-0\"> </a><a name=\"hcvf-false-positives-re-0\"> </a><a name=\"vf-false-positives-re-0-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/eyecare/CodeSystem/visual-field-observations 400205}\">False positive ratio</span></p><p><b>subject</b>: <a href=\"Patient-ophthal-patient-example-0.html\">Eve Bill Female, DoB: 1958-12-24 ( Medical Record Number: 02134005)</a></p><p><b>effective</b>: 2013-06-27 17:04:20+0400</p><p><b>value</b>: 2/100</p><p><b>bodySite</b>: <span title=\"Codes:\"></span></p><p><b>derivedFrom</b>: <a href=\"Media-visual-field-re-0.html\">Media: status = completed</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "exam" ] ;
+       fhir:display [ fhir:v "Exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/eyecare/CodeSystem/visual-field-observations"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "400205" ] ;
+       fhir:display [ fhir:v "False positive ratio" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/ophthal-patient-example-0> ;
+     fhir:reference [ fhir:v "Patient/ophthal-patient-example-0" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2013-06-27T17:04:20+04:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Ratio ;
+     fhir:numerator [
+       fhir:value [ fhir:v "2"^^xsd:decimal ]
+     ] ;
+     fhir:denominator [
+       fhir:value [ fhir:v "100"^^xsd:decimal ]
+     ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/bodySite"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://larfuma.github.io/fhir-eyecare-ig/BodyStructure/bodystructure-right-eye> ;
+         fhir:reference [ fhir:v "BodyStructure/bodystructure-right-eye" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Media/visual-field-re-0> ;
+     fhir:reference [ fhir:v "Media/visual-field-re-0" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

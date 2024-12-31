@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://larfuma.github.io/fhir-eyecare-ig/DiagnosticReport/pupillomotoric-report-1> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pupillomotoric-report-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-PupillomotoricDiagnosticReport"^^xsd:anyURI ;
+       fhir:link <https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition-PupillomotoricDiagnosticReport>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport pupillomotoric-report-1</b></p><a name=\"pupillomotoric-report-1\"> </a><a name=\"hcpupillomotoric-report-1\"> </a><a name=\"pupillomotoric-report-1-en-US\"> </a><h2><span title=\"Codes:{http://loinc.org 60592-9}\">Pupillomotoric Diagnostic Report</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2023-11-17 10:00:00+0000</td></tr><tr><td>Reported</td><td>2023-11-17 11:00:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner/456\">Dr. Alice Smith</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-pupil-diameter-right-eye-1.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span>)</td><td>3 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td/></tr><tr><td><a href=\"Observation-pupil-diameter-left-eye-1.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 12853009}\">Left eye</span>)</td><td>4 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td/></tr><tr><td><a href=\"Observation-pupil-comparison-1.html\"><span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC comparison-of-pupil-diameter-between-eyes}\">Comparison of Pupil diameters</span></a></td><td/><td>Final</td><td/></tr><tr><td><a href=\"Observation-pupil-diameter-right-eye-2.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span>)</td><td>3 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td>2023-11-17 10:05:00+0000</td></tr><tr><td><a href=\"Observation-pupil-diameter-left-eye-2.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 12853009}\">Left eye</span>)</td><td>6 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td>2023-11-17 10:05:00+0000</td></tr><tr><td><a href=\"Observation-pupil-comparison-2.html\"><span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC comparison-of-pupil-diameter-between-eyes}\">Comparison of Pupil diameters</span></a></td><td/><td>Final</td><td>2023-11-17 10:05:00+0000</td></tr><tr><td><a href=\"Observation-pupil-diameter-right-eye-3.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span>)</td><td>7 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td>2023-11-17 10:35:00+0000</td></tr><tr><td><a href=\"Observation-pupil-diameter-left-eye-3.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 12853009}\">Left eye</span>)</td><td>5 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td>2023-11-17 10:35:00+0000</td></tr><tr><td><a href=\"Observation-pupil-comparison-3.html\"><span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC comparison-of-pupil-diameter-between-eyes}\">Comparison of Pupil diameters</span></a></td><td/><td>Final</td><td>2023-11-17 10:35:00+0000</td></tr><tr><td><a href=\"Observation-pupil-diameter-right-eye-4.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 362502000}\">Entire right eye (body structure)</span>)</td><td>8 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td>2023-11-17 10:40:00+0000</td></tr><tr><td><a href=\"Observation-pupil-diameter-left-eye-4.html\"><span title=\"Codes:{http://loinc.org LP73214-6}\">Pupil diameter</span></a> (<span title=\"Codes:{http://snomed.info/sct 12853009}\">Left eye</span>)</td><td>6 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td><td>Final</td><td>2023-11-17 10:40:00+0000</td></tr><tr><td><a href=\"Observation-pupil-comparison-4.html\"><span title=\"Codes:{https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC comparison-of-pupil-diameter-between-eyes}\">Comparison of Pupil diameters</span></a></td><td/><td>Final</td><td>2023-11-17 10:40:00+0000</td></tr></table><p>Findings are consistent with Horner syndrome on the right side, as evidenced by anisocoria that reverses after administration of apraclonidine.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 702680001}\">Horner syndrome</span></li></ul></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:60592-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60592-9" ] ;
+       fhir:display [ fhir:v "Pupillary function panel" ]
+     ] ) ;
+     fhir:text [ fhir:v "Pupillomotoric Diagnostic Report" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Patient/123> ;
+     fhir:reference [ fhir:v "Patient/123" ] ;
+     fhir:display [ fhir:v "John Doe" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-11-17T10:00:00+00:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2023-11-17T11:00:00+00:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Practitioner/456> ;
+     fhir:reference [ fhir:v "Practitioner/456" ] ;
+     fhir:display [ fhir:v "Dr. Alice Smith" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-1> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-1" ] ;
+     fhir:display [ fhir:v "Right Eye, Bright Light without Medication" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-1> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-1" ] ;
+     fhir:display [ fhir:v "Left Eye, Bright Light without Medication" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-1> ;
+     fhir:reference [ fhir:v "Observation/pupil-comparison-1" ] ;
+     fhir:display [ fhir:v "Pupil Comparison - Bright Light without Medication" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-2> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-2" ] ;
+     fhir:display [ fhir:v "Right Eye, Dim Light without Medication" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-2> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-2" ] ;
+     fhir:display [ fhir:v "Left Eye, Dim Light without Medication" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-2> ;
+     fhir:reference [ fhir:v "Observation/pupil-comparison-2" ] ;
+     fhir:display [ fhir:v "Pupil Comparison - Dim Light without Medication" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-3> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-3" ] ;
+     fhir:display [ fhir:v "Right Eye, Bright Light after Apraclonidine" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-3> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-3" ] ;
+     fhir:display [ fhir:v "Left Eye, Bright Light after Apraclonidine" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-3> ;
+     fhir:reference [ fhir:v "Observation/pupil-comparison-3" ] ;
+     fhir:display [ fhir:v "Pupil Comparison - Bright Light after Apraclonidine" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-right-eye-4> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-right-eye-4" ] ;
+     fhir:display [ fhir:v "Right Eye, Dim Light after Apraclonidine" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-diameter-left-eye-4> ;
+     fhir:reference [ fhir:v "Observation/pupil-diameter-left-eye-4" ] ;
+     fhir:display [ fhir:v "Left Eye, Dim Light after Apraclonidine" ]
+  ] [
+     fhir:link <https://larfuma.github.io/fhir-eyecare-ig/Observation/pupil-comparison-4> ;
+     fhir:reference [ fhir:v "Observation/pupil-comparison-4" ] ;
+     fhir:display [ fhir:v "Pupil Comparison - Dim Light after Apraclonidine" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Findings are consistent with Horner syndrome on the right side, as evidenced by anisocoria that reverses after administration of apraclonidine."] ; # 
+  fhir:conclusionCode ( [
+     fhir:coding ( [
+       a sct:702680001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "702680001" ] ;
+       fhir:display [ fhir:v "Horner's syndrome (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Horner syndrome" ]
+  ] ) ; # 
+  fhir:presentedForm ( [
+     fhir:contentType [ fhir:v "text/plain" ] ;
+     fhir:language [ fhir:v "en" ] ;
+     fhir:data [ fhir:v "VGVzdCBQdXBpbGxvbW90b3JpYyBEaWFnbm9zdGljIFJlcG9ydA=="^^xsd:base64Binary ] ;
+     fhir:title [ fhir:v "Pupillomotoric Diagnostic Report" ] ;
+     fhir:creation [ fhir:v "2023-11-17T11:00:00+00:00"^^xsd:dateTime ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "visual-acuity-correction-methods",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet visual-acuity-correction-methods</b></p><a name=\"visual-acuity-correction-methods\"> </a><a name=\"hcvisual-acuity-correction-methods\"> </a><a name=\"visual-acuity-correction-methods-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/420050001\">420050001</a></td><td>Uncorrected visual acuity</td></tr><tr><td><a href=\"http://snomed.info/id/50121007\">50121007</a></td><td>Eye glasses, device</td></tr><tr><td><a href=\"http://snomed.info/id/57368009\">57368009</a></td><td>Contact lenses, device</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html\"><code>https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-autorefraction\">trial-lenses-autorefraction</a></td><td>Trial Lenses - Values from Autorefraction</td><td>Trial lenses used for visual acuity testing based on values obtained from an autorefractor.</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-manifest-without-cycloplegia\">trial-lenses-manifest-without-cycloplegia</a></td><td>Trial Lenses - Values from Manifest Refraction without Cycloplegia</td><td>Trial lenses used for visual acuity testing based on values from manifest refraction without cycloplegia.</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-manifest-with-cycloplegia\">trial-lenses-manifest-with-cycloplegia</a></td><td>Trial Lenses - Values from Manifest Refraction with Cycloplegia</td><td>Trial lenses used for visual acuity testing based on values from manifest refraction with cycloplegia.</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-retinoscopy\">trial-lenses-retinoscopy</a></td><td>Trial Lenses - Values from Retinoscopy</td><td>Trial lenses used for visual acuity testing based on values from retinoscopy.</td></tr><tr><td><a href=\"CodeSystem-custom-codes-to-be-submitted-to-SNOMED-or-LOINC.html#custom-codes-to-be-submitted-to-SNOMED-or-LOINC-trial-lenses-unspecified-origin\">trial-lenses-unspecified-origin</a></td><td>Trial Lenses - Values of Unspecified Origin</td><td>Trial lenses used for visual acuity testing where the origin of the refractive values is unspecified.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://larfuma.github.io/fhir-eyecare-ig/ValueSet-visual-acuity-correction-methods",
+  "version" : "0.1.0",
+  "name" : "VisualAcuityCorrectionMethods",
+  "title" : "Visual Acuity Correction Methods",
+  "status" : "active",
+  "date" : "2024-12-31T12:44:09+00:00",
+  "publisher" : "Lars Fuhrmann",
+  "contact" : [{
+    "name" : "Lars Fuhrmann",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://larfuma.github.io/fhir-eyecare-ig/"
+    },
+    {
+      "system" : "email",
+      "value" : "fuhr.lars@gmail.com"
+    }]
+  }],
+  "description" : "Methods of correction used during a visual acuity test.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "420050001",
+        "display" : "Uncorrected visual acuity"
+      },
+      {
+        "code" : "50121007",
+        "display" : "Eye glasses, device"
+      },
+      {
+        "code" : "57368009",
+        "display" : "Contact lenses, device"
+      }]
+    },
+    {
+      "system" : "https://larfuma.github.io/fhir-eyecare-ig/CodeSystem/custom-codes-to-be-submitted-to-SNOMED-or-LOINC",
+      "concept" : [{
+        "code" : "trial-lenses-autorefraction",
+        "display" : "Trial Lenses - Values from Autorefraction"
+      },
+      {
+        "code" : "trial-lenses-manifest-without-cycloplegia",
+        "display" : "Trial Lenses - Values from Manifest Refraction without Cycloplegia"
+      },
+      {
+        "code" : "trial-lenses-manifest-with-cycloplegia",
+        "display" : "Trial Lenses - Values from Manifest Refraction with Cycloplegia"
+      },
+      {
+        "code" : "trial-lenses-retinoscopy",
+        "display" : "Trial Lenses - Values from Retinoscopy"
+      },
+      {
+        "code" : "trial-lenses-unspecified-origin",
+        "display" : "Trial Lenses - Values of Unspecified Origin"
+      }]
+    }]
+  }
+}
