@@ -31,9 +31,8 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "short": "Single Code fallback option",
-        "definition": "This is fallback option for use cases where components of VA values cannot be mapped to the indivdual components due to regulatory constraints (MDR in Europe), and have to be represented by a single code representing multiple components of the VA test.",
-        "max": "1",
+        "short": "Additional codings",
+        "definition": "This could be used for additional codes to describe the observation, but it should not be necessary to do so. \r\nIn secondary profiles, this could be used as a fallback option for systems that are unable to map and therefore need to represent the VA test as a single code",
         "binding": {
           "strength": "preferred",
           "valueSet": "http://terminology.hl7.org/uv/eyecare/ValueSet-observation-visual-acuity"
